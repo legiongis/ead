@@ -3,29 +3,26 @@ import inspect
 from arches_hip.settings import *
 from django.utils.translation import ugettext as _
 
+DEBUG = False
+
+ALLOWED_HOSTS = ["*"]
+
 PACKAGE_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 PACKAGE_NAME = PACKAGE_ROOT.split(os.sep)[-1]
-#DATABASES['default']['NAME'] = 'arches_%s' % (PACKAGE_NAME)
-print PACKAGE_NAME
+APP_NAME = 'ead'
 
-#'AiuD5cfAzJpAMMqow3HuWr0_4aJzQhjxeVyekBKWgbUpo2siEfQqzfFHHaN-miBA'
 DATABASES = {
     'default': {
-    'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'arches_%s' % (PACKAGE_NAME),
         'USER': 'postgres',
-    'PASSWORD':'apassword',
+        'PASSWORD':'apassword',
         'HOST': '127.0.0.1',
         'PORT': '5432',
-    'POSTGIS_TEMPLATE' : 'template_postgis_20',
-    'SCHEMAS': 'public,data,app_metadata,ontology,concepts'
+        'POSTGIS_TEMPLATE' : 'template_postgis_20',
+        'SCHEMAS': 'public,data,app_metadata,ontology,concepts'
     }
 }
-#'django.db.backends.postgresql_psycopg2'
-#DATABASES['default']['NAME'] = 'arches_%s' % (PACKAGE_NAME)
-#DATABASES['default']['POSTGIS_TEMPLATE'] = 'template_postgis_2.1'
-#DATABASES['default']['PASSWORD'] = 'apassword'
-#DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 ROOT_URLCONF = '%s.urls' % (PACKAGE_NAME)
 
@@ -36,11 +33,10 @@ TEMPLATE_DIRS = (os.path.join(PACKAGE_ROOT, 'templates'),os.path.join(PACKAGE_RO
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT =  os.path.join(PACKAGE_ROOT, 'uploadedfiles')
 
-
 #RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
 DEFAULT_MAP_X = 3450904
 DEFAULT_MAP_Y = 2968150
-DEFAULT_MAP_ZOOM = 10
+DEFAULT_MAP_ZOOM = 6
 MAP_MIN_ZOOM = 1
 MAP_MAX_ZOOM = 20
 MAP_EXTENT = '2616008,2154396,4285800,3829124'
@@ -59,7 +55,7 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 # MAP_MAX_ZOOM = 19
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
 
-def RESOURCE_TYPE_CONFIGS():
+def RESOURCE_TYPE_CONFIGS_ead():
     return {
         'HERITAGE_RESOURCE.E18': {
             'resourcetypeid': 'HERITAGE_RESOURCE.E18',
@@ -220,25 +216,26 @@ def RESOURCE_TYPE_CONFIGS():
 #     }
 
 
+## not using any geocoding
 #GEOCODING_PROVIDER = ''
 
-RESOURCE_GRAPH_LOCATIONS = (
+#RESOURCE_GRAPH_LOCATIONS = (
 #     # Put strings here, like "/home/data/resource_graphs" or "C:/data/resource_graphs".
 #     # Always use forward slashes, even on Windows.
 #     # Don't forget to use absolute paths, not relative paths.
-os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
-)
+#os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
+#)
 
 
 
-CONCEPT_SCHEME_LOCATIONS = (
+#CONCEPT_SCHEME_LOCATIONS = (
     # Put strings here, like "/home/data/authority_files" or "C:/data/authority_files".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     
     #'absolute/path/to/authority_files',
-     os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
-)
+#     os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
+#)
 
 BUSISNESS_DATA_FILES = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -247,7 +244,7 @@ BUSISNESS_DATA_FILES = (
     # os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'business_data', 'sample.arches')),
 )
 
-APP_NAME = 'ead'
+
 
 LOGGING = {
     'version': 1,
