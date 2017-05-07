@@ -1,10 +1,32 @@
 import os
 import inspect
 from arches_hip.settings import *
+from django.utils.translation import ugettext as _
 
 PACKAGE_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 PACKAGE_NAME = PACKAGE_ROOT.split(os.sep)[-1]
-DATABASES['default']['NAME'] = 'arches_%s' % (PACKAGE_NAME)
+#DATABASES['default']['NAME'] = 'arches_%s' % (PACKAGE_NAME)
+print PACKAGE_NAME
+
+#'AiuD5cfAzJpAMMqow3HuWr0_4aJzQhjxeVyekBKWgbUpo2siEfQqzfFHHaN-miBA'
+DATABASES = {
+    'default': {
+    'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'arches_%s' % (PACKAGE_NAME),
+        'USER': 'postgres',
+    'PASSWORD':'apassword',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    'POSTGIS_TEMPLATE' : 'template_postgis_20',
+    'SCHEMAS': 'public,data,app_metadata,ontology,concepts'
+    }
+}
+#'django.db.backends.postgresql_psycopg2'
+#DATABASES['default']['NAME'] = 'arches_%s' % (PACKAGE_NAME)
+#DATABASES['default']['POSTGIS_TEMPLATE'] = 'template_postgis_2.1'
+#DATABASES['default']['PASSWORD'] = 'apassword'
+#DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
 ROOT_URLCONF = '%s.urls' % (PACKAGE_NAME)
 
 INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,)
@@ -15,17 +37,146 @@ TEMPLATE_DIRS = (os.path.join(PACKAGE_ROOT, 'templates'),os.path.join(PACKAGE_RO
 MEDIA_ROOT =  os.path.join(PACKAGE_ROOT, 'uploadedfiles')
 
 
-#RESOURCE_MODEL = {'default': 'ead.models.resource.Resource'}
+#RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
+DEFAULT_MAP_X = 3450904
+DEFAULT_MAP_Y = 2968150
+DEFAULT_MAP_ZOOM = 6
+MAP_MIN_ZOOM = 1
+MAP_MAX_ZOOM = 20
+MAP_EXTENT = '2616008,2154396,4285800,3829124'
 
+#DEFAULT_MAP_X = 3061141 #2875745 #-13179347.3099
+#DEFAULT_MAP_Y = 3228265 #4031285.8349
+#DEFAULT_MAP_ZOOM = 6
+#MAP_MIN_ZOOM = 1
+#MAP_MAX_ZOOM = 24
+#MAP_EXTENT = '2616008,2154936,4285800,3829124' 
 
 # DEFAULT_MAP_X = -13179347.3099
 # DEFAULT_MAP_Y = 4031285.8349
-DEFAULT_MAP_ZOOM = 1
+#DEFAULT_MAP_ZOOM = 1
 # MAP_MIN_ZOOM = 9
 # MAP_MAX_ZOOM = 19
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
 
-
+def RESOURCE_TYPE_CONFIGS():
+    return {
+        'HERITAGE_RESOURCE.E18': {
+            'resourcetypeid': 'HERITAGE_RESOURCE.E18',
+            'name': _('Archaeological Site'),
+            'icon_class': 'fa fa-university',
+            'default_page': 'summary',
+            'default_description': 'No description available',
+            'description_node': _('DESCRIPTION.E62'),
+            'categories': [_('Resource')],
+            'has_layer': True,
+            'on_map': False,
+            'marker_color': '#fa6003',
+            'stroke_color': '#fb8c49',
+            'fill_color': '#ffc29e',
+            'primary_name_lookup': {
+                'entity_type': 'NAME.E41',
+                'lookup_value': 'Primary'
+            },
+            'sort_order': 1
+        },
+        'HERITAGE_RESOURCE_GROUP.E27': {
+            'resourcetypeid': 'HERITAGE_RESOURCE_GROUP.E27',
+            'name': _('Archaeological Complex'),
+            'icon_class': 'fa fa-th',
+            'default_page': 'summary',
+            'default_description': 'No description available',
+            'description_node': _('DESCRIPTION.E62'), # changed node for EAD Apr 5 2017
+            'categories': [_('Resource')],
+            'has_layer': True,
+            'on_map': False,
+            'marker_color': '#FFC53D',
+            'stroke_color': '#d9b562',
+            'fill_color': '#eedbad',
+            'primary_name_lookup': {
+                'entity_type': 'NAME.E41',
+                'lookup_value': 'Primary'
+            },
+            'sort_order': 2
+        },
+        'ACTIVITY.E7': {
+            'resourcetypeid': 'ACTIVITY.E7',
+            'name': _('Activity'),
+            'icon_class': 'fa fa-tasks',
+            'default_page': 'activity-summary',
+            'default_description': 'No description available',
+            'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
+            'categories': [_('Resource')],
+            'has_layer': True,
+            'on_map': False,
+            'marker_color': '#6DC3FC',
+            'stroke_color': '#88bde0',
+            'fill_color': '#afcce1',
+            'primary_name_lookup': {
+                'entity_type': 'NAME.E41',
+                'lookup_value': 'Primary'
+            },
+            'sort_order': 3
+        },
+        'HISTORICAL_EVENT.E5':{
+            'resourcetypeid': 'HISTORICAL_EVENT.E5',
+            'name': _('Historic Event'),
+            'icon_class': 'fa fa-calendar',
+            'default_page': 'historical-event-summary',
+            'default_description': 'No description available',
+            'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
+            'categories': [_('Resource')],
+            'has_layer': True,
+            'on_map': False,
+            'marker_color': '#4EBF41',
+            'stroke_color': '#61a659',
+            'fill_color': '#c2d8bf',
+            'primary_name_lookup': {
+                'entity_type': 'NAME.E41',
+                'lookup_value': 'Primary'
+            },
+            'sort_order': 4
+        },
+        'ACTOR.E39': {
+            'resourcetypeid': 'ACTOR.E39',
+            'name': _('Person'),
+            'icon_class': 'fa fa-group',
+            'default_page': 'actor-summary',
+            'default_description': 'No description available',
+            'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
+            'categories': [_('Resource')],
+            'has_layer': True,
+            'on_map': False,
+            'marker_color': '#a44b0f',
+            'stroke_color': '#a7673d',
+            'fill_color': '#c8b2a3',
+            'primary_name_lookup': {
+                'entity_type': 'ACTOR_APPELLATION.E82',
+                'lookup_value': 'Primary'
+            },
+            'sort_order': 5
+        },
+        'INFORMATION_RESOURCE.E73': {
+            'resourcetypeid': 'INFORMATION_RESOURCE.E73',
+            'name': _('Biblography/Images/OtherDocs'),
+            'icon_class': 'fa fa-file-text-o',
+            'default_page': 'information-resource-summary',
+            'default_description': 'No description available',
+            'description_node': _('DESCRIPTION.E62'), #added description node EAD Apr 5 2017 
+            'categories': [_('Resource')],
+            'has_layer': True,
+            'on_map': False,
+            'marker_color': '#8D45F8',
+            'stroke_color': '#9367d5',
+            'fill_color': '#c3b5d8',
+            'primary_name_lookup': {
+                'entity_type': 'TITLE.E41',
+                'lookup_value': 'Primary'
+            },
+            'sort_order': 6
+        }
+    }
+#EXPORT_CONFIG = ''
 # def RESOURCE_TYPE_CONFIGS():
 #     return { 
 #         'HERITAGE_RESOURCE.E18': {
@@ -71,12 +222,12 @@ DEFAULT_MAP_ZOOM = 1
 
 #GEOCODING_PROVIDER = ''
 
-# RESOURCE_GRAPH_LOCATIONS = (
+RESOURCE_GRAPH_LOCATIONS = (
 #     # Put strings here, like "/home/data/resource_graphs" or "C:/data/resource_graphs".
 #     # Always use forward slashes, even on Windows.
 #     # Don't forget to use absolute paths, not relative paths.
-#     os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
-# )
+os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
+)
 
 
 
@@ -86,7 +237,7 @@ CONCEPT_SCHEME_LOCATIONS = (
     # Don't forget to use absolute paths, not relative paths.
     
     #'absolute/path/to/authority_files',
-    # os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
+     os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
 )
 
 BUSISNESS_DATA_FILES = (
@@ -122,7 +273,7 @@ LOGGING = {
     },
 }
 
-#EXPORT_CONFIG = os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'business_data', 'resource_export_mappings.json'))
+EXPORT_CONFIG = os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'business_data', 'resource_export_mappings.json'))
 
 try:
     from settings_local import *
