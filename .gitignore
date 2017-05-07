@@ -1,6 +1,7 @@
 ead/settings_local.py
 ead/elasticsearch
 ead/logs
+ead/uploadedfiles
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
