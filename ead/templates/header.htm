@@ -8,14 +8,16 @@
             
             <!-- Topbar Message -->
             <div class="arches-loginbar pull-left">
-                
-                <a href="http://www.archesproject.org" class="">{% trans "Arches" %} </a> 
-                <span class="hidden-xs">{% trans "Cultural Heritage Inventory" %}</span>
+
+                <a href="http://www.archesproject.org" class="">
+                    <img src="{% static 'img/PoweredByArches.png' %}" class="powered-by-arches">
+                </a>
 
             </div>
 
             <!-- Topbar Navigation -->
             <ul class="loginbar pull-right">
+                
                 <li>
                     <i class="fa fa-globe"></i>
                     <a>{% trans "Languages" %}</a>
@@ -27,7 +29,7 @@
                 </li>
                 <li class="topbar-devider"></li>   
                 <li><a href="javascript:void(0);" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="{% trans 'Documentation coming soon.' %}">{% trans "Help" %}</a></li>
-                <li class="topbar-devider"></li>
+                <li class="topbar-devider"></li>   
                 <li>
                     <a id="auth-link" href="{% url 'auth' %}?next={{ request.get_full_path }}{% if user.username != 'anonymous' %}&logout=true{% endif %}">{% if user.username == 'anonymous' %}{% trans "Login" %}{% else %}{% trans "Welcome" %} {{ user.username }} - {% trans "Logout" %}{% endif %}</a>
                 </li>
@@ -48,9 +50,13 @@
                     <span class="sr-only">{% trans "Toggle navigation" %}</span>
                     <span class="fa fa-bars"></span>
                 </button>
+
+                <!-- Default Logo, Replace with your own -->
                 <a class="navbar-brand" href="{% url 'home' %}">
-                    <img id="logo-header" class="arches-logo" src="{{ STATIC_URL }}img/arches_logo.png" alt="Logo">
+                    <!--<img id="logo-header" class="arches-logo" src="{{ STATIC_URL }}img/arches_logo.png" alt="Logo">-->
+                    <h1><strong> Egyptian Archaeological Database (EAD) </strong></h1>
                 </a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -94,9 +100,13 @@
                         </ul>
                     </li>
                     <!-- End Resource Editor -->
+					<!--I added this -->
+					{% endif %}
 
+					{% if 'rdm' in user.user_groups %}
+					<!--till here -->
                      <!-- RDM-->
-                    <li class="{% if user.is_anonymous %}{% endif %} {% if active_page = 'RDM' %}active{% endif %}">
+                    <li class="{% if active_page = 'RDM' %}active{% endif %}">
                         <a href="{% url 'rdm' '' %}">
                             {% trans "RDM" %}
                         </a>
