@@ -219,23 +219,13 @@ def RESOURCE_TYPE_CONFIGS_ead():
 ## not using any geocoding
 #GEOCODING_PROVIDER = ''
 
-#RESOURCE_GRAPH_LOCATIONS = (
-#     # Put strings here, like "/home/data/resource_graphs" or "C:/data/resource_graphs".
-#     # Always use forward slashes, even on Windows.
-#     # Don't forget to use absolute paths, not relative paths.
-#os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
-#)
+RESOURCE_GRAPH_LOCATIONS = (
+    os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
+)
 
-
-
-#CONCEPT_SCHEME_LOCATIONS = (
-    # Put strings here, like "/home/data/authority_files" or "C:/data/authority_files".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    
-    #'absolute/path/to/authority_files',
-#     os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
-#)
+CONCEPT_SCHEME_LOCATIONS = (
+     os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
+)
 
 BUSISNESS_DATA_FILES = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
