@@ -33,7 +33,6 @@ TEMPLATE_DIRS = (os.path.join(PACKAGE_ROOT, 'templates'),os.path.join(PACKAGE_RO
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT =  os.path.join(PACKAGE_ROOT, 'uploadedfiles')
 
-#RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
 DEFAULT_MAP_X = 3450904
 DEFAULT_MAP_Y = 2968150
 DEFAULT_MAP_ZOOM = 6
@@ -55,7 +54,9 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 # MAP_MAX_ZOOM = 19
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
 
-def RESOURCE_TYPE_CONFIGS_ead():
+RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
+
+def RESOURCE_TYPE_CONFIGS():
     return {
         'HERITAGE_RESOURCE.E18': {
             'resourcetypeid': 'HERITAGE_RESOURCE.E18',
@@ -72,7 +73,7 @@ def RESOURCE_TYPE_CONFIGS_ead():
             'fill_color': '#ffc29e',
             'primary_name_lookup': {
                 'entity_type': 'NAME.E41',
-                'lookup_value': 'Primary'
+                'lookup_value': ('NAME_TYPE.E55','Primary')
             },
             'sort_order': 1
         },
@@ -91,7 +92,7 @@ def RESOURCE_TYPE_CONFIGS_ead():
             'fill_color': '#eedbad',
             'primary_name_lookup': {
                 'entity_type': 'NAME.E41',
-                'lookup_value': 'Primary'
+                'lookup_value': ('NAME_TYPE.E55','Primary')
             },
             'sort_order': 2
         },
@@ -110,7 +111,7 @@ def RESOURCE_TYPE_CONFIGS_ead():
             'fill_color': '#afcce1',
             'primary_name_lookup': {
                 'entity_type': 'NAME.E41',
-                'lookup_value': 'Primary'
+                'lookup_value': ('NAME_TYPE.E55','Primary')
             },
             'sort_order': 3
         },
@@ -129,7 +130,7 @@ def RESOURCE_TYPE_CONFIGS_ead():
             'fill_color': '#c2d8bf',
             'primary_name_lookup': {
                 'entity_type': 'NAME.E41',
-                'lookup_value': 'Primary'
+                'lookup_value': ('NAME_TYPE.E55','Primary')
             },
             'sort_order': 4
         },
@@ -148,7 +149,7 @@ def RESOURCE_TYPE_CONFIGS_ead():
             'fill_color': '#c8b2a3',
             'primary_name_lookup': {
                 'entity_type': 'ACTOR_APPELLATION.E82',
-                'lookup_value': 'Primary'
+                'lookup_value': ('NAME_TYPE.E55','Primary')
             },
             'sort_order': 5
         },
@@ -167,7 +168,7 @@ def RESOURCE_TYPE_CONFIGS_ead():
             'fill_color': '#c3b5d8',
             'primary_name_lookup': {
                 'entity_type': 'TITLE.E41',
-                'lookup_value': 'Primary'
+                'lookup_value': ('TITLE_TYPE.E55','Primary')
             },
             'sort_order': 6
         }
