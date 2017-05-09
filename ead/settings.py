@@ -10,6 +10,7 @@ ALLOWED_HOSTS = ["*"]
 PACKAGE_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 PACKAGE_NAME = PACKAGE_ROOT.split(os.sep)[-1]
 APP_NAME = 'ead'
+NEW_SETTING = "TEST"
 
 DATABASES = {
     'default': {
