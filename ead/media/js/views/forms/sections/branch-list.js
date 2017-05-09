@@ -239,7 +239,6 @@ define(['jquery',
         },
         
         clearSelect2: function() {
-            console.log("clearing");
             $('.select2-container').select2('val', '');
         },
 
