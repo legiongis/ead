@@ -1,12 +1,15 @@
 define(['jquery', 
     'underscore', 
-    'knockout',
-    'views/forms/wizard-base', 
+    'summernote', 
+    'views/forms/base',
+    'views/forms/sections/validation',
     'views/forms/sections/branch-list',
-    'bootstrap-datetimepicker',
-    'summernote'], function ($, _, ko, WizardBase, BranchList, datetimepicker, summernote) {
-
-    return WizardBase.extend({
+    'bootstrap-datetimepicker'], function ($, _, summernote, BaseForm, ValidationTools, BranchList) {
+    
+    var vt = new ValidationTools;
+    
+    return BaseForm.extend({
+        
         initialize: function() {
             WizardBase.prototype.initialize.apply(this);
 
@@ -42,7 +45,7 @@ define(['jquery',
                 data: currentEditedClassification,
                 dataKey: 'ANCILLARY_FEATURE_TYPE.E55',
                 validateBranch: function (nodes) {
-                    return this.validateHasValues(nodes);
+                    return vt.nodesHaveValues(nodes,['HERITAGE_RESOURCE_TYPE.E55','CULTURAL_PERIOD.E55']);
                 }
             }));
             this.addBranchList(new BranchList({
