@@ -1,7 +1,7 @@
 define(['jquery', 
     'underscore', 
     'knockout-mapping', 
-    'views/forms/base', 
+    'views/forms/base',
     'views/forms/sections/branch-list',
     'bootstrap-datetimepicker',], 
     function ($, _, koMapping, BaseForm, BranchList) {
@@ -20,7 +20,7 @@ define(['jquery',
                     data: this.data,
                     dataKey: 'RESOURCE_TYPE_CLASSIFICATION.E55',
                     validateBranch: function (nodes) {
-                        return true;
+                        return this.validateHasValues(nodes);
                     }//,
                     // onSelect2Selecting: function(item, select2Config){
                     //     _.each(this.editedItem(), function(node){
