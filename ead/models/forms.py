@@ -278,10 +278,7 @@ class ComponentForm(ResourceForm):
                 }
             }
 
-
 class ClassificationForm(ResourceForm):
-    baseentity = None
-
     @staticmethod
     def get_info():
         return {
@@ -291,115 +288,21 @@ class ClassificationForm(ResourceForm):
             'class': ClassificationForm
         }
 
-    def get_nodes(self, entity, entitytypeid):
-        ret = []
-        entities = entity.find_entities_by_type_id(entitytypeid)
-        for entity in entities:
-            ret.append({'nodes': entity.flatten()})
-
-        return ret
-
-    def update_nodes(self, entitytypeid, data):
-        
-        if self.schema == None:
-       
-            self.schema = Entity.get_mapping_schema(self.resource.entitytypeid)
-        for value in data[entitytypeid]:
-            for newentity in value['nodes']:
-                entity = Entity()
-                entity.create_from_mapping(self.resource.entitytypeid, self.schema[newentity['entitytypeid']]['steps'], newentity['entitytypeid'], newentity['value'], newentity['entityid'])
-
-                if self.baseentity == None:
-                    self.baseentity = entity
-                else:
-                    self.baseentity.merge(entity)
-
     def update(self, data, files):
+        self.update_nodes('PHASE_TYPE_ASSIGNMENT.E17', data)
 
-        self.update_nodes('HERITAGE_RESOURCE_TYPE.E55', data)
-      # self.update_nodes('TO_DATE.E49', data)
-      # self.update_nodes('FROM_DATE.E49', data)
-      # self.update_nodes('HERITAGE_RESOURCE_USE_TYPE.E55', data)
-        self.update_nodes('CULTURAL_PERIOD.E55', data)
-        self.update_nodes('DYNASTY.E55', data) #added this
-        self.update_nodes('RULER.E55', data) #added this
-        self.update_nodes('STYLE.E55', data)
-        self.update_nodes('ANCILLARY_FEATURE_TYPE.E55', data)
-        production_entities = self.resource.find_entities_by_type_id('PRODUCTION.E12')
 
-		
-        phase_type_node_id = ''
-        for value in data['PHASE_TYPE_ASSIGNMENT.E17']:
-            for node in value['nodes']:
-                if node['entitytypeid'] == 'PHASE_TYPE_ASSIGNMENT.E17' and node['entityid'] != '':
-                    #remove the node
-                    phase_type_node_id = node['entityid']
-                    self.resource.filter(lambda entity: entity.entityid != node['entityid'])
-
-        for entity in self.baseentity.find_entities_by_type_id('PHASE_TYPE_ASSIGNMENT.E17'):
-            entity.entityid = phase_type_node_id
-
-        if len(production_entities) > 0:
-            self.resource.merge_at(self.baseentity, 'PRODUCTION.E12')
-        else:
-            self.resource.merge_at(self.baseentity, self.resource.entitytypeid)
-
-        self.resource.trim()
-                   
     def load(self, lang):
-
-        self.data = {
-            'data': [],
-            'domains': {
-                'HERITAGE_RESOURCE_TYPE.E55': Concept().get_e55_domain('HERITAGE_RESOURCE_TYPE.E55'),
-              # 'HERITAGE_RESOURCE_USE_TYPE.E55' : Concept().get_e55_domain('HERITAGE_RESOURCE_USE_TYPE.E55'),
-                'CULTURAL_PERIOD.E55' : Concept().get_e55_domain('CULTURAL_PERIOD.E55'),
-                'STYLE.E55' : Concept().get_e55_domain('STYLE.E55'),
-                'ANCILLARY_FEATURE_TYPE.E55' : Concept().get_e55_domain('ANCILLARY_FEATURE_TYPE.E55'),
-                'DYNASTY.E55' : Concept().get_e55_domain('DYNASTY.E55'), #Added this
-                'RULER.E55' : Concept().get_e55_domain('RULER.E55') #Added this
+        if self.resource:
+            self.data['PHASE_TYPE_ASSIGNMENT.E17'] = {
+                'branch_lists': self.get_nodes('PHASE_TYPE_ASSIGNMENT.E17'),
+                'domains': {
+                    'HERITAGE_RESOURCE_TYPE.E55' : Concept().get_e55_domain('HERITAGE_RESOURCE_TYPE.E55'),
+                    'CULTURAL_PERIOD.E55': Concept().get_e55_domain('CULTURAL_PERIOD.E55'),
+                    'DYNASTY.E55': Concept().get_e55_domain('DYNASTY.E55'),
+                    'RULER.E55': Concept().get_e55_domain('RULER.E55')
+                }
             }
-        }
-
-        classification_entities = self.resource.find_entities_by_type_id('PHASE_TYPE_ASSIGNMENT.E17')
-
-        for entity in classification_entities:
-          # to_date_nodes = datetime_nodes_to_dates(self.get_nodes(entity, 'TO_DATE.E49'))
-          # from_date_nodes = datetime_nodes_to_dates(self.get_nodes(entity, 'FROM_DATE.E49')       # Removed date nodes and added dynasty and ruler below
-
-            self.data['data'].append({
-                'HERITAGE_RESOURCE_TYPE.E55': {
-                    'branch_lists': self.get_nodes(entity, 'HERITAGE_RESOURCE_TYPE.E55')
-                },
-              # 'HERITAGE_RESOURCE_USE_TYPE.E55': {
-              #     'branch_lists': self.get_nodes(entity, 'HERITAGE_RESOURCE_USE_TYPE.E55')
-              # },
-                'CULTURAL_PERIOD.E55': {
-                    'branch_lists': self.get_nodes(entity, 'CULTURAL_PERIOD.E55')
-                },
-		'DYNASTY.E55': {
-                    'branch_lists': self.get_nodes(entity, 'DYNASTY.E55')
-                },
-                'RULER.E55': {
-                    'branch_lists': self.get_nodes(entity, 'RULER.E55')
-                },
-              # 'TO_DATE.E49': {
-              #     'branch_lists': to_date_nodes
-              # },
-              # 'FROM_DATE.E49': {
-              #    'branch_lists': from_date_nodes
-              # },									  						  												     
-                'STYLE.E55': {
-                    'branch_lists': self.get_nodes(entity, 'STYLE.E55')
-                },
-                'ANCILLARY_FEATURE_TYPE.E55': {
-                    'branch_lists': self.get_nodes(entity, 'ANCILLARY_FEATURE_TYPE.E55')
-                },
-                'PHASE_TYPE_ASSIGNMENT.E17': {
-                    'branch_lists': self.get_nodes(entity, 'PHASE_TYPE_ASSIGNMENT.E17')
-                },
-             })
-
 
 class HistoricalEventSummaryForm(ActivitySummaryForm):
     @staticmethod
