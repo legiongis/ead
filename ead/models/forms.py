@@ -291,13 +291,17 @@ class ClassificationForm(ResourceForm):
     def update(self, data, files):
         self.update_nodes('PHASE_TYPE_ASSIGNMENT.E17', data)
 
-
     def load(self, lang):
+        if self.resource.entitytypeid == 'HERITAGE_RESOURCE.E18':
+            type_node = 'HERITAGE_RESOURCE_TYPE.E55'
+        if self.resource.entitytypeid == 'HERITAGE_RESOURCE_GROUP.E27':
+            type_node = 'HERITAGE_RESOURCE_GROUP_TYPE.E55'
+            
         if self.resource:
             self.data['PHASE_TYPE_ASSIGNMENT.E17'] = {
                 'branch_lists': self.get_nodes('PHASE_TYPE_ASSIGNMENT.E17'),
                 'domains': {
-                    'HERITAGE_RESOURCE_TYPE.E55' : Concept().get_e55_domain('HERITAGE_RESOURCE_TYPE.E55'),
+                    type_node : Concept().get_e55_domain(type_node),
                     'CULTURAL_PERIOD.E55': Concept().get_e55_domain('CULTURAL_PERIOD.E55'),
                     'DYNASTY.E55': Concept().get_e55_domain('DYNASTY.E55'),
                     'RULER.E55': Concept().get_e55_domain('RULER.E55')

@@ -25,9 +25,16 @@
                                     <div class="form-group" style="width: 100%">
                                         
                                         <!-- Classification -->
+                                        
                                         <div class="col-xs-12 col-sm-6">
+                                            {% if resourcetypeid == 'HERITAGE_RESOURCE.E18' %}
                                             <h5 id="arches-names-form" class="section-headline">{% trans "Site Type" %}</h5>
-                                            <input style="width:100%;" class="select2 arches-select2-crud-form resource" id="resource-type-dropdown3" data-bind="select2: {value: getEditedNode('HERITAGE_RESOURCE_TYPE.E55', 'value'), placeholder: '{% trans 'Site Type' %}', multiple: false, dataKey: 'HERITAGE_RESOURCE_TYPE.E55'}"></input>
+                                            <input style="width:100%;" class="select2 arches-select2-crud-form resource" id="resource-type-dropdown" data-bind="select2: {value: getEditedNode('HERITAGE_RESOURCE_TYPE.E55', 'value'), placeholder: '{% trans 'Site Type' %}', multiple: false, dataKey: 'HERITAGE_RESOURCE_TYPE.E55'}"></input>
+                                            {% endif %}
+                                            {% if resourcetypeid == 'HERITAGE_RESOURCE_GROUP.E27' %}
+                                            <h5 id="arches-names-form" class="section-headline">{% trans "Complex Type" %}</h5>
+                                            <input style="width:100%;" class="select2 arches-select2-crud-form resource" id="resource-type-dropdown" data-bind="select2: {value: getEditedNode('HERITAGE_RESOURCE_GROUP_TYPE.E55', 'value'), placeholder: '{% trans 'Complex Type' %}', multiple: false, dataKey: 'HERITAGE_RESOURCE_GROUP_TYPE.E55'}"></input>
+                                            {% endif %}
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <h5 id="arches-names-form" class="section-headline">{% trans "Cultural Period" %}</h5>
@@ -67,7 +74,12 @@
             <div class="arches-crud-child-section">
                 <dl>
                     <dd class="arches-CRUD-child-title">
+                        {% if resourcetypeid == 'HERITAGE_RESOURCE.E18' %}
                         This site has these classifications:
+                        {% endif %}
+                        {% if resourcetypeid == 'HERITAGE_RESOURCE_GROUP.E27' %}
+                        This complex has these classifications:
+                        {% endif %}
                     </dd>
 
                     <dd class="margin-left-5" style="display: none;" data-bind="visible: true">
@@ -77,7 +89,12 @@
                             <div class="arches-crud-record">
                                 <a href="javascript:void(0)" class="arches-CRUD-child" title="Delete this record"><i data-bind='click: $parent.deleteItem.bind($parent)' class="arches-CRUD-delete fa fa-times-circle"></i></a>
                                 <a href="javascript:void(0)" class="arches-CRUD-child arches-CRUD-edit" data-bind='click: $parent.editItem.bind($parent)' title="Edit this record">
+                                    {% if resourcetypeid == 'HERITAGE_RESOURCE.E18' %}
                                     <span data-bind='text: nodes.get("HERITAGE_RESOURCE_TYPE.E55", "label")' style="padding-right:2px;"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "Site Type" %})</span><br>
+                                    {% endif %}
+                                    {% if resourcetypeid == 'HERITAGE_RESOURCE_GROUP.E27' %}
+                                    <span data-bind='text: nodes.get("HERITAGE_RESOURCE_GROUP_TYPE.E55", "label")' style="padding-right:2px;"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "Complex Type" %})</span><br>
+                                    {% endif %}
                                     <span data-bind='text: nodes.get("CULTURAL_PERIOD.E55", "label")' style="padding-right:2px;"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "Cultural Period" %})</span><br>
                                     <span data-bind='text: nodes.get("DYNASTY.E55", "label")' style="padding-right:2px;"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "Dynasty" %})</span><br>
                                     <span data-bind='text: nodes.get("RULER.E55", "label")' style="padding-right:2px;"></span><span class="text-muted arches-crud-type-identifier"> ({% trans "Ruler" %})</span>

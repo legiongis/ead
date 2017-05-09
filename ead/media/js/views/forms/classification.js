@@ -12,13 +12,20 @@ define(['jquery',
         
         initialize: function() {
             BaseForm.prototype.initialize.apply(this);
+            
+            var resourcetypeid = $('#resourcetypeid').val();
 
             this.addBranchList(new BranchList({
                 el: this.$el.find('#classification-section')[0],
                 data: this.data,
                 dataKey: 'PHASE_TYPE_ASSIGNMENT.E17',
                 validateBranch: function (nodes) {
-                    return vt.nodesHaveValues(nodes,['HERITAGE_RESOURCE_TYPE.E55','CULTURAL_PERIOD.E55']);
+                    if (resourcetypeid == "HERITAGE_RESOURCE.E18"){
+                        return vt.nodesHaveValues(nodes,['HERITAGE_RESOURCE_TYPE.E55','CULTURAL_PERIOD.E55']);
+                    }
+                    if (resourcetypeid == "HERITAGE_RESOURCE_GROUP.E27"){
+                        return vt.nodesHaveValues(nodes,['HERITAGE_RESOURCE_GROUP_TYPE.E55','CULTURAL_PERIOD.E55']);
+                    }
                 }
             }));
         }
