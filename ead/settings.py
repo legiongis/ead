@@ -173,49 +173,6 @@ def RESOURCE_TYPE_CONFIGS():
             'sort_order': 6
         }
     }
-#EXPORT_CONFIG = ''
-# def RESOURCE_TYPE_CONFIGS():
-#     return { 
-#         'HERITAGE_RESOURCE.E18': {
-#             'resourcetypeid': 'HERITAGE_RESOURCE.E18',
-#             'name': _('Historic Resource'),
-#             'icon_class': 'fa fa-university',
-#             'default_page': 'summary',
-#             'default_description': 'No description available',
-#             'description_node': _('DESCRIPTION.E62'),
-#             'categories': [_('Resource')],
-#             'has_layer': True,
-#             'on_map': False,
-#             'marker_color': '#fa6003',
-#             'stroke_color': '#fb8c49',
-#             'fill_color': '#ffc29e',
-#             'primary_name_lookup': {
-#                 'entity_type': 'NAME.E41',
-#                 'lookup_value': 'Primary'
-#             },
-#             'sort_order': 1
-#         },
-#         'HERITAGE_RESOURCE_GROUP.E27': {
-#             'resourcetypeid': 'HERITAGE_RESOURCE_GROUP.E27',
-#             'name': _('Historic District'),
-#             'icon_class': 'fa fa-th',
-#             'default_page': 'summary',
-#             'default_description': 'No description available',
-#             'description_node': _('REASONS.E62'),
-#             'categories': [_('Resource')],
-#             'has_layer': True,
-#             'on_map': False,
-#             'marker_color': '#FFC53D',
-#             'stroke_color': '#d9b562',
-#             'fill_color': '#eedbad',
-#             'primary_name_lookup': {
-#                 'entity_type': 'NAME.E41',
-#                 'lookup_value': 'Primary'
-#             },
-#             'sort_order': 2
-#         }
-#     }
-
 
 ## not using any geocoding
 #GEOCODING_PROVIDER = ''
