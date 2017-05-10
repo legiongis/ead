@@ -1,0 +1,30 @@
+{% load i18n %}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="">
+            <dl class="report-item-list">
+                <dt>
+                    <h5 id="" class="arches-report-subsection-title">{% trans "Grid References" %}</h5>
+                </dt>
+
+                <dd class="arches-report-subsection-item empty-message" style="display:none;">
+                    {% trans "No Grid References recorded" %}
+                </dd>
+
+                {% if 'PLACE_E53' in report_info.source.graph %}
+                    {% for PLACE_E53 in report_info.source.graph.PLACE_E53 %}
+                        {% if 'GRID_REF_E42' in PLACE_E53 %}
+                            {% for GRID_REF_E42 in PLACE_E53.GRID_REF_E42 %}
+							<dd class="arches-report-subsection-item">
+                                <span class="arches-report-subsection-item-type">{{GRID_REF_E42.GRID_REF_TYPE.E55__value}}</span>    
+                                {{GRID_REF_E42.GRID_REF_E42__value}} 	
+                            </dd>
+                            {% endfor %}                          
+                        {% endif %}
+                    {% endfor %}                
+                {% endif %}
+                
+            </dl>
+        </div>
+    </div>
+</div>
