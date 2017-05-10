@@ -113,9 +113,11 @@ define([
                         extent = ol.extent.extend(extent, featureExtent);
                     }
                 });
-
                 if (extent) {
-                    map.map.getView().fitExtent(extent, (map.map.getSize()));
+                    map.map.getView().fitExtent(extent,(map.map.getSize()));
+                    if (map.map.getView().getZoom() > 12) {
+                        map.map.getView().setZoom(12)
+                    }
                 }
             }
 

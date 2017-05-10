@@ -96,9 +96,9 @@ require([
                 var maxX = extent[2];
                 var maxY = extent[3];
                 var polygon = new ol.geom.Polygon([[[minX, minY], [maxX, minY], [maxX, maxY], [minX, maxY], [minX, minY]]]);
-                this.map.map.getView().fitGeometry(polygon, this.map.map.getSize(), {maxZoom:18}); 
+                this.map.map.getView().fitGeometry(polygon, this.map.map.getSize(), {maxZoom:8});
             }else{
-                this.map.map.getView().fitGeometry(feature.getGeometry().getGeometries()[0], this.map.map.getSize(), {maxZoom:18});                    
+                this.map.map.getView().fitGeometry(feature.getGeometry().getGeometries()[0], this.map.map.getSize(), {maxZoom:8});                    
             }
         },
 
