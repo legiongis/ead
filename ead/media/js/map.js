@@ -14,7 +14,8 @@ require([
     'resource-types',
     'bootstrap',
     'select2',
-    'plugins/jquery.knob.min'
+    'plugins/jquery.knob.min',
+    'map/map-tools',
 ], function($, _, Backbone, ol, ko, arches, layerInfo, MapView, layers, resourceLayers, LayerModel, selectedResourceId, resourceTypes) {
     var geoJSON = new ol.format.GeoJSON();
     var PageView = Backbone.View.extend({
@@ -346,7 +347,8 @@ require([
                         }
                         if (!_.contains(keys, 'select_feature')) {
                             if (isArchesFeature) {
-                                if (archesFeaturesCache[clickFeature.getId()] && archesFeaturesCache[clickFeature.getId()] !== 'loading'){
+                                // if (archesFeaturesCache[clickFeature.getId()] && archesFeaturesCache[clickFeature.getId()] !== 'loading'){
+                                if (1==2){
                                     showFeaturePopup(archesFeaturesCache[clickFeature.getId()]);
                                 } else {
                                     $('.map-loading').show();
@@ -354,12 +356,22 @@ require([
                                     $.ajax({
                                         url: arches.urls.map_markers + 'all?entityid=' + clickFeature.getId(),
                                         success: function(response) {
+                                            
+                                            var coords = response.features[0].geometry.geometries[0].coordinates;
+                                            var lat = ConvertDDToDMS(coords[1]);
+                                            var latstring = lat['deg']+'\xB0 '+lat['min']+"' "+lat['sec']+'" '+lat['dir']
+                                            var lon = ConvertDDToDMS(coords[0],true);
+                                            var longstring = lon['deg']+'\xB0 '+lon['min']+"' "+lon['sec']+'" '+lon['dir']
+
                                             var feature = geoJSON.readFeature(response.features[0]);
+                                            
                                             var geom = feature.getGeometry();
                                             geom.transform(ol.proj.get('EPSG:4326'), ol.proj.get('EPSG:3857'));
 
                                             feature.set('select_feature', true);
                                             feature.set('entityid', feature.getId());
+                                            feature.set('lat',latstring);
+                                            feature.set('long',longstring);
 
                                             archesFeaturesCache[clickFeature.getId()] = feature;
                                             $('.map-loading').hide();

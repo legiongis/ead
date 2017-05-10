@@ -22,8 +22,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
         <dt class="txt-color-blue">{% trans 'Resource Type' %}</dt>
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().resource_type : ''"></dd>
         
-        <dt class="txt-color-blue">{% trans 'Address' %}</dt>
-        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().address : ''"></dd>
+        <dt class="txt-color-blue">{% trans 'Location Coordinates' %}</dt>
+        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().lat+', '+selectedResource().long : ''"></dd>
 
         <dt class="txt-color-blue">{% trans 'Designations' %}</dt>
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().designations : ''"></dd>
