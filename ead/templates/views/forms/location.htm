@@ -87,7 +87,7 @@
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-1" style="">
 
-                        <div id="overlay-panel" class="tools-panel hidden" style="margin-top: -490px; overflow-y: scroll; overflow-x: hidden; height: 435px;">
+                        <div id="overlay-panel" class="tools-panel hidden" style="margin-top: -490px; overflow-y: auto; overflow-x: hidden; height: 391px;">
                             <div class="modal-header arches-modal-header">
 
                                 <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true">
@@ -146,16 +146,43 @@
                                                         {% trans 'Add from gpx, kml, or geojson' %}
                                                     </a>
                                                     <input type="file" class="upload geom-upload" accept=".gpx, .kml, .geojson, .json"/>
+                                                    <p class="geom-file-instructions">{% trans '(or drag and drop the file onto the map)' %}</p>
                                                 </div>
                                             </dd>
-
-                                            <dd class="geom-file-instructions">
-                                                {% trans '(or drag and drop the file onto the map)' %}
+                                            
+                                            <dd>
+                                                <div class="arches-tool-item">
+                                                    
+                                                    <i class="fa fa-compass"></i>
+                                                    {% trans 'Enter latitude/longitude' %}
+                                                    <p class="geom-file-instructions">{% trans 'use decimal degrees: dd.ddddd' %}</p>
+                                                    
+                                                    <div class="col-xs-12 col-sm-6" style="top:5px">
+                                                        <input class="form-control coord-input" id="latinput" placeholder="latitude" maxlength="8" type="text" autocomplete="off"/>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6" style="top:5px">
+                                                        <div id="lat-dms-display" class="dms-display">
+                                                            <p>0&deg; 0" 0' N</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <input class="form-control coord-input" id="longinput" placeholder="longitude" maxlength="8" type="text" autocomplete="off"/>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div id="long-dms-display" class="dms-display">
+                                                            <p>0&deg; 0" 0' E</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <input type="button" id="add-lat-long" value="Add to Map" style="width=100%">
+                                                    </div>
+                                                </div>
                                             </dd>
                                             
                                         </dl>
                                         
                                     </div>
+                                    
                                 </div>
                             </div>
                             <!-- End Body Content -->

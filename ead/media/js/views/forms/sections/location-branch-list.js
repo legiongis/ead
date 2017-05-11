@@ -6,7 +6,8 @@ define([
     'underscore',
     'openlayers',
     'views/forms/sections/branch-list',
-    'views/map'
+    'views/map',
+    'map/map-tools',
 ], function ($, Backbone, ko, koMapping, _, ol, BranchList, MapView) {
     var wkt = new ol.format.WKT();
     return BranchList.extend({
@@ -15,7 +16,7 @@ define([
             var map = new MapView({
                 el: this.$el.find('.map')
             });
-
+            
             var addFeature = function (feature, editing) {
                 var branch = koMapping.fromJS({
                     'editing': ko.observable(editing), 
@@ -242,6 +243,43 @@ define([
                     baseLayer.layer.setVisible(baseLayer.id == basemap);
                 });
                 $("#inventory-home").click()
+            });
+            
+            // manage input of lat/long and live display in DMS
+            $('.coord-input').keyup(function () {
+                if (this.id == "latinput") {
+                    var dms = ConvertDDToDMS(this.value);
+                    var dmsstring = DMSString(dms);
+                    $('#lat-dms-display').html('<p>'+dmsstring+'</p>');
+                }
+                if (this.id == "longinput") {
+                    var dms = ConvertDDToDMS(this.value,true);
+                    var dmsstring = DMSString(dms);
+                    $('#long-dms-display').html('<p>'+dmsstring+'</p>');
+                }
+                if (!this.value.match(/[0-9]/)) {
+                    this.value = this.value.replace(/[^0-9]/g, '');
+                };
+                if (!this.value.match(/^[+\-]?[0-9]{1,3}\.[0-9]{5,}/)) {
+                    $('#'+this.id).css({ color: "red" })
+                } else {
+                    $('#'+this.id).css({ color: "black" })
+                }
+            });
+            
+            // take the input lat/long and add to map by making a feature from wkt
+            this.$el.find('#add-lat-long').on('click', function() {
+                var latdd = $('#latinput').val();
+                var longdd = $('#longinput').val();
+                var wkt = 'POINT('+longdd+' '+latdd+')';
+                var format = new ol.format.WKT();
+                var feature = format.readFeature(wkt, {
+                    dataProjection: 'EPSG:4326',
+                    featureProjection: 'EPSG:3857'
+                });
+                bulkAddFeatures([feature]);
+                $("#inventory-home").click()
+                $('.coord-input').val("");
             });
 
             var formatConstructors = [

@@ -1,1 +1,29 @@
 /*put package specific styles here...*/
+
+.geom-file-instructions {
+    font-size: 14px;
+    font-weight: 200;
+    color: #888;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    display: block;
+    padding-left: 18px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.coord-input {
+    width: 100% !important;
+    height: 25px;
+    font-family: courier;
+    font-weight: bold;
+}
+
+.dms-display {
+    font-family: courier;
+    font-size: 14px;
+    margin-top: 5px;
+}
