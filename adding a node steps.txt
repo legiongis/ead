@@ -1,0 +1,21 @@
+adding a new data input in a form is a many-step process that begins with the addition of a new node in that resource type's graph.
+
+1. add node to graph
+    -- use Gephi, version 0.8.2
+    -- make changes, export edges csv and nodes csv
+2. reinstall the package
+    -- (ENV) python manage.py packages -o install
+3. add node to form class in forms.py
+    --use existing examples
+    --in the case of a new node that is a dropdown (or a branchlist that contains a node with a dropdown), you will need to add those domains to the load function, in self.data[<node name>]['domains']
+    -- make sure new node is included in the self.load() and self.update() method
+4. modify js file for the form
+    -- if the new node creates a new branchlist, this must be added in the js for the form, and reference the appropriate htm section id
+    -- add validation if desired to new branchlist
+    -- if the node is included in an existing branch, probably no change to js is needed (maybe validation)
+5. add input to htm template for form
+    -- use existing examples
+    -- if the new node creates a new branchlist, create a new section with UNIQUE id that is reference by the js branchlist instantiation
+    -- if the new node is inside of an existing branchlist, add the data input widget inside of the appropriate section
+    -- use the node name in the input widget where necessary
+    -- below the input forms, add reference to the node so it appears in the summary of added values
