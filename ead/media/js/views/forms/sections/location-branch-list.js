@@ -6,9 +6,10 @@ define([
     'underscore',
     'openlayers',
     'views/forms/sections/branch-list',
+    'arches',
     'views/map',
     'map/map-tools',
-], function ($, Backbone, ko, koMapping, _, ol, BranchList, MapView) {
+], function ($, Backbone, ko, koMapping, _, ol, BranchList, arches, MapView) {
     var wkt = new ol.format.WKT();
     return BranchList.extend({
         initialize: function(options) {
