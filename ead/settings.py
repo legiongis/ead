@@ -31,6 +31,8 @@ INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,)
 STATICFILES_DIRS = (os.path.join(PACKAGE_ROOT, 'media'),) + STATICFILES_DIRS
 TEMPLATE_DIRS = (os.path.join(PACKAGE_ROOT, 'templates'),os.path.join(PACKAGE_ROOT, 'templatetags')) + TEMPLATE_DIRS
 
+TEMPLATE_CONTEXT_PROCESSORS = ('ead.utils.context_processors.saved_search_urls',) + TEMPLATE_CONTEXT_PROCESSORS
+
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT =  os.path.join(PACKAGE_ROOT, 'uploadedfiles')
 
@@ -54,6 +56,12 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 # MAP_MIN_ZOOM = 9
 # MAP_MAX_ZOOM = 19
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
+
+## these urls must be defined in settings_local because they are different in each installation
+SAVED_SEARCH_URLS = {
+    # name referenced in saved_searches.htm: url for that saved search
+    'isis_temples':'',
+}
 
 RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
 
