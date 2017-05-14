@@ -68,7 +68,7 @@ define(['jquery',
         },
         
         nodesHaveValues: function(nodes, node_names) {
-            vals_good = true;
+            var vals_good = true;
             _.each(nodes, function(node) {
                 if (node_names.indexOf(node["entitytypeid"]) > -1) {
                     if (node["value"] === "") {
@@ -77,6 +77,22 @@ define(['jquery',
                 }
             });
             return vals_good;
+        },
+        
+        dependantNodePair: function(nodes,node1,node2) {
+            var node1_present = false;
+            _.each(nodes, function(node) {
+                if (node["entitytypeid"] == node1) {
+                    node1_present = true;
+                }
+            });
+            if (node1_present) {
+                _.each(nodes, function(node) {
+                    if (node["entitytypeid"] == node2) {return true}
+                });
+            } else {return true}
+            return false
         }
+        
     });
 });
