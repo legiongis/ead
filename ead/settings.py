@@ -58,9 +58,36 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
 
 ## these urls must be defined in settings_local because they are different in each installation
-SAVED_SEARCH_URLS = {
-    # name referenced in saved_searches.htm: url for that saved search
-    'isis_temples':'',
+
+SAVED_SEARCHES = {
+    'al_jizah_bibliography': {
+        'title':'Giza Bibliography',
+        'url':'XXX',
+        'icon_class':'fa-file-text-o',
+        'desc':'Find and print out the bibliography for the pyramids of Giza (Al Jizah)',
+        'sort_order':1
+    },
+    'all_sites': {
+        'title':'All Sites',
+        'url':'XXX',
+        'icon_class':'fa-file-text-o',
+        'desc':'Search for all sites and complexes',
+        'sort_order':2
+    },
+    'isis_temples': {
+        'title':'Isis Temples',
+        'url':'XXX',
+        'icon_class':'fa-bank',
+        'desc':'Find and print out the bibliography for the pyramids of Giza (Al Jizah)',
+        'sort_order':3
+    },
+    'isis_templese': {
+        'title':'Isis Temples2',
+        'url':'XXX',
+        'icon_class':'fa-file-text-o',
+        'desc':'Find and print out the bibliography for the pyramids of Giza (Al Jizah)',
+        'sort_order':4
+    }
 }
 
 RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
