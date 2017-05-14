@@ -195,10 +195,6 @@
                             <button class="btn btn-success btn-xs" id="attribute-filter-button" style=""> 
                                 <i class="fa fa-map-marker"></i> {% trans 'Attribute filter' %}
                             </button>
-
-                            <button class="btn btn-success btn-xs" id="time-filter-button" style=""> 
-                                <i class="fa fa-clock-o"></i> {% trans 'Time filter' %}
-                            </button>
                         </span>
 
                     </h2>
@@ -244,9 +240,6 @@
             <div class="s-results margin-bottom-50">
                 <div class="row" id="map-filter-container" data-filtertext="{% trans "Map Filter Enabled" %}" style="margin-right: 20px;"> 
                     {% include 'views/search/map-filter.htm' %}
-                </div>
-                <div class="row" id="time-filter-container" data-filtertext="{% trans "Time Filter Enabled" %}"> 
-                    {% include 'views/search/time-filter.htm' %}
                 </div>
                 <div class="row" id="search-results-container"> 
                     <!-- Content -->              
