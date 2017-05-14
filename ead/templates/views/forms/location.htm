@@ -251,7 +251,7 @@
     <div class="row">
         <div class="col-xs-12">
 
-            <!-- Address -->
+            <!-- For EAD Address is not used, Grid references entered in these boxes May 14 2017  -->
             <div class="padding-left-10">
                 <dl>
 
@@ -271,10 +271,10 @@
                                 <!-- Form for screens > xs -->
                                 <form class="form-inline arches-form hidden-xs" role="form">
                                     <div class="form-group" style="width: 100%">
-                                        <input class="form-control" style="width: 50%; height: 32px;" id="address" placeholder="grid reference" data-bind='value: getEditedNode("PLACE_ADDRESS.E45", "value")'>
+                                        <input class="form-control" style="width: 50%; height: 32px;" id="address" placeholder="grid reference" data-bind='value: getEditedNode("GRID_REF.E42", "value")'>
                                         
                                         <!-- Address Type -->
-                                        <input style="width:30%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form address-type" placeholder="type" data-bind="select2: {value: getEditedNode('ADDRESS_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'ADDRESS_TYPE.E55'}">
+                                        <input style="width:30%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form address-type" placeholder="type" data-bind="select2: {value: getEditedNode('GRID_REF_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'GRID_REF_TYPE.E55'}">
                                         <!-- Address Type -->
                                         
                                         {% include 'views/components/add-item-button.htm' %}
@@ -286,13 +286,13 @@
                                 <!-- Form for screens = xs -->
                                 <form class="form-inline arches-form hidden-sm hidden-md hidden-lg" role="form">
                                     <div class="form-group" style="width: 100%">
-                                        <input class="form-control" style="width: 100%; height: 32px;" id="address" placeholder="grid reference" data-bind='value: getEditedNode("PLACE_ADDRESS.E45", "value")'>
+                                        <input class="form-control" style="width: 100%; height: 32px;" id="address" placeholder="grid reference" data-bind='value: getEditedNode("GRID_REF.E42", "value")'>
 
                                         <!-- Spacer (for xs screens) -->
                                         <div class="margin-top-5 hidden-sm hidden-md hidden-lg"></div>
                                         
                                         <!-- Address Type -->
-                                        <input style="width:100%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form address-type" placeholder="type" data-bind="select2: {value: getEditedNode('ADDRESS_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'ADDRESS_TYPE.E55'}">
+                                        <input style="width:100%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form address-type" placeholder="type" data-bind="select2: {value: getEditedNode('GRID_REF_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'GRID_REF_TYPE.E55'}">
                                         <!-- Address Type -->
 
                                         <!-- Spacer (for xs screens) -->
@@ -315,11 +315,11 @@
     </div>
     <!-- End Address CRUD Form COntainer -->
 
-    <!-- Address Records -->
+    <!-- Grid reference records -->
     <div class="row">
         <div class="col-xs-12">
 
-            <!-- Address -->
+            <!-- grid reference -->
             <div class="arches-crud-child-section">
                 <dl>
                     <dd class="arches-CRUD-child-title">
@@ -331,7 +331,7 @@
                         <dd class="margin-left-5">
                             <div class="arches-crud-record">
                                 <a href="javascript:void(0);" class="arches-CRUD-child" title="Remove this relationship" data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
-                                <a href="javascript:void(0);" class="arches-CRUD-child manage-address" title="Edit this address" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('PLACE_ADDRESS.E45', 'value')"></a>&nbsp; <span class="text-muted arches-crud-type-identifier">(<span data-bind="text: nodes.get('ADDRESS_TYPE.E55', 'label')"></span>)</span>
+                                <a href="javascript:void(0);" class="arches-CRUD-child manage-address" title="Edit this address" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('GRID_REF.E42', 'value')"></a>&nbsp; <span class="text-muted arches-crud-type-identifier">(<span data-bind="text: nodes.get('GRID_REF_TYPE.E55', 'label')"></span>)</span>
                             </div>
                         </dd>
                     </div>
@@ -340,7 +340,7 @@
             </div>
         </div>
     </div>
-    <!-- End Address -->
+    <!-- End grid reference -->
 </div>
 
 <hr class="devider arches-RDM-divider">
@@ -389,7 +389,7 @@
 
                             <!-- Title -->
                             <dt>
-                                <h5 id="arches-names-form" class="section-headline">{% trans 'Settings' %}</h5>
+                                <h5 id="arches-names-form" class="section-headline">{% trans 'Environmental Settings' %}</h5>
                             </dt>
 
                             <!-- Admin Areas CRUD -->
