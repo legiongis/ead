@@ -81,17 +81,23 @@ define(['jquery',
         
         dependantNodePair: function(nodes,node1,node2) {
             var node1_present = false;
+            var vals_good = false;
             _.each(nodes, function(node) {
                 if (node["entitytypeid"] == node1) {
                     node1_present = true;
                 }
             });
+            console.log('node1_present');
+            console.log(node1_present);
             if (node1_present) {
                 _.each(nodes, function(node) {
-                    if (node["entitytypeid"] == node2) {return true}
+                    if (node["entitytypeid"] == node2 && node['value'] != '') {
+                        vals_good = true;
+                    }
                 });
-            } else {return true}
-            return false
+            } else {vals_good = true}
+            console.log(vals_good);
+            return vals_good
         }
         
     });
