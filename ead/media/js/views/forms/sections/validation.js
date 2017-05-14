@@ -83,7 +83,7 @@ define(['jquery',
             var node1_present = false;
             var vals_good = false;
             _.each(nodes, function(node) {
-                if (node["entitytypeid"] == node1) {
+                if (node["entitytypeid"] == node1 && node['value'] != '') {
                     node1_present = true;
                 }
             });
