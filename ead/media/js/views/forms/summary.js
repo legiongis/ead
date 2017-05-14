@@ -3,8 +3,12 @@ define(['jquery',
     'knockout-mapping', 
     'views/forms/base',
     'views/forms/sections/branch-list',
+    'views/forms/sections/validation',
     'bootstrap-datetimepicker',], 
-    function ($, _, koMapping, BaseForm, BranchList) {
+    function ($, _, koMapping, BaseForm, BranchList, ValidationTools) {
+        
+        var vt = new ValidationTools;
+        
         return BaseForm.extend({
             initialize: function() {
                 BaseForm.prototype.initialize.apply(this);                
@@ -47,31 +51,31 @@ define(['jquery',
                     data: this.data,
                     dataKey: 'NAME.E41',
                     validateBranch: function (nodes) {
-                        var valid = true;
-                        var primaryname_count = 0;
-                        var primaryname_conceptid = this.viewModel.primaryname_conceptid;
-                        _.each(nodes, function (node) {
-                            if (node.entitytypeid === 'NAME.E41') {
-                                if (node.value === ''){
-                                    valid = false;
-                                }
-                            }
-                            if (node.entitytypeid === 'NAME_TYPE.E55') {
-                                if (node.value === primaryname_conceptid){
-                                    _.each(self.viewModel['branch_lists'], function (branch_list) {
-                                        _.each(branch_list.nodes, function (node) {
-                                            if (node.entitytypeid === 'NAME_TYPE.E55' && node.value === primaryname_conceptid) {
-                                                valid = false;
-                                            }
-                                        }, this);
-                                    }, this);
-                                }
-                            }
-                        }, this);
-                        return valid;
+                        return vt.nodesHaveValues(nodes,['NAME.E41'])
+                        // var valid = true;
+                        // var primaryname_count = 0;
+                        // var primaryname_conceptid = this.viewModel.primaryname_conceptid;
+                        // _.each(nodes, function (node) {
+                            // if (node.entitytypeid === 'NAME.E41') {
+                                // if (node.value === ''){
+                                    // valid = false;
+                                // }
+                            // }
+                            // if (node.entitytypeid === 'NAME_TYPE.E55') {
+                                // if (node.value === primaryname_conceptid){
+                                    // _.each(self.viewModel['branch_lists'], function (branch_list) {
+                                        // _.each(branch_list.nodes, function (node) {
+                                            // if (node.entitytypeid === 'NAME_TYPE.E55' && node.value === primaryname_conceptid) {
+                                                // valid = false;
+                                            // }
+                                        // }, this);
+                                    // }, this);
+                                // }
+                            // }
+                        // }, this);
+                        // return valid;
                     }
                 }));
-
 
                 this.addBranchList(new BranchList({
                     el: this.$el.find('#subjects-section')[0],
