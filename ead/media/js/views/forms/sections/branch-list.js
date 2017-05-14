@@ -20,6 +20,9 @@ define(['jquery',
             this.defaults = [];
             console.log(this.dataKey);
             console.log(this.data);
+            if (this.data[this.dataKey] == undefined){
+                console.log("error: incorrect data key. check forms.py or this form's js file");
+            }
             this.viewModel = JSON.parse(JSON.stringify(this.data[this.dataKey]));
             //this.viewModel.domains = this.data[this.dataKey].domains;
             this.viewModel.branch_lists = koMapping.fromJS(this.data[this.dataKey].branch_lists);
