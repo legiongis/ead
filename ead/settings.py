@@ -57,8 +57,8 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 # MAP_MAX_ZOOM = 19
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
 
-## these urls must be defined in settings_local because they are different in each installation
-
+## SAVED_SEARCHES urls must be defined in settings_local.py because they are different in each
+## installation icons are defined by their class as listed here: http://fontawesome.io/cheatsheet/
 SAVED_SEARCHES = {
     'al_jizah_bibliography': {
         'title':'Giza Bibliography',
