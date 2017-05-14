@@ -212,15 +212,11 @@ class Resource(ArchesResource):
         
         if self.entitytypeid == 'HERITAGE_RESOURCE.E18':
             document_data['resource_type'] = get_entity_data('HERITAGE_RESOURCE_TYPE.E55', get_label=True)
-
-            document_data['address'] = _('None specified')
-            address_nodes = self.find_entities_by_type_id('PLACE_ADDRESS.E45')
-            for node in address_nodes:
-                if node.find_entities_by_type_id('ADDRESS_TYPE.E55')[0].label == 'Primary':
-                    document_data['address'] = node.value
-
+            document_data['cultural_period'] = get_entity_data('CULTURAL_PERIOD.E55', get_label=True)
+            
         if self.entitytypeid == 'HERITAGE_RESOURCE_GROUP.E27':
             document_data['resource_type'] = get_entity_data('HERITAGE_RESOURCE_GROUP_TYPE.E55', get_label=True)
+            document_data['cultural_period'] = get_entity_data('CULTURAL_PERIOD.E55', get_label=True)
 
         if self.entitytypeid == 'ACTIVITY.E7':
             document_data['resource_type'] = get_entity_data('ACTIVITY_TYPE.E55', get_label=True)

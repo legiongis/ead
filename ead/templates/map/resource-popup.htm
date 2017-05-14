@@ -19,21 +19,24 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 {% load i18n %}   
 <dl class="">
     <div data-bind="if: selectedResource()['entitytypeid'] === 'HERITAGE_RESOURCE.E18'">
-        <dt class="txt-color-blue">{% trans 'Resource Type' %}</dt>
+        <dt class="txt-color-blue">{% trans 'Site Type' %}</dt>
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().resource_type : ''"></dd>
         
+        <dt class="txt-color-blue">{% trans 'Cultural Period' %}</dt>
+        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().cultural_period : ''"></dd>
+    
         <dt class="txt-color-blue">{% trans 'Location Coordinates' %}</dt>
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().lat+', '+selectedResource().long : ''"></dd>
-
-        <dt class="txt-color-blue">{% trans 'Designations' %}</dt>
-        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().designations : ''"></dd>
     </div>
     <div data-bind="if: selectedResource()['entitytypeid'] === 'HERITAGE_RESOURCE_GROUP.E27'">
-        <dt class="txt-color-blue">{% trans 'Historic District Type' %}</dt>
+        <dt class="txt-color-blue">{% trans 'Complex Type' %}</dt>
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().resource_type : ''"></dd>
-
-        <dt class="txt-color-blue">{% trans 'Designations' %}</dt>
-        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().designations : ''"></dd>
+        
+        <dt class="txt-color-blue">{% trans 'Cultural Period' %}</dt>
+        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().cultural_period : ''"></dd>
+    
+        <dt class="txt-color-blue">{% trans 'Location Coordinates' %}</dt>
+        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().lat+', '+selectedResource().long : ''"></dd>
     </div>
     <div data-bind="if: selectedResource()['entitytypeid'] === 'ACTIVITY.E7'">
         <dt class="txt-color-blue">{% trans 'Activity Type' %}</dt>
