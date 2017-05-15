@@ -557,6 +557,7 @@ class LocationForm(ResourceForm):
 
     def update(self, data, files):
         if self.resource.entitytypeid not in ['ACTOR.E39']:
+            self.update_nodes('SPATIAL_COORDINATES_GEOMETRY.E47', data)
             self.update_nodes('DESCRIPTION_OF_LOCATION.E62', data)
             self.update_nodes('GRID_REF.E42', data)
             self.update_nodes('ADMINISTRATIVE_SUBDIVISION.E48', data)
