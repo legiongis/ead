@@ -1,0 +1,3153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-15 13:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\ead\settings.py:33 .\ead\templates\header.htm:26
+msgid "English"
+msgstr "انجليزي"
+
+#: .\ead\settings.py:34 .\ead\templates\header.htm:27
+msgid "Arabic"
+msgstr "عربي"
+
+#: .\ead\settings.py:126
+#, fuzzy
+msgid "Archaeological Site"
+msgstr "مدى التأكد الأثري"
+
+#: .\ead\settings.py:130 .\ead\settings.py:149 .\ead\settings.py:225
+msgid "DESCRIPTION.E62"
+msgstr ""
+
+#: .\ead\settings.py:131 .\ead\settings.py:150 .\ead\settings.py:169
+#: .\ead\settings.py:188 .\ead\settings.py:207 .\ead\settings.py:226
+msgid "Resource"
+msgstr "مورد"
+
+#: .\ead\settings.py:145
+#, fuzzy
+msgid "Archaeological Complex"
+msgstr "مدى التأكد الأثري"
+
+#: .\ead\settings.py:164
+msgid "Activity"
+msgstr "نشاط"
+
+#: .\ead\settings.py:168 .\ead\settings.py:187 .\ead\settings.py:206
+msgid "INSERT RESOURCE DESCRIPTION NODE HERE"
+msgstr "أدخل علامة وصف المصدر هنا"
+
+#: .\ead\settings.py:183
+msgid "Historic Event"
+msgstr "حدث تاريخي"
+
+#: .\ead\settings.py:202
+#, fuzzy
+msgid "Person"
+msgstr "العصر"
+
+#: .\ead\settings.py:221
+msgid "Biblography/Images/OtherDocs"
+msgstr ""
+
+#: .\ead\models\forms.py:50 .\ead\models\forms.py:173
+#: .\ead\models\forms.py:317 .\ead\models\forms.py:327
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:136
+#: .\ead\templates\views\reports\ACTOR.E39.htm:136
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:136
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:136
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:136
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:136
+msgid "Resource Summary"
+msgstr "ملخص المورد"
+
+#: .\ead\models\forms.py:124 .\ead\templates\views\reports\ACTIVITY.E7.htm:328
+#: .\ead\templates\views\reports\ACTOR.E39.htm:406
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:384
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:374
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:388
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:337
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:597
+#: .\ead\templates\views\reports\sections\EXTERNAL_XREF.E42.htm:6
+msgid "External System References"
+msgstr "مصادر خارجية للنظام"
+
+#: .\ead\models\forms.py:147
+msgid "Actions"
+msgstr "أفعال"
+
+#: .\ead\models\forms.py:223
+msgid "Components"
+msgstr "مكونات"
+
+#: .\ead\models\forms.py:287 .\ead\models\forms.py:1114
+#, fuzzy
+msgid "Classifications"
+msgstr "تصنيف"
+
+#: .\ead\models\forms.py:379
+#, fuzzy
+msgid "Descriptions"
+msgstr "الوصف"
+
+#: .\ead\models\forms.py:408
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:353
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:343
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:357
+#: .\ead\templates\views\reports\sections\MEASUREMENT_TYPE.E55.htm:6
+msgid "Measurements"
+msgstr "قياسات"
+
+#: .\ead\models\forms.py:434
+msgid "Condition Assessment"
+msgstr "تقييم الحالة"
+
+#: .\ead\models\forms.py:554
+msgid "Location"
+msgstr "الموقع"
+
+#: .\ead\models\forms.py:620
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:330
+msgid "Coverage"
+msgstr ""
+
+#: .\ead\models\forms.py:657
+msgid "Images and Files"
+msgstr "صور وملفات"
+
+#: .\ead\models\forms.py:758
+#, fuzzy
+msgid "File Upload"
+msgstr "إدخال آخر"
+
+#: .\ead\models\forms.py:799
+msgid "Designation"
+msgstr "دلالة"
+
+#: .\ead\models\forms.py:825 .\ead\templates\views\reports\ACTOR.E39.htm:317
+msgid "Role"
+msgstr "دور"
+
+#: .\ead\models\forms.py:852
+msgid "Actor Summary"
+msgstr "ملخص الفاعل"
+
+#: .\ead\models\forms.py:908
+msgid "Phase"
+msgstr "مرحلة"
+
+#: .\ead\models\forms.py:938
+#, fuzzy
+msgid "Evaluation Criteria"
+msgstr "تفاصيل التقييم"
+
+#: .\ead\models\forms.py:1033
+#: .\ead\templates\views\forms\related-resources.htm:58
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:12
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:12
+msgid "Related Resources"
+msgstr "موارد ذات صلة"
+
+#: .\ead\models\forms.py:1210
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:388
+#, fuzzy
+msgid "Creation and Publication"
+msgstr "تاريخ النشر"
+
+#: .\ead\models\resource.py:35
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:113
+#: .\ead\templates\views\reports\ACTOR.E39.htm:113
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:113
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:113
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:113
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:113
+msgid "Resource Description"
+msgstr "وصف المورد"
+
+#: .\ead\models\resource.py:59
+#, fuzzy
+msgid "Evaluate Resource"
+msgstr "موارد ذات صلة"
+
+#: .\ead\models\resource.py:123
+msgid "Manage Resource"
+msgstr "إدارة المورد"
+
+#: .\ead\models\resource.py:199
+msgid "None specified"
+msgstr "غير محدد"
+
+#: .\ead\templates\header.htm:23
+msgid "Languages"
+msgstr "اللغات"
+
+#: .\ead\templates\header.htm:31
+msgid "Documentation coming soon."
+msgstr "إحضار التوثيق قريباً"
+
+#: .\ead\templates\header.htm:31
+msgid "Help"
+msgstr "مساعدة"
+
+#: .\ead\templates\header.htm:34
+msgid "Login"
+msgstr "دخول"
+
+#: .\ead\templates\header.htm:34
+msgid "Welcome"
+msgstr "مرحباً"
+
+#: .\ead\templates\header.htm:34
+msgid "Logout"
+msgstr "خروج"
+
+#: .\ead\templates\header.htm:66
+msgid "Toggle navigation"
+msgstr "ملاحة مفصلية"
+
+#: .\ead\templates\header.htm:73
+msgid "Egyptian Archaeological Database (EAD)"
+msgstr ""
+
+#: .\ead\templates\header.htm:85
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: .\ead\templates\header.htm:93
+msgid "Search"
+msgstr "بحث"
+
+#: .\ead\templates\header.htm:101
+msgid "Map View"
+msgstr "رؤية الخريطة"
+
+#: .\ead\templates\header.htm:110
+msgid "Resource Manager"
+msgstr "مدير المصدر"
+
+#: .\ead\templates\header.htm:127
+msgid "RDM"
+msgstr "نظام التحكم عن بعد"
+
+#: .\ead\templates\map.htm:61 .\ead\templates\map.htm.py:63
+msgid "Find an Address"
+msgstr "أوجد عنوان"
+
+#: .\ead\templates\map.htm:75
+msgid "Loading resource data..."
+msgstr "تحميل بيانات المورد"
+
+#: .\ead\templates\map.htm:96
+msgid "Map Zoom"
+msgstr "تكبير الخريطة"
+
+#: .\ead\templates\map.htm:97
+msgid "Cursor"
+msgstr "المؤشر"
+
+#: .\ead\templates\map.htm:97
+#, fuzzy
+msgid "(long,lat)"
+msgstr "خط الطول، خط العرض"
+
+#: .\ead\templates\map.htm:124 .\ead\templates\map.htm.py:251
+#: .\ead\templates\views\forms\location.htm:51
+#: .\ead\templates\views\forms\location.htm:203
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:51
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:90
+#: .\ead\templates\views\reports\ACTOR.E39.htm:51
+#: .\ead\templates\views\reports\ACTOR.E39.htm:90
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:51
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:90
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:51
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:90
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:51
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:90
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:51
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:90
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:51
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:90
+msgid "Basemaps"
+msgstr "خرائط مرجعية"
+
+#: .\ead\templates\map.htm:172
+msgid "Add Layer"
+msgstr "أضف طبقة"
+
+#: .\ead\templates\map.htm:178 .\ead\templates\map.htm.py:254
+msgid "Overlays"
+msgstr "متراكب"
+
+#: .\ead\templates\map.htm:306 .\ead\templates\map.htm.py:356
+msgid "Close"
+msgstr "أغلق"
+
+#: .\ead\templates\map.htm:310
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:53
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:105
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:158
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:210
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:260
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:316
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:343
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:53
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:105
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:158
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:210
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:260
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:316
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:343
+msgid "View Report"
+msgstr "إطلاع على التقرير"
+
+#: .\ead\templates\map.htm:316
+msgid "Edit"
+msgstr "تعديل"
+
+#: .\ead\templates\map.htm:335
+msgid "Clustered Resources"
+msgstr "موارد مجمعة"
+
+#: .\ead\templates\map.htm:379
+msgid "Back to map"
+msgstr ""
+
+#: .\ead\templates\map.htm:383
+#, fuzzy
+msgid "Manage Map Layers"
+msgstr "إدارة الأبوين"
+
+#: .\ead\templates\map.htm:427
+#, fuzzy
+msgid "Categories"
+msgstr "المنشئ"
+
+#: .\ead\templates\search.htm:20
+#: .\ead\templates\views\forms\related-resources.htm:219
+msgid "Search for a resource..."
+msgstr "ابحث عن مورد"
+
+#: .\ead\templates\search.htm:30
+msgid "Location Filter"
+msgstr "مرشح المكان"
+
+#: .\ead\templates\search.htm:34
+msgid "Time Filter"
+msgstr "مرشح الزمن"
+
+#: .\ead\templates\search.htm:40
+msgid "Tools"
+msgstr "أدوات"
+
+#: .\ead\templates\search.htm:42
+#: .\ead\templates\views\components\add-item-button.htm:7
+#: .\ead\templates\views\forms\related-resources.htm:321
+msgid "Toggle Dropdown"
+msgstr "قائمة يتم إفرادها للتبديل"
+
+#: .\ead\templates\search.htm:45
+msgid "View Popular Searches"
+msgstr "أنظر الأبحاث المتواترة"
+
+#: .\ead\templates\search.htm:51
+msgid "Clear Search"
+msgstr "امسح البحث"
+
+#: .\ead\templates\search.htm:72
+msgid "Popular Searches:"
+msgstr "أبحات متواترة"
+
+#: .\ead\templates\search.htm:87
+msgid "Results"
+msgstr "نتائج"
+
+#: .\ead\templates\search.htm:95
+#: .\ead\templates\views\forms\related-resources.htm:241
+msgid "Map Filter Enabled"
+msgstr "تم تفعيل مرشح الخريطة"
+
+#: .\ead\templates\search.htm:98
+#: .\ead\templates\views\forms\related-resources.htm:244
+msgid "Time Filter Enabled"
+msgstr "تم تفعيل مرشح الزمن"
+
+#: .\ead\templates\map\layers.htm:7
+msgid "Example Layer"
+msgstr "طبقة مثال"
+
+#: .\ead\templates\map\layers.htm:8
+msgid "visible zoom range: 9-20"
+msgstr "المدى المرئي لاقتراب الكاميرا"
+
+#: .\ead\templates\map\layers.htm:9
+msgid "City Admin Area"
+msgstr "منطقة إدارية بالمدينة"
+
+#: .\ead\templates\map\resource-popup.htm:22
+#: .\ead\templates\views\forms\classification.htm:30
+#: .\ead\templates\views\forms\classification.htm:31
+#: .\ead\templates\views\forms\classification.htm:94
+#, fuzzy
+msgid "Site Type"
+msgstr "نوع العنوان"
+
+#: .\ead\templates\map\resource-popup.htm:25
+#: .\ead\templates\map\resource-popup.htm:35
+#: .\ead\templates\views\forms\classification.htm:39
+#: .\ead\templates\views\forms\classification.htm:40
+#: .\ead\templates\views\forms\classification.htm:99
+msgid "Cultural Period"
+msgstr "فترة ثقافية"
+
+#: .\ead\templates\map\resource-popup.htm:28
+#: .\ead\templates\map\resource-popup.htm:38
+#: .\ead\templates\views\reports\sections\SPATIAL_COORDINATES_GEOMETRY.E47.htm:6
+#, fuzzy
+msgid "Location Coordinates"
+msgstr "مرشح المكان"
+
+#: .\ead\templates\map\resource-popup.htm:32
+#: .\ead\templates\views\forms\classification.htm:34
+#: .\ead\templates\views\forms\classification.htm:35
+#: .\ead\templates\views\forms\classification.htm:97
+#, fuzzy
+msgid "Complex Type"
+msgstr "نوع الشكل"
+
+#: .\ead\templates\map\resource-popup.htm:42
+msgid "Activity Type"
+msgstr "نوع النشاط"
+
+#: .\ead\templates\map\resource-popup.htm:45
+#: .\ead\templates\map\resource-popup.htm:55
+msgid "Start of Occurrence"
+msgstr "بدء الحدث"
+
+#: .\ead\templates\map\resource-popup.htm:48
+#: .\ead\templates\map\resource-popup.htm:58
+msgid "End of Occurrence"
+msgstr "نهاية الحدث"
+
+#: .\ead\templates\map\resource-popup.htm:52
+#, fuzzy
+msgid "Historic Event Type"
+msgstr "حدث تاريخي"
+
+#: .\ead\templates\map\resource-popup.htm:62
+#, fuzzy
+msgid "Person/Organization Type"
+msgstr "نوع الشخص/المؤسسة"
+
+#: .\ead\templates\map\resource-popup.htm:65
+msgid "Birth Date/Start of Existence"
+msgstr "تاريخ الميلاد/ بداية الوجود"
+
+#: .\ead\templates\map\resource-popup.htm:68
+msgid "Death Date/End of Existence"
+msgstr "تاريخ الوفاة/ نهاية الوجود"
+
+#: .\ead\templates\map\resource-popup.htm:72
+msgid "Information Resource Type"
+msgstr "نوع مصدر المعلومات"
+
+#: .\ead\templates\map\resource-popup.htm:75
+msgid "Date of Creation"
+msgstr "تاريخ التعيين الإحداث"
+
+#: .\ead\templates\map\resource-popup.htm:78
+msgid "Date of Publication"
+msgstr "تاريخ النشر"
+
+#: .\ead\templates\views\components\add-item-button.htm:4
+#: .\ead\templates\views\forms\related-resources.htm:318
+msgid "Add"
+msgstr "أضف"
+
+#: .\ead\templates\views\components\add-item-button.htm:10
+#, fuzzy
+msgid "Clear forms"
+msgstr "المنشئ"
+
+#: .\ead\templates\views\components\add-item-button.htm:11
+#: .\ead\templates\views\forms\related-resources.htm:10
+#: .\ead\templates\views\forms\related-resources.htm:31
+#: .\ead\templates\views\forms\related-resources.htm:324
+msgid "Discard edits"
+msgstr "إلغاء التعديلات"
+
+#: .\ead\templates\views\forms\classification.htm:13
+msgid ""
+"Classify your site by entering the site type and cultural period. Enter "
+"dynasty and ruler if available, otherwise leave blank."
+msgstr ""
+
+#: .\ead\templates\views\forms\classification.htm:44
+#: .\ead\templates\views\forms\classification.htm:45
+#: .\ead\templates\views\forms\classification.htm:100
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:59
+msgid "Dynasty"
+msgstr ""
+
+#: .\ead\templates\views\forms\classification.htm:48
+#: .\ead\templates\views\forms\classification.htm:49
+#: .\ead\templates\views\forms\classification.htm:101
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:70
+#, fuzzy
+msgid "Ruler"
+msgstr "دور"
+
+#: .\ead\templates\views\forms\classification.htm:66
+msgid ""
+"A site type and cultural period must be selected. If a ruler has been "
+"selected, then a dynasty must also be selected."
+msgstr ""
+
+#: .\ead\templates\views\forms\classification.htm:87
+#, fuzzy
+msgid "No classifications defined."
+msgstr "لم يتم تسجيل تصنيفات"
+
+#: .\ead\templates\views\forms\component.htm:35
+#: .\ead\templates\views\forms\component.htm:54
+msgid "component"
+msgstr "مكون"
+
+#: .\ead\templates\views\forms\component.htm:37
+#: .\ead\templates\views\forms\component.htm:56
+#, fuzzy
+msgid "technique"
+msgstr "التقنية"
+
+#: .\ead\templates\views\forms\component.htm:39
+#: .\ead\templates\views\forms\component.htm:58
+msgid "material"
+msgstr "مواد"
+
+#: .\ead\templates\views\forms\component.htm:88
+msgid "No Components Defined"
+msgstr "لم يتم تحديد مكون"
+
+#: .\ead\templates\views\forms\component.htm:94
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:26
+msgid "Component"
+msgstr "مكون"
+
+#: .\ead\templates\views\forms\component.htm:95
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:37
+msgid "Technique"
+msgstr "التقنية"
+
+#: .\ead\templates\views\forms\component.htm:96
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:56
+msgid "Material"
+msgstr "مواد"
+
+#: .\ead\templates\views\forms\component.htm:185
+msgid "This resource has these modifications:"
+msgstr "هذا المورد به هذه التعديلات"
+
+#: .\ead\templates\views\forms\component.htm:189
+msgid "No Modifications Defined"
+msgstr "لم يتم تحديد تعديلات"
+
+#: .\ead\templates\views\forms\component.htm:197
+msgid "Edit this description"
+msgstr "تعديل هذا الوصف"
+
+#: .\ead\templates\views\forms\location.htm:18
+msgid "Mapped Locations"
+msgstr "مواقع لها خرائط"
+
+#: .\ead\templates\views\forms\location.htm:98
+msgid "Geometry Tools"
+msgstr "أدوات هندسية"
+
+#: .\ead\templates\views\forms\location.htm:116
+msgid "Draw new point"
+msgstr "ارسم نقطة جديدة"
+
+#: .\ead\templates\views\forms\location.htm:126
+msgid "Draw new line"
+msgstr "ارسم خط جديد"
+
+#: .\ead\templates\views\forms\location.htm:136
+msgid "Draw new polygon"
+msgstr "ارسم مضلع جديد"
+
+#: .\ead\templates\views\forms\location.htm:146
+msgid "Add from gpx, kml, or geojson"
+msgstr " geojson أو kml أو gpx أضف من "
+
+#: .\ead\templates\views\forms\location.htm:149
+msgid "(or drag and drop the file onto the map)"
+msgstr "أو اسحب الملف واسقطه على الخريطة"
+
+#: .\ead\templates\views\forms\location.htm:157
+msgid "Enter latitude/longitude"
+msgstr ""
+
+#: .\ead\templates\views\forms\location.htm:158
+msgid "use decimal degrees: dd.ddddd"
+msgstr ""
+
+#: .\ead\templates\views\forms\location.htm:206
+msgid "Add Geometry"
+msgstr "أضف خصائص هندسية"
+
+#: .\ead\templates\views\forms\location.htm:225
+msgid "This resource is represented by the following geometries:"
+msgstr "هذا المورد يتم تمثيله بالخصائص الهندسية التالية"
+
+#: .\ead\templates\views\forms\location.htm:228
+msgid "No geometries defined"
+msgstr "لم يتم تحديد خصائص هندسية"
+
+#: .\ead\templates\views\forms\location.htm:260
+#, fuzzy
+msgid "Location Grid References"
+msgstr "مصادر مساحية"
+
+#: .\ead\templates\views\forms\location.htm:326
+#, fuzzy
+msgid "This resource has the following grid references:"
+msgstr "هذا المورد له هذه العناوين"
+
+#: .\ead\templates\views\forms\location.htm:328
+#, fuzzy
+msgid "No Grid References Defined"
+msgstr "لم يتم تحديد هوية الشبكة"
+
+#: .\ead\templates\views\forms\location.htm:359
+#: .\ead\templates\views\reports\sections\DESCRIPTION_OF_LOCATION.E62.htm:6
+msgid "Location Description"
+msgstr "وصف الموقع"
+
+#: .\ead\templates\views\forms\location.htm:392
+msgid "Environmental Settings"
+msgstr ""
+
+#: .\ead\templates\views\forms\location.htm:443
+#, fuzzy
+msgid "This resource has the following settings:"
+msgstr "هذا المورد له هذه المراحل"
+
+#: .\ead\templates\views\forms\location.htm:446
+msgid "No Settings Defined"
+msgstr "لم يتم تحديد موقع"
+
+#: .\ead\templates\views\forms\location.htm:480
+#: .\ead\templates\views\reports\sections\ADMINISTRATIVE_SUBDIVISION.E48.htm:6
+msgid "Administrative Areas"
+msgstr "المناطق الإدارية"
+
+#: .\ead\templates\views\forms\location.htm:535
+msgid "This resource is located in the following Administrative Areas:"
+msgstr "هذا المورد يقع في المناطق الإدارية التالية"
+
+#: .\ead\templates\views\forms\location.htm:538
+msgid "No Administrative Areas Defined"
+msgstr "لم يتم تحديد مناطق إدارية"
+
+#: .\ead\templates\views\forms\location.htm:571
+msgid "Cadastral References"
+msgstr "مصادر مساحية"
+
+#: .\ead\templates\views\forms\location.htm:628
+msgid "No Parcels Defined"
+msgstr "لم يتم تحديد قطع"
+
+#: .\ead\templates\views\forms\related-resources.htm:13
+#: .\ead\templates\views\forms\related-resources.htm:34
+msgid "Save edits"
+msgstr "حفظ التعديلات"
+
+#: .\ead\templates\views\forms\related-resources.htm:17
+#: .\ead\templates\views\forms\related-resources.htm:38
+msgid "Find Resources"
+msgstr "ابحث عن المورد"
+
+#: .\ead\templates\views\forms\related-resources.htm:22
+#: .\ead\templates\views\forms\related-resources.htm:43
+msgid "Show Relationships"
+msgstr "عرض العلاقات"
+
+#: .\ead\templates\views\forms\related-resources.htm:95
+#: .\ead\templates\views\forms\related-resources.htm:334
+msgid "from (yyyy-mm-dd)"
+msgstr "(من (يوم/شهر/سنة "
+
+#: .\ead\templates\views\forms\related-resources.htm:108
+#: .\ead\templates\views\forms\related-resources.htm:347
+msgid "to (yyyy-mm-dd)"
+msgstr "(إلى (يوم/شهر/ سنة "
+
+#: .\ead\templates\views\forms\related-resources.htm:128
+#: .\ead\templates\views\forms\related-resources.htm:367
+msgid "All values must be populated."
+msgstr "يجب تعبئة جميع القيم"
+
+#: .\ead\templates\views\forms\related-resources.htm:143
+msgid "This resource has no relationships yet"
+msgstr "ليس لهذا المورد علاقات بعد"
+
+#: .\ead\templates\views\forms\related-resources.htm:150
+msgid "Edit this relationship"
+msgstr "تعديل هذه العلاقة"
+
+#: .\ead\templates\views\forms\related-resources.htm:192
+msgid "Map filter"
+msgstr "مرشح الخريطة"
+
+#: .\ead\templates\views\forms\related-resources.htm:196
+msgid "Attribute filter"
+msgstr "مرشح الوصف"
+
+#: .\ead\templates\views\forms\related-resources.htm:287
+msgid "Edit Relationship"
+msgstr "تعديل العلاقة"
+
+#: .\ead\templates\views\forms\related-resources.htm:287
+msgid "Add Relationship"
+msgstr "إضافة علاقة"
+
+#: .\ead\templates\views\forms\related-resources.htm:293
+msgid "Relationship:"
+msgstr "علاقة"
+
+#: .\ead\templates\views\forms\summary.htm:20
+#, fuzzy
+msgid "Archaeological Site Type"
+msgstr "مدى التأكد الأثري"
+
+#: .\ead\templates\views\forms\summary.htm:31
+#: .\ead\templates\views\forms\summary.htm:40
+#: .\ead\templates\views\forms\summary.htm:108
+#: .\ead\templates\views\forms\summary.htm:119
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:248
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:255
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:248
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:422
+#: .\ead\templates\views\reports\sections\designation_section.htm:60
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:26
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:26
+msgid "Type"
+msgstr "النوع"
+
+#: .\ead\templates\views\forms\summary.htm:50
+#, fuzzy
+msgid "The type value must be populated."
+msgstr "يجب إدخال قيمة نوع الدور"
+
+#: .\ead\templates\views\forms\summary.htm:64
+#, fuzzy
+msgid "This resource has these types:"
+msgstr "هذا المصدر له هذه الأسماء"
+
+#: .\ead\templates\views\forms\summary.htm:68
+msgid "No Types Defined"
+msgstr "لم يتم تحديد نوع"
+
+#: .\ead\templates\views\forms\summary.htm:72
+msgid "Delete this type"
+msgstr "احذف هذا النوع"
+
+#: .\ead\templates\views\forms\summary.htm:73
+msgid "Edit this type"
+msgstr "تعديل هذا النوع"
+
+#: .\ead\templates\views\forms\summary.htm:98
+#: .\ead\templates\views\reports\sections\NAME.E41.htm:6
+msgid "Names"
+msgstr "الاسم"
+
+#: .\ead\templates\views\forms\summary.htm:107
+#: .\ead\templates\views\forms\summary.htm:116
+msgid "Name"
+msgstr "الاسم"
+
+#: .\ead\templates\views\forms\summary.htm:133
+msgid ""
+"The name value must be populated. A resource can only have one primary name."
+msgstr "يجب ادخال قيمة الاسم. لا يحمل المصدر إلا اسم أساسي واحد"
+
+#: .\ead\templates\views\forms\summary.htm:149
+msgid "This resource has these names:"
+msgstr "هذا المصدر له هذه الأسماء"
+
+#: .\ead\templates\views\forms\summary.htm:153
+msgid "No Names Defined"
+msgstr "لم يتم تحديد أية أسماء"
+
+#: .\ead\templates\views\forms\summary.htm:157
+msgid "Delete this name"
+msgstr "امسح هذا الاسم"
+
+#: .\ead\templates\views\forms\summary.htm:158
+msgid "Edit this name"
+msgstr "تعديل هذا الاسم"
+
+#: .\ead\templates\views\forms\summary.htm:183
+msgid "Deities Associated with Site/Complex"
+msgstr ""
+
+#: .\ead\templates\views\forms\summary.htm:190
+#: .\ead\templates\views\forms\summary.htm:192
+msgid "Deity"
+msgstr ""
+
+#: .\ead\templates\views\forms\summary.htm:202
+#, fuzzy
+msgid "The deity input must be populated."
+msgstr "يجب تعبئة قيمة النسحة"
+
+#: .\ead\templates\views\forms\summary.htm:218
+#, fuzzy
+msgid "These Deities are associated with this Archaeological Site/Complex:"
+msgstr "هذه التواريخ مرتبطة بهذا المصدر"
+
+#: .\ead\templates\views\forms\summary.htm:221
+#, fuzzy
+msgid "No Deities Defined"
+msgstr "لم يتم تحديد أية تواريخ"
+
+#: .\ead\templates\views\forms\summary.htm:225
+#, fuzzy
+msgid "Delete this Deity"
+msgstr "احذف هذا النوع"
+
+#: .\ead\templates\views\forms\summary.htm:226
+#, fuzzy
+msgid "Edit this Deity"
+msgstr "تعديل هذا النوع"
+
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:173
+#: .\ead\templates\views\reports\ACTOR.E39.htm:246
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:210
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:176
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:176
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:173
+msgid "Location Information"
+msgstr "معلومات الموقع"
+
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:211
+msgid "Activity Details"
+msgstr "تفاصيل النشاط"
+
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:228
+msgid "Tasks"
+msgstr "مهام"
+
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:233
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:240
+#: .\ead\templates\views\reports\ACTOR.E39.htm:302
+#: .\ead\templates\views\reports\ACTOR.E39.htm:309
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:239
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:246
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:233
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:240
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:11
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:18
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:11
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:18
+msgid "No classifications recorded"
+msgstr "لم يتم تسجيل تصنيفات"
+
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:257
+#: .\ead\templates\views\reports\ACTOR.E39.htm:335
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:282
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:266
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:92
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:70
+msgid "Dates (from/to)"
+msgstr "تواريخ (من/إلى  "
+
+#: .\ead\templates\views\reports\ACTIVITY.E7.htm:297
+#: .\ead\templates\views\reports\ACTOR.E39.htm:375
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:312
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:326
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:306
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:566
+msgid "Resource Descriptions"
+msgstr "وصف المورد"
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:153
+msgid "Names/Epithets"
+msgstr ""
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:158
+#: .\ead\templates\views\reports\ACTOR.E39.htm:164
+#: .\ead\templates\views\reports\sections\NAME.E41.htm:11
+msgid "No names recorded"
+msgstr "لا أسماء لمن قام بالتسجيل"
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:175
+msgid "Epithet"
+msgstr ""
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:191
+#: .\ead\templates\views\reports\sections\RESOURCE_TYPE_CLASSIFICATION.E55.htm:6
+msgid "Resource Types"
+msgstr "أنواع الموارد"
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:196
+#: .\ead\templates\views\reports\ACTOR.E39.htm:202
+#: .\ead\templates\views\reports\ACTOR.E39.htm:208
+#: .\ead\templates\views\reports\sections\RESOURCE_TYPE_CLASSIFICATION.E55.htm:11
+msgid "No types recorded"
+msgstr "لم يتم تسجيل أنواع"
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:280
+#: .\ead\templates\views\reports\ACTOR.E39.htm:297
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:217
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:234
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:6
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:6
+msgid "Classification"
+msgstr "تصنيف"
+
+#: .\ead\templates\views\reports\ACTOR.E39.htm:326
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:273
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:257
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:48
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:48
+msgid "Period"
+msgstr "العصر"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:113
+#, fuzzy
+msgid "Archaeological Site Description"
+msgstr "مدى التأكد الأثري"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:136
+#, fuzzy
+msgid "Archaeological Site Summary"
+msgstr "مدى التأكد الأثري"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:179
+#, fuzzy
+msgid "Site Descriptions"
+msgstr "الوصف"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:238
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:199
+msgid "Settings"
+msgstr "الوضعيات"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:242
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:203
+msgid "No settings recorded"
+msgstr "لم يتم تسجيل وضعيات"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:290
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:251
+msgid "Classification/Components"
+msgstr "تصنيف/ مكونات"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:313
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:274
+msgid "Modifications"
+msgstr "تعديلات"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:318
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:279
+msgid "No modifications recorded"
+msgstr "لم يتم تسجيل تعديلات"
+
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:264
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:37
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:37
+msgid "Use"
+msgstr "الاستخدام"
+
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:211
+msgid "Event Details"
+msgstr "تفاصيل الفعالية"
+
+#: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:228
+msgid "Actions/Activities"
+msgstr "أفعال/ فعاليات"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:153
+#, fuzzy
+msgid "Titles"
+msgstr "عنوان"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:158
+#, fuzzy
+msgid "No titles recorded"
+msgstr "لم يتم تسجيل أنواع"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:177
+msgid "Identifiers"
+msgstr "محددات"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:182
+#, fuzzy
+msgid "No identifiers recorded"
+msgstr "لم يتم تسجيل تواريخ"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:201
+msgid "Formats"
+msgstr "تشكيل"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:206
+msgid "No formats recorded"
+msgstr "لم يتم تسجيل تشكيلات"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:232
+#, fuzzy
+msgid "No languages recorded"
+msgstr "لا أسماء لمن قام بالتسجيل"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:265
+#, fuzzy
+msgid "Digital Representation"
+msgstr "التفسير"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:297
+msgid "View document"
+msgstr ""
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:298
+msgid "Link to document"
+msgstr ""
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:307
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:65
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:117
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:170
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:222
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:272
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:323
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:356
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:65
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:117
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:170
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:222
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:272
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:323
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:356
+msgid "None"
+msgstr "لا يوجد"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:350
+msgid "Temporal Coverage"
+msgstr ""
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:355
+#, fuzzy
+msgid "No coverage recorded"
+msgstr "لم يتم تسجيل رموز"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:405
+#, fuzzy
+msgid "Resource Creation"
+msgstr "وصف المورد"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:410
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:488
+#, fuzzy
+msgid "No creation information recorded"
+msgstr "لم يتم تسجيل الحالة"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:435
+#, fuzzy
+msgid "Created on"
+msgstr "المنشئ"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:448
+msgid "Creator"
+msgstr "المنشئ"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:461
+#, fuzzy
+msgid "Contributor"
+msgstr "الحالة"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:483
+#, fuzzy
+msgid "Publishers"
+msgstr "الناشر"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:510
+#, fuzzy
+msgid "Publication date"
+msgstr "تاريخ الاستحواذ/ الالتقاط"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:533
+#, fuzzy
+msgid "Copy Rights"
+msgstr "حقوق النشر"
+
+#: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:538
+#, fuzzy
+msgid "No rights recorded"
+msgstr "لم يتم تسجيل صور"
+
+#: .\ead\templates\views\reports\sections\ADMINISTRATIVE_SUBDIVISION.E48.htm:10
+msgid "No areas recorded"
+msgstr "لم يتم تسجيل مناطق"
+
+#: .\ead\templates\views\reports\sections\ANCILLARY_FEATURE_TYPE.E55.htm:6
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:108
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:86
+msgid "Related Features"
+msgstr "ملمح ذو صلة"
+
+#: .\ead\templates\views\reports\sections\ANCILLARY_FEATURE_TYPE.E55.htm:11
+#: .\ead\templates\views\reports\sections\ANCILLARY_FEATURE_TYPE.E55.htm:17
+#: .\ead\templates\views\reports\sections\ANCILLARY_FEATURE_TYPE.E55.htm:23
+msgid "No features recorded"
+msgstr "لم يتم تسجيل ملامح"
+
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:6
+msgid "Features"
+msgstr "ملامح"
+
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:11
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:18
+msgid "No components recorded"
+msgstr "لم يتم تسجيل مكونات"
+
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:33
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:52
+#: .\ead\templates\views\reports\sections\COMPONENT.E18.htm:63
+#: .\ead\templates\views\reports\sections\designation_section.htm:67
+#: .\ead\templates\views\reports\sections\designation_section.htm:83
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:33
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:44
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:55
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:66
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:77
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:88
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:104
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:115
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:33
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:44
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:55
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:66
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:82
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:93
+msgid "none defined"
+msgstr "غير محدد"
+
+#: .\ead\templates\views\reports\sections\DESCRIPTION.E62.htm:8
+#: .\ead\templates\views\reports\sections\DESCRIPTION_OF_LOCATION.E62.htm:10
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:87
+msgid "No descriptions recorded"
+msgstr "لم يتم تسجيل وصف"
+
+#: .\ead\templates\views\reports\sections\EXTERNAL_XREF.E42.htm:11
+msgid "No references recorded"
+msgstr "لم يتم تسجيل مصادر"
+
+#: .\ead\templates\views\reports\sections\GRID_REF.E42.htm:7
+#, fuzzy
+msgid "Grid References"
+msgstr "مصادر مساحية"
+
+#: .\ead\templates\views\reports\sections\GRID_REF.E42.htm:11
+#, fuzzy
+msgid "No Grid References recorded"
+msgstr "لم يتم تسجيل مصادر"
+
+#: .\ead\templates\views\reports\sections\KEYWORD.E55.htm:11
+#, fuzzy
+msgid "No deities recorded"
+msgstr "لم يتم تسجيل تواريخ"
+
+#: .\ead\templates\views\reports\sections\KEYWORD.E55_old_9_4.htm:11
+msgid "No keywords recorded"
+msgstr "لم يتم تسجيل كلمات مفاتيح"
+
+#: .\ead\templates\views\reports\sections\MEASUREMENT_TYPE.E55.htm:11
+msgid "No measurements recorded"
+msgstr "لم يتم تسجيل قياسات"
+
+#: .\ead\templates\views\reports\sections\PLACE_ADDRESS.E45.htm:7
+msgid "Addresses"
+msgstr "عناوين"
+
+#: .\ead\templates\views\reports\sections\PLACE_ADDRESS.E45.htm:11
+msgid "No addresses recorded"
+msgstr "لم يتم تسجيل عناوين"
+
+#: .\ead\templates\views\reports\sections\PLACE_APPELLATION_CADASTRAL_REFERENCE.E44.htm:6
+msgid "Parcels"
+msgstr "قطع"
+
+#: .\ead\templates\views\reports\sections\PLACE_APPELLATION_CADASTRAL_REFERENCE.E44.htm:10
+msgid "No parcels recorded"
+msgstr "لم يتم تسجيل قطع"
+
+#: .\ead\templates\views\reports\sections\SPATIAL_COORDINATES_GEOMETRY.E47.htm:10
+#, fuzzy
+msgid "No coordinates recorded"
+msgstr "لم يتم تسجيل رموز"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:15
+msgid "Resource Condition Assessment"
+msgstr "تقييم حالة المورد"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:58
+msgid "Condition"
+msgstr "الحالة"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:63
+msgid "No conditions recorded"
+msgstr "لم يتم تسجيل الحالة"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:82
+msgid "Description"
+msgstr "الوصف"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:106
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:309
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:309
+msgid "Images"
+msgstr "صور"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:138
+msgid "Previous"
+msgstr "السابق"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:141
+msgid "Next"
+msgstr "التالي"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:156
+msgid "No images recorded"
+msgstr "لم يتم تسجيل صور"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:183
+msgid "Disturbances"
+msgstr "اضطرابات"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:188
+msgid "No disturbances recorded"
+msgstr "لم يتم تسجيل اضطرابات"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:207
+msgid "Threats"
+msgstr "مخاطر"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:212
+msgid "No theats recorded"
+msgstr "لم يتم تسجيل مخاطر"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:231
+msgid "Management Recommendations"
+msgstr "توصيات للإدارة"
+
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:236
+#: .\ead\templates\views\reports\sections\condition_assessment_section.htm:242
+msgid "No recommendations recorded"
+msgstr "لم يتم تسجيل توصيات"
+
+#: .\ead\templates\views\reports\sections\designation_section.htm:15
+msgid "Designations"
+msgstr "تحديد المكانة"
+
+#: .\ead\templates\views\reports\sections\designation_section.htm:37
+msgid "Designation and Protection Status"
+msgstr "حالة المكانة والحماية"
+
+#: .\ead\templates\views\reports\sections\designation_section.htm:71
+msgid "Date"
+msgstr "التاريخ"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:15
+msgid "Resource Significance"
+msgstr "أهمية المورد"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:40
+msgid "Evaluation Details"
+msgstr "تفاصيل التقييم"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:58
+msgid "Context/Theme"
+msgstr "السياق/ الموضوع"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:63
+msgid "No criteria recorded"
+msgstr "لم يتم تسجيل معايير"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:82
+msgid "Eligibility Standards"
+msgstr "مقاييس الصلاحية"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:87
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:109
+msgid "No standards recorded"
+msgstr "لم يتم تسجيل مقاييس"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:104
+msgid "Integrity Standards"
+msgstr "مقاييس التكاملية"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:126
+msgid "Status Codes"
+msgstr "رمز الحالات"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:131
+msgid "No codes recorded"
+msgstr "لم يتم تسجيل رموز"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:148
+msgid "Significance Statement"
+msgstr "بيان الأهمية"
+
+#: .\ead\templates\views\reports\sections\evaluation_section.htm:153
+msgid "No statement recorded"
+msgstr "لم يتم تسجيل بيان الأهمية"
+
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:81
+#: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:59
+msgid "Style"
+msgstr "طراز"
+
+#: .\ead\templates\views\reports\sections\important_dates.htm:6
+msgid "Important Dates"
+msgstr "تواريخ مهمة"
+
+#: .\ead\templates\views\reports\sections\important_dates.htm:11
+msgid "No dates recorded"
+msgstr "لم يتم تسجيل تواريخ"
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:35
+#, fuzzy
+msgid "Related Archaeological Sites"
+msgstr "مدى التأكد الأثري"
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:87
+msgid "Related Archaeological Complexes"
+msgstr ""
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:139
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:139
+#, fuzzy
+msgid "Related Activities"
+msgstr "ملفات ذات صلة"
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:192
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:192
+#, fuzzy
+msgid "Related Historic Events"
+msgstr "حدث تاريخي"
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:243
+#, fuzzy
+msgid "Related People"
+msgstr "ملفات ذات صلة"
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:293
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:293
+msgid "Related Information Resources"
+msgstr "مصادر معلومات ذات صلة"
+
+#: .\ead\templates\views\reports\sections\related_resource_section.htm:337
+msgid "Bibliography and Other Documents"
+msgstr ""
+
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:35
+#, fuzzy
+msgid "Related Historic Resources"
+msgstr "موارد ذات صلة"
+
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:87
+#, fuzzy
+msgid "Related Historic Districts"
+msgstr "موارد ذات صلة"
+
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:243
+#, fuzzy
+msgid "Related People/Organizations"
+msgstr "أشخاص/ مؤسسات ذوي صلة"
+
+#: .\ead\templates\views\reports\sections\related_resource_section_old_9_4.htm:337
+#, fuzzy
+msgid "Documents"
+msgstr "مكونات"
+
+#~ msgid "Streets"
+#~ msgstr "شوارع"
+
+#~ msgid "Satellite"
+#~ msgstr "قمر صناعي"
+
+#~ msgid "Streets & Satellite"
+#~ msgstr "شوارع وقمر صناعي"
+
+#~ msgid "Loading results..."
+#~ msgstr "نتيجة التحميل ..."
+
+#~ msgid "Login to EAMENA"
+#~ msgstr "الدخول إلى يامينا"
+
+#~ msgid "Sign In"
+#~ msgstr "توقيع للدخول"
+
+#~ msgid "Username"
+#~ msgstr "اسم المستخدم"
+
+#~ msgid "Password"
+#~ msgstr "كلمة السر"
+
+#~ msgid "Log In"
+#~ msgstr "الدخول"
+
+#~ msgid "Login failed"
+#~ msgstr "فشل الدخول"
+
+#~ msgid "Invalid username and/or password."
+#~ msgstr "اسم مستخدم و/أو كلمة سر غير صالح/ة"
+
+#~ msgid "Review Edit History"
+#~ msgstr "مراجعة تاريخخ التعديل"
+
+#~ msgid "Delete Resource"
+#~ msgstr "احذف المورد"
+
+#~ msgid "Area Name"
+#~ msgstr "اسم المنطقة"
+
+#~ msgid "You won't be able to undo this operation!"
+#~ msgstr "لن يمكنك عكس هذه العملية"
+
+#~ msgid ""
+#~ "Are you sure you want to permanently delete this resource from the "
+#~ "database?"
+#~ msgstr "هل أنت متأكد أنك تريد حذف هذا المورد بشكل نهائي من قاعدة البيانات؟"
+
+#~ msgid "Sorani"
+#~ msgstr "سوراني"
+
+#~ msgid "Heritage Resource E18 Feature"
+#~ msgstr "مورد تراثي E18 ملمح"
+
+#~ msgid "No name available"
+#~ msgstr "لا يوجد اسم متاح"
+
+#~ msgid "NAME.E41"
+#~ msgstr "E41 الاسم"
+
+#~ msgid "Heritage Resource E27"
+#~ msgstr "مورد ثقافي E27"
+
+#~ msgid "No description available"
+#~ msgstr "لا يوجد وصف متاح"
+
+#~ msgid "Person/Organization"
+#~ msgstr "شخص/مؤسسة"
+
+#~ msgid "Information Resource"
+#~ msgstr "معلومات المورد"
+
+#~ msgid "URLs"
+#~ msgstr "عنوان الموقع على الانترنت"
+
+#~ msgid "Resource Type"
+#~ msgstr "نوع المورد"
+
+#~ msgid "Additional Information"
+#~ msgstr "معلومات إضافية"
+
+#~ msgid "Forms and Interpretations"
+#~ msgstr "أشكال وتدخلات"
+
+#~ msgid "Geometry Upload"
+#~ msgstr "إدخال الشكل الهندسي"
+
+#~ msgid "Bibliography"
+#~ msgstr "الكتب والمراجع"
+
+#~ msgid "Shared Data"
+#~ msgstr "البيانات المشتركة"
+
+#~ msgid "Cartography"
+#~ msgstr "رسم الخرائط"
+
+#~ msgid "Imagery"
+#~ msgstr "التصوير"
+
+#~ msgid "Reference Data Manager (RDM)"
+#~ msgstr "نظام التحكم عن بعد"
+
+#~ msgid "Add Scheme"
+#~ msgstr "أضف نظام"
+
+#~ msgid "Import Scheme"
+#~ msgstr "احضر نظام"
+
+#~ msgid "Resource Data Manager"
+#~ msgstr "نظام التحكم عن بعد"
+
+#~ msgid "Unsaved edits..."
+#~ msgstr "تعديلات لم يتم حفظها"
+
+#~ msgid "Warning!"
+#~ msgstr "تحذير"
+
+#~ msgid ""
+#~ "You have unsaved edits in your form that will be lost if you leave this "
+#~ "form.  Would you like to continue and discard your current edits?"
+#~ msgstr ""
+#~ "لديك تعديلات على الاستبيان الخاص بك، فإذا تركت هذا الاستبيان ستفقد "
+#~ "التعديلات. هل تود الاستمرار والتخلّص من التعديلات التي أدخلتها؟"
+
+#~ msgid "Cancel"
+#~ msgstr "إلغاء"
+
+#~ msgid "Discard Edits"
+#~ msgstr "إلغاء التعديلات"
+
+#~ msgid "Export results to .SHP"
+#~ msgstr "أرسل النتائج إلى SHP"
+
+#~ msgid "Export results to .CSV"
+#~ msgstr "أرسل النتائج إلى CSV"
+
+#~ msgid "Export results to .KML"
+#~ msgstr "أرسل النتائج إلى KML"
+
+#~ msgid "Export results to .JSON"
+#~ msgstr "أرسل النتائج إلى JSON"
+
+#~ msgid "Location certainty"
+#~ msgstr "مدى التأكد من الموقع"
+
+#~ msgid "Site function(s)"
+#~ msgstr "وظيفة (وظائف) الموقع"
+
+#~ msgid "Person/Organization Name"
+#~ msgstr "اسم الشخص/ المؤسسة"
+
+#~ msgid "activity type"
+#~ msgstr "نوع النشاط"
+
+#~ msgid "start (yyyy-mm-dd)"
+#~ msgstr "البداية (اليو-الشهر-السنة"
+
+#~ msgid "end (yyyy-mm-dd)"
+#~ msgstr "(النهاية (اليوم-الشهر-السنة"
+
+#~ msgid "start action"
+#~ msgstr "بداية الفعل"
+
+#~ msgid "start date"
+#~ msgstr "تاريخ البداية"
+
+#~ msgid "end date"
+#~ msgstr "تاريخ النهاية"
+
+#~ msgid "No Actions Defined"
+#~ msgstr "لم يتم تحديد أي فعل"
+
+#~ msgid "Activity type"
+#~ msgstr "نوع النشاط"
+
+#~ msgid "Start Date"
+#~ msgstr "تاريخ البداية"
+
+#~ msgid "End Date"
+#~ msgstr "تاريخ النهاية"
+
+#~ msgid "yyyy-mm-dd"
+#~ msgstr "اليوم-الشهر-السنة"
+
+#~ msgid "The date and type values must be populated."
+#~ msgstr "يجب ادخال قيمة التاريخ والنوع"
+
+#~ msgid "Edit this date"
+#~ msgstr "تعديل هذا التاريخ"
+
+#~ msgid "Keywords"
+#~ msgstr "أسماء مفاتيح"
+
+#~ msgid "The subject must be populated."
+#~ msgstr "يجب ادخال هذا الموضوع"
+
+#~ msgid "These subjects are associated with this resource:"
+#~ msgstr "هذه المواضيع مرتبطة بهذا المصدر"
+
+#~ msgid "No Subjects Defined"
+#~ msgstr "لم يتم تحديد أية مواضيع"
+
+#~ msgid "Edit this subject"
+#~ msgstr "تعديل هذا الموضوع"
+
+#~ msgid "The name and name type values must be populated."
+#~ msgstr "يجب ملئ قيمة الاسم وقيمة نوع الاسم"
+
+#~ msgid "This Actor has the following Name(s):"
+#~ msgstr "هذا الفاعل له الأسم/الاسماء التالية:"
+
+#~ msgid "A person/organisation type value must be populated."
+#~ msgstr "شخص/مؤسسة يجب إدخال قيمة"
+
+#~ msgid "This actor has the following Type(s):"
+#~ msgstr "هذا الفاعل له هذا النوع/الأنواع"
+
+#~ msgid "Country"
+#~ msgstr "الدولة"
+
+#~ msgid "This actor's country of origin is:"
+#~ msgstr "البلد الأصلي لهذا الفاعل هو:"
+
+#~ msgid "No Country Defined"
+#~ msgstr "لم يتم تحديد دولة"
+
+#~ msgid "Delete this country"
+#~ msgstr "احذف هذا البلد"
+
+#~ msgid "Edit this item"
+#~ msgstr "تعديل هذا البند"
+
+#~ msgid "Map Source"
+#~ msgstr "مصدر الخريطة"
+
+#~ msgid "Source"
+#~ msgstr "مصدر"
+
+#~ msgid "A map source must be selected."
+#~ msgstr "يجب اختيار مصدر الخريطة"
+
+#~ msgid "These sources are associated with this resource:"
+#~ msgstr "هذه المصادر مرتبطة بهذا المورد"
+
+#~ msgid "No Map Source defined"
+#~ msgstr "لم يتم تحديد مصدر الخريطة"
+
+#~ msgid "Delete this right"
+#~ msgstr "احذف هذه الحقوق"
+
+#~ msgid "Edit this right"
+#~ msgstr "تعديل هذه الحقوق"
+
+#~ msgid "A right type must be selected."
+#~ msgstr "يجب اختيار النوع الصحيح"
+
+#~ msgid "This creator is associated with this resource:"
+#~ msgstr "هذا المنشئ هذو صلة بهذا المورد"
+
+#~ msgid "No Creator(s) Defined"
+#~ msgstr "المنشئ غير معرّف"
+
+#~ msgid "Series"
+#~ msgstr "سلسلة"
+
+#~ msgid "This series is associated with this resource:"
+#~ msgstr "هذه السلسلة ذات صلة بهذا المورد"
+
+#~ msgid "No Series Defined"
+#~ msgstr "لم يتم تحديد سلسلة"
+
+#~ msgid "Place of publication"
+#~ msgstr "مكان النشر"
+
+#~ msgid "Place"
+#~ msgstr "مكان"
+
+#~ msgid "The resource type value must be populated."
+#~ msgstr "يجب ادخال قيمة المورد"
+
+#~ msgid "This resource is published here:"
+#~ msgstr "هذا المورد منضور عنه هنا"
+
+#~ msgid "No Place Defined"
+#~ msgstr "لم يتم تحديد مكان"
+
+#~ msgid "Delete this publisher/date"
+#~ msgstr "احذف هذا الناشر/التاريخ"
+
+#~ msgid "Edit this publisher/date"
+#~ msgstr "تعديل هذا الناشر/التاريخ"
+
+#~ msgid "author"
+#~ msgstr "المؤلف"
+
+#~ msgid "Projection/Grid"
+#~ msgstr "اشعاع/شبكة"
+
+#~ msgid "Scale"
+#~ msgstr "المقياس"
+
+#~ msgid "The Projection/Grid must be populated."
+#~ msgstr "يجب تعبئة الاشعاع/الشبكة"
+
+#~ msgid "This projection/grid is associated with this resource:"
+#~ msgstr "هذا الإشعاع/ هذه الشبكة مرتبط/ة بهذا المورد"
+
+#~ msgid "No Projection/Grid Defined"
+#~ msgstr "لم يتم تحديد اشعاع/شبكة"
+
+#~ msgid "Delete this projection/grid"
+#~ msgstr "امسح هذا الاشعاع/الشبكة"
+
+#~ msgid "Edit this projection/grid"
+#~ msgstr "تعديل هذا الاشعاع/الشبكة"
+
+#~ msgid "The Scale must be populated."
+#~ msgstr "يجب تعبئة المقياس"
+
+#~ msgid "This scale is associated with this resource:"
+#~ msgstr "هذا المقياس ذو صلة بهذا المصدر"
+
+#~ msgid "No Scale Defined"
+#~ msgstr "لم يتم تحديد مقياس"
+
+#~ msgid "Delete this scale"
+#~ msgstr "احذف هذا المقياس"
+
+#~ msgid "Edit this scale "
+#~ msgstr "تعديل هذا المقياس"
+
+#~ msgid "Sheet Number"
+#~ msgstr "رقم الصفحة"
+
+#~ msgid "This resource has these sheet numbers:"
+#~ msgstr "هذا المورد له أرقام الصفحات التالية:"
+
+#~ msgid "No Sheet Number(s) defined"
+#~ msgstr "لم يتم تحديد أرقام صفحات"
+
+#~ msgid "Delete this sheet number"
+#~ msgstr "أحذف رقم الصفحة هذا"
+
+#~ msgid "Edit this sheet number"
+#~ msgstr "تعديل رقم الصفحة هذه"
+
+#~ msgid "Sheet Name"
+#~ msgstr "اسم الصفحة"
+
+#~ msgid "Sheet name"
+#~ msgstr "اسم الصفحة"
+
+#~ msgid "The sheet name must be populated."
+#~ msgstr "يجب تعبئة اسم الصفحة"
+
+#~ msgid "This resource has these Sheet Name(s)"
+#~ msgstr "هذا المورد له أسماء الصفحات هذه"
+
+#~ msgid "No Sheet Name Defined"
+#~ msgstr "لم يتم تحديد رقم صفحة"
+
+#~ msgid "Delete this sheet name"
+#~ msgstr "احذف اسم الصفحة هذا"
+
+#~ msgid "Edit this sheet name"
+#~ msgstr "تعديل اسم الصفحة هذا"
+
+#~ msgid "Edition"
+#~ msgstr "نسخة"
+
+#~ msgid "This resource has this Edition(s)"
+#~ msgstr "هذا المورد له هذه النسخة/النسخ"
+
+#~ msgid "No Edition Defined"
+#~ msgstr "لم يتم تحديد نسخة"
+
+#~ msgid "Delete this edition"
+#~ msgstr "امسح هذه النسخة"
+
+#~ msgid "Edit this edition"
+#~ msgstr "تعديل هذه النسخة"
+
+#~ msgid "Feature Form "
+#~ msgstr "شكل الملمح"
+
+#~ msgid "Type certainty"
+#~ msgstr "مدى التأكد من النوع"
+
+#~ msgid "Shape"
+#~ msgstr "الهيئة"
+
+#~ msgid "Arrangement"
+#~ msgstr "الترتيب"
+
+#~ msgid "Number"
+#~ msgstr "العدد"
+
+#~ msgid "Feature form(s) recorded:"
+#~ msgstr "شكل/أشكال الملمح المسجلة"
+
+#~ msgid "No Values Defined"
+#~ msgstr "لم يتم تحديد قيمة"
+
+#~ msgid "Delete this measurement"
+#~ msgstr "احذف هذه القياسات"
+
+#~ msgid "Edit this measurement"
+#~ msgstr "تعديل هذا القياس"
+
+#~ msgid "Feature type"
+#~ msgstr "نوع الملمح"
+
+#~ msgid " type certainty "
+#~ msgstr "مدى التأكد من النوع"
+
+#~ msgid " shape "
+#~ msgstr "الهيئة"
+
+#~ msgid " arrangement "
+#~ msgstr "الترتيب"
+
+#~ msgid " number type "
+#~ msgstr "نوع الرقم"
+
+#~ msgid "Feature Interpretation "
+#~ msgstr "تفسير الملمح"
+
+#~ msgid "Interpretation certainty"
+#~ msgstr "مدى التأكد من التفسير"
+
+#~ msgid "Interpretation number"
+#~ msgstr "رقم التفسير"
+
+#~ msgid "Feature interpretation(s) recorded:"
+#~ msgstr "التفسير/التفاسير المسجلة للملمح"
+
+#~ msgid " interpretation type "
+#~ msgstr "نوع التفسير"
+
+#~ msgid " intepretation certainty "
+#~ msgstr "مدى التأكد من التفصير"
+
+#~ msgid " interpretation number type "
+#~ msgstr "نوع رقم التفسير"
+
+#~ msgid "style"
+#~ msgstr "طراز"
+
+#~ msgid "This resource has these descriptions:"
+#~ msgstr "هذا المورد له هذه الأوصاف"
+
+#~ msgid "No Descriptions Defined"
+#~ msgstr "لم يتم تحديد وصف"
+
+#~ msgid "Remove this description"
+#~ msgstr "احذف هذا الوصف"
+
+#~ msgid "This resource has the following designations:"
+#~ msgstr "هذا المورد له هذه الإسنادات"
+
+#~ msgid "No Designations Defined"
+#~ msgstr "لم يتم تحديد اسنادات"
+
+#~ msgid "Delete this designation"
+#~ msgstr "احذف هذا الاسناد"
+
+#~ msgid "A type and date must be specified."
+#~ msgstr "يجب تحديد نوع وتاريخ"
+
+#~ msgid "Resource Classification"
+#~ msgstr "تصنيف المورد"
+
+#~ msgid "Loading ...."
+#~ msgstr "تحميل... "
+
+#~ msgid "From"
+#~ msgstr "هيئة"
+
+#~ msgid "To"
+#~ msgstr "إلى"
+
+#~ msgid "Part 1: Summary"
+#~ msgstr "الجزء الأول: ملخص"
+
+#~ msgid "Part 2: Related Features"
+#~ msgstr "الجزء الثاني: ملامح ذات صلة"
+
+#~ msgid "Part 1"
+#~ msgstr "الجزء الأول"
+
+#~ msgid "Classification Summary"
+#~ msgstr "ملخص التصنيف"
+
+#~ msgid ""
+#~ "Start your classification by describing it's type, use and cultural "
+#~ "period."
+#~ msgstr "ابدأالتصنيف بوصف النوع والاستخدام والفترة الثقافية"
+
+#~ msgid "morphology"
+#~ msgstr "المورفولوجي"
+
+#~ msgid "use"
+#~ msgstr "الاستخدام"
+
+#~ msgid "period"
+#~ msgstr "العصر"
+
+#~ msgid "Part 2"
+#~ msgstr "الجزء الثاني"
+
+#~ msgid "Assessment Summary"
+#~ msgstr "ملخص التقييم"
+
+#~ msgid "Select this classification's related features."
+#~ msgstr "اختار الملامح ذات الصلة بهذا التصنيف"
+
+#~ msgid "No related features selected"
+#~ msgstr "لم يتم اختيار ملامح"
+
+#~ msgid "Are you ready to delete this assessment?"
+#~ msgstr "هل أنت مستعد لحذف هذا التقييم؟"
+
+#~ msgid "No"
+#~ msgstr "لا"
+
+#~ msgid "Yes"
+#~ msgstr "نعم"
+
+#~ msgid "URL"
+#~ msgstr " عنوان الموقع على الانترنت "
+
+#~ msgid "Access date"
+#~ msgstr "تاريخ الدخول"
+
+#~ msgid "This resource has the following URLs:"
+#~ msgstr "هذا المورد له هذا الموقع على الانترنت"
+
+#~ msgid "No URLs defined"
+#~ msgstr "لم يتم تحديد موقع على الانترنت"
+
+#~ msgid "Delete this URL"
+#~ msgstr "احذف موقع على الانترنت"
+
+#~ msgid "Edit this URL"
+#~ msgstr "تعديل هذا الموقع على الانترنت"
+
+#~ msgid "Date of access"
+#~ msgstr "تاريخ الدخول"
+
+#~ msgid "Name(s)"
+#~ msgstr "اسم/اسماء"
+
+#~ msgid "No file uploaded for this resource yet"
+#~ msgstr "لم يتم تحميل ملف لهذا المورد بعد"
+
+#~ msgid "Delete Image"
+#~ msgstr "احذف الصورة"
+
+#~ msgid "Download this file"
+#~ msgstr "حمّل هذا الملف"
+
+#~ msgid "Delete this file"
+#~ msgstr "احذف هذا الملف"
+
+#~ msgid "format"
+#~ msgstr "تشكيل/ تصميم البنية"
+
+#~ msgid "Delete File"
+#~ msgstr "احذف الملف"
+
+#~ msgid "Are you sure you want to delete the file?"
+#~ msgstr "هل أنت متأكد أنك تريد حذف هذاالملف؟"
+
+#~ msgid "Delete"
+#~ msgstr "حذف"
+
+#~ msgid "Only one file allowed"
+#~ msgstr "ملف واحد فقط مسموح به"
+
+#~ msgid "Only one file is allowed to be associated with this resource."
+#~ msgstr "ملف واحد فقط مسموح أن يكون ذا صلة بهذا المورد"
+
+#~ msgid "OK"
+#~ msgstr "موافق"
+
+#~ msgid ""
+#~ "DISCLAIMER: Please bear in mind that the database is OPEN-ACCESS and "
+#~ "therefore ANY images or files that are uploaded must be Public Domain. It "
+#~ "is your responsibility to ensure that you have permission to upload the "
+#~ "file into the EAMENA database and that doing so does not violate any "
+#~ "copyright or intellectual property laws. Any images or files that are "
+#~ "found to violate copyright will be DELETED immediately. If you find any "
+#~ "images or files in the database that you know or suspect to be in breach "
+#~ "of copyright, please notify a member of the EAMENA team. Furthermore, if "
+#~ "you upload any personal files (e.g. personal photographs, survey notes), "
+#~ "be aware that these may be downloaded and used by any member of the "
+#~ "public. EAMENA are not responsible if files are downloaded and used in "
+#~ "ways not approved or anticipated by the uploader."
+#~ msgstr ""
+#~ " إخلاء المسئولية: الرجا الأخذ في الاعتبار أن قاعدة البيانات هي (مصدر "
+#~ "مفتوح) ولذلك يجب أن تكون جميع الصور والملفات التي يتم تحميلها ملكية عامة. "
+#~ "وهي مسئوليتك أن تتأكد أن لديك تصريح بتحميل الملف على قاعدة بيانت يامينا "
+#~ "وأنك عندما تفعل ذلك لا تتعدى على أية قوانين متعلقة بحقوق ملكية فكرية "
+#~ "وحقوق النسخ. وإذا وجد أن أية صورة أو أي ملف يخالف حوق النسخ سيتم حذفه "
+#~ "فوراً. وإن وجدت أية صور أو ملفات في قاعدة البيانات تعلم أو تشك أنها تنتهك "
+#~ "حقوق النسخ فالرجاء إبلاغ أحد أعضاء فريق يامينا. وكذلك الرجا الأخذ في "
+#~ "الاعتبار أن عند تحميلك لأية ملفات أو صور شخصية (مثال: صور شخصية، أو "
+#~ "الملاحظات الخاصة بك فيما يخص المساحة) فقد يتم تنزيل هذه الملفات أو الصور "
+#~ "واستخدامها بواسطة أي شخص من العامة. وتخلي يامينا مسئوليتها عن أية ملفات "
+#~ "يتم تنزيلها واستخدامها بطريقة لا تقرّها أو لم تتوقعها الجهة التي قامت "
+#~ "بتحميله."
+
+#~ msgid "Catalog ID"
+#~ msgstr "هوية الفهرس"
+
+#~ msgid "Editors"
+#~ msgstr "المحررون"
+
+#~ msgid "This resource has this Catalog ID:"
+#~ msgstr "هذا المورد له هويةالكتالوج هذه"
+
+#~ msgid "No Catalog ID Defined"
+#~ msgstr "لم يتم تحديد هوية فهرس"
+
+#~ msgid "Edit this Catalog ID"
+#~ msgstr "تعديل هوية هذا الكتالوج"
+
+#~ msgid "These types are associated with this resource:"
+#~ msgstr "هذه الأنواع ذات صلة بهذا المورد"
+
+#~ msgid "No Source Defined"
+#~ msgstr "لم يتم تحديد مصدر"
+
+#~ msgid "Creator(s)/Owner(s)"
+#~ msgstr "المنشئ (المنشئون)/ المالك/المالكون"
+
+#~ msgid "Creator(s)"
+#~ msgstr "المنشئ"
+
+#~ msgid "This resource has these authors:"
+#~ msgstr "هذاالمورد له هؤلاء المؤلفين"
+
+#~ msgid "No Creators(s) Defined"
+#~ msgstr "لم يتم تعريف منشئ (أو منشئين)"
+
+#~ msgid "Image Details"
+#~ msgstr "تفاصيل الصورة"
+
+#~ msgid "Platform/Vehicle"
+#~ msgstr "منصة/آلية"
+
+#~ msgid "Sensor/Camera Model"
+#~ msgstr "موديل أداة الاستشعار/آلة التصوير"
+
+#~ msgid "Bands/Colours/Spectral Resolution"
+#~ msgstr "حرم/ألوان/وضوح صورة خاص"
+
+#~ msgid "Sensor/Camera Type"
+#~ msgstr "نوع أداة الاستشعار/ آلة التصوير"
+
+#~ msgid "Sensor/Camera Resolution"
+#~ msgstr "دقة شاشة جهاز استشعار آلة التصوير"
+
+#~ msgid "Imagery Acquisition details recorded:"
+#~ msgstr "التفاصيل المسجلة لاقتناء الصورة"
+
+#~ msgid "Platform"
+#~ msgstr "المنصة"
+
+#~ msgid " Sensor/Camera Model "
+#~ msgstr "موديل أداة الاستشعار/ آلة التصوير"
+
+#~ msgid " Sensor/Camera Type "
+#~ msgstr "نوع أداة الاستشعار/ آلة التصوير"
+
+#~ msgid " Sensor/Camera Resolution "
+#~ msgstr "درجة وضوح أداة الاستشعار/ آلة التصوير"
+
+#~ msgid "Post-Processing Resolution"
+#~ msgstr "درجة الوضوع بعد المعالجة"
+
+#~ msgid "Resolution"
+#~ msgstr "دقة الشاشة"
+
+#~ msgid "The Keyword must be populated."
+#~ msgstr "يجب ادخال الكلمة المفتاح"
+
+#~ msgid "This resolution is associated with this resource:"
+#~ msgstr "دقة الشاشة هذه ذات صلة بهذا المورد"
+
+#~ msgid "No Resolution Defined"
+#~ msgstr "لم يتم تحديد دقة شاشة"
+
+#~ msgid "Delete this resolution type"
+#~ msgstr "احذف نوع دقة الشاشة هذه"
+
+#~ msgid "Edit this resolution "
+#~ msgstr "تعديل دقةالشاشة هذه"
+
+#~ msgid "Processing Type"
+#~ msgstr "نوع المعالجة"
+
+#~ msgid "This processing type is associated with this resource:"
+#~ msgstr "نوع هذه العملية ذو صلة بهذا المورد"
+
+#~ msgid "No Processing Type Defined"
+#~ msgstr "لم يتم تحديد نوع معالجة"
+
+#~ msgid "File date"
+#~ msgstr "تاريخ الملف"
+
+#~ msgid "Copyright Type"
+#~ msgstr "نوع حقوق النسخ"
+
+#~ msgid "This copyright is associated with this resource:"
+#~ msgstr "حقوق النشر هذه ذات صلة بهذا المورد"
+
+#~ msgid "No Copyright Defined"
+#~ msgstr "لم يتم تحديد حقوق نشر"
+
+#~ msgid "Delete this copyright"
+#~ msgstr "احذف حقوق النشر هذه"
+
+#~ msgid "Edit this copyright"
+#~ msgstr "تعديل حقوق النشر هذه"
+
+#~ msgid "No Information Resource Type Defined"
+#~ msgstr "لم يتم تحديد نوع مصدر المعلومات"
+
+#~ msgid "Format Type"
+#~ msgstr "نوع التشكيل"
+
+#~ msgid "The format must be populated."
+#~ msgstr "يجب ادخال التشكيل"
+
+#~ msgid "These formats are associated with this resource:"
+#~ msgstr "هذا التشكيل ذا صلة بهذاالمورد"
+
+#~ msgid "No Formats Defined"
+#~ msgstr "لم يتم تحديد تشكيل"
+
+#~ msgid "Delete this format type"
+#~ msgstr "احذف نوع التشكيل هذا"
+
+#~ msgid "Edit this format type"
+#~ msgstr "تعديل نوع التشكيل هذا"
+
+#~ msgid "Remove this geometry"
+#~ msgstr "احذف هذه الخصائص الهندسية"
+
+#~ msgid "Edit this geometry"
+#~ msgstr "تعديل هذه الخصائص الهندسية"
+
+#~ msgid "Grid ID"
+#~ msgstr "هوية الشبكة"
+
+#~ msgid "Resource ID"
+#~ msgstr "هوية المصدر"
+
+#~ msgid "This resource has the following Grid ID code:"
+#~ msgstr "لهذا المورد رمز هوية الشبكة التالي"
+
+#~ msgid "Certainty of  Location"
+#~ msgstr "مدى التأكد من الموقع"
+
+#~ msgid "location certainty"
+#~ msgstr "مدى التأكد من المكان"
+
+#~ msgid "Certainty of location rank:"
+#~ msgstr "مدى التأكد من رتبة الموقع"
+
+#~ msgid "No Certainty Defined"
+#~ msgstr "لم يتم تحديد مدى التأكد"
+
+#~ msgid "Remove this relationship"
+#~ msgstr "احذف هذه العلاقات"
+
+#~ msgid "Edit this setting"
+#~ msgstr "تعديل هذا الضبط"
+
+#~ msgid "Certainty of Geometry Extent"
+#~ msgstr "مدى التأكد من أبعاد الخصائص الهندسية"
+
+#~ msgid "extent certainty"
+#~ msgstr "مدى التأكد من الأبعاد"
+
+#~ msgid "Certainty of geometry extent rank:"
+#~ msgstr "مدى التأكد من رتبة أبعاد الخصائص الهندسية"
+
+#~ msgid "Topographic Setting"
+#~ msgstr "الموقع الطبوغرافي"
+
+#~ msgid "topography"
+#~ msgstr "الطبوغرافية"
+
+#~ msgid "Topographic settings:"
+#~ msgstr "المواقع الطبوغرافية"
+
+#~ msgid "(More fields)"
+#~ msgstr "حقول أخرى"
+
+#~ msgid "resource address"
+#~ msgstr "عنوان المورد"
+
+#~ msgid "No Addresses Defined"
+#~ msgstr "لم يتم تحديد عناوين"
+
+#~ msgid "Admin Area Type"
+#~ msgstr "نوع المنطقة الإدارية"
+
+#~ msgid "Parcel Number"
+#~ msgstr "رقم قطعة الأرض"
+
+#~ msgid "This resource is related to the following Parcels:"
+#~ msgstr "هذا المورد يرتبط بقطعة الأرض التالية:"
+
+#~ msgid "Condition State"
+#~ msgstr "الحالة"
+
+#~ msgid "Condition type defined:"
+#~ msgstr "تحديد نوع الحالة"
+
+#~ msgid "No type Defined"
+#~ msgstr "لم يتم تحديد نوع"
+
+#~ msgid "type"
+#~ msgstr "نوع"
+
+#~ msgid "Disturbance Extent "
+#~ msgstr "مدى الاضطراب"
+
+#~ msgid "Disturbance extent defined:"
+#~ msgstr "تحديد مدى الاضطراب"
+
+#~ msgid "None Defined"
+#~ msgstr "غير محدد"
+
+#~ msgid "approximate horizontal extent of site disturbed"
+#~ msgstr "الحدود الأفقية التقريبية لموقع به اضطراب"
+
+#~ msgid "Disturbance Assessment "
+#~ msgstr "تقييم الاضطراب"
+
+#~ msgid "Cause "
+#~ msgstr "السبب"
+
+#~ msgid "Cause certainty"
+#~ msgstr "مدى التأكد من السبب"
+
+#~ msgid "Effect 1"
+#~ msgstr "التأثير 1"
+
+#~ msgid "Effect 1 certainty"
+#~ msgstr "مدى التأكد من التأثير 1"
+
+#~ msgid "Effect 2"
+#~ msgstr "التأثير 2"
+
+#~ msgid "Effect 2 certainty"
+#~ msgstr "مدى التأكد من التأثير 2"
+
+#~ msgid "Effect 3"
+#~ msgstr "التأثير 3"
+
+#~ msgid "Effect 3 certainty"
+#~ msgstr "مدى التأكد من التأثير 3"
+
+#~ msgid "Effect 4"
+#~ msgstr "التأثير 4"
+
+#~ msgid "Effect 4 certainty"
+#~ msgstr "مدى التأكد من التأثير 4"
+
+#~ msgid "Effect 5"
+#~ msgstr "التأثير 5"
+
+#~ msgid "Effect 5 certainty"
+#~ msgstr "مدى التأكد من التأثير 5"
+
+#~ msgid "Date type"
+#~ msgstr "نوع التاريخ"
+
+#~ msgid "Disturbance state defined records:"
+#~ msgstr "التسجيلات التي تم تحديدها لحالة الاضطراب"
+
+#~ msgid "cause"
+#~ msgstr "السبب"
+
+#~ msgid "cause certainty"
+#~ msgstr "مدى التأكد من السبب"
+
+#~ msgid "effect 1"
+#~ msgstr "التأثير 1"
+
+#~ msgid "effect 1 certainty"
+#~ msgstr "مدى التأكد من التأثير 1"
+
+#~ msgid "effect 2"
+#~ msgstr "التأثير 2"
+
+#~ msgid "effect 2 certainty"
+#~ msgstr "مدى التأكد من التأثير 2"
+
+#~ msgid "effect 3"
+#~ msgstr "التأثير 3"
+
+#~ msgid "effect 3 certainty"
+#~ msgstr "مدى التأكد من التأثير 3"
+
+#~ msgid "effect 4"
+#~ msgstr "التأثير 4"
+
+#~ msgid "effect 4 certainty"
+#~ msgstr "مدى التأكد من التأثير 4"
+
+#~ msgid "effect 5"
+#~ msgstr "التأثير 5"
+
+#~ msgid "effect 5 certainty"
+#~ msgstr "مدى التأكد من التأثير 5"
+
+#~ msgid "date type"
+#~ msgstr "نوع التاريخ"
+
+#~ msgid "start"
+#~ msgstr "البداية"
+
+#~ msgid "end"
+#~ msgstr "النهاية"
+
+#~ msgid "Threat Assessment "
+#~ msgstr "تقييم المخاطر"
+
+#~ msgid "Cause"
+#~ msgstr "السبب"
+
+#~ msgid "Threat state defined records:"
+#~ msgstr "السجلات التي تم تحديدها لحالة المخاطر"
+
+#~ msgid "Unit"
+#~ msgstr "الوحدة"
+
+#~ msgid "Each measurement must have a type, unit, and value."
+#~ msgstr "كل قياس يجب أن يكون له نوع، ووحدة، وقيمة"
+
+#~ msgid "This resource has these measurements:"
+#~ msgstr "هذا المورد له هذه القياسات"
+
+#~ msgid "No Measurements Defined"
+#~ msgstr "لم يتم تحديد قياسات"
+
+#~ msgid "The phase type value must be populated."
+#~ msgstr "يجب إدخال قيمة نوع المرحلة"
+
+#~ msgid "No Phases Defined"
+#~ msgstr "لم يتم تحديد مراحل"
+
+#~ msgid "Delete this phase"
+#~ msgstr "احذف هذه المرحلة"
+
+#~ msgid "Author(s)"
+#~ msgstr "مؤلف/مؤلفون"
+
+#~ msgid "Authors"
+#~ msgstr "مؤلف/مؤلفون"
+
+#~ msgid "No Author(s) Defined"
+#~ msgstr "لم يتم تحديد مؤلف"
+
+#~ msgid "This resource was published in this year:"
+#~ msgstr "تم نشر هذا المورد في هذه السنة"
+
+#~ msgid ""
+#~ "The Type value must be populated. A resource can only have one primary "
+#~ "name."
+#~ msgstr "يجب ادخال قيمة النوع. ولا يحمل المورد سوى اسم أساسي واحد"
+
+#~ msgid "This resource has this title:"
+#~ msgstr "هذا المورد له هذا العنوان"
+
+#~ msgid "No Titles Defined"
+#~ msgstr "لم يتم تحديد عنوان"
+
+#~ msgid "Delete this Title"
+#~ msgstr "امسح هذا العنوان"
+
+#~ msgid "Edit this title"
+#~ msgstr "تعديل هذا العنوان"
+
+#~ msgid "Editor(s)"
+#~ msgstr "المحرر"
+
+#~ msgid "This resource has these editors:"
+#~ msgstr "هذا المورد له هؤلاء المؤلفين:"
+
+#~ msgid "No Editor(s) Defined"
+#~ msgstr "المحرر غير معرّف"
+
+#~ msgid "editor"
+#~ msgstr "المحرر"
+
+#~ msgid "Source (e.g. Journal/Volume title)"
+#~ msgstr "المصدر (مثال: الدورية/عنوان المجلد)"
+
+#~ msgid "This resource has this source:"
+#~ msgstr "هذا المورد له هذاالمصدر"
+
+#~ msgid "Delete this source"
+#~ msgstr "احذف هذا المصدر"
+
+#~ msgid "Edit this source"
+#~ msgstr "تعديل هذا المصدر"
+
+#~ msgid "source"
+#~ msgstr "مصدر"
+
+#~ msgid "place"
+#~ msgstr "مكان"
+
+#~ msgid "This resource was published at this place:"
+#~ msgstr "هذا المورد كان منشوراً عنه في هذا المكان:"
+
+#~ msgid "No Place of Publication Defined"
+#~ msgstr "لم يتم تحديد مكان النشر"
+
+#~ msgid "Delete this place"
+#~ msgstr "احذف هذا المكان"
+
+#~ msgid "Edit this place"
+#~ msgstr "تعديل هذا المكان"
+
+#~ msgid "This resource has this publisher:"
+#~ msgstr "هذا المورد له هذا الناشر"
+
+#~ msgid "No Publisher Defined"
+#~ msgstr "لم يتم تحديد الناشر"
+
+#~ msgid "Delete this publisher"
+#~ msgstr "احذف هذا الناشر"
+
+#~ msgid "Edit this publisher"
+#~ msgstr "تعديل هذا الناشر"
+
+#~ msgid "publisher"
+#~ msgstr "الناشر"
+
+#~ msgid "Volume"
+#~ msgstr "المجلد"
+
+#~ msgid "This resource is from this volume:"
+#~ msgstr "هذا المورد من هذا المجلد:"
+
+#~ msgid "No Volume Defined"
+#~ msgstr "لم يتم تحديد مجلد"
+
+#~ msgid "Delete this Volume"
+#~ msgstr "حذف هذا المجلد"
+
+#~ msgid "Edit this Volume"
+#~ msgstr "تعديل"
+
+#~ msgid "Issue/Edition"
+#~ msgstr "العدد/النسخة"
+
+#~ msgid "Issue"
+#~ msgstr "العدد"
+
+#~ msgid "This resource is from this issue:"
+#~ msgstr "هذا المورد من هذا الإصدار:"
+
+#~ msgid "No Issue Defined"
+#~ msgstr "لم يتم تحديد إصدار"
+
+#~ msgid "Delete this issue"
+#~ msgstr "احذف هذا الإصدار"
+
+#~ msgid "Edit this issue"
+#~ msgstr "تعديل هذا الإصدار"
+
+#~ msgid "issue"
+#~ msgstr "إصدار"
+
+#~ msgid "Pages(s)"
+#~ msgstr "الصفحة/ الصفحات"
+
+#~ msgid "Pages"
+#~ msgstr "الصفحة/ الصفحات"
+
+#~ msgid "This resource has the following page numbers:"
+#~ msgstr "هذا المورد له أرقام الصفحات التالية:"
+
+#~ msgid "No Pages Defined"
+#~ msgstr "لم يتم تحديد صفحات"
+
+#~ msgid "Delete these page numbers"
+#~ msgstr "احذف أرقام الصفحات هذه"
+
+#~ msgid "Edit these page numbers"
+#~ msgstr "تعديل أرقام الصفحات هذه"
+
+#~ msgid "pages"
+#~ msgstr "الصفحات"
+
+#~ msgid "Figure(s)"
+#~ msgstr "(شكل (أشكال "
+
+#~ msgid "This resource has these figures:"
+#~ msgstr "هذا المورد له هذه الأشكال:"
+
+#~ msgid "No Figure(s) Defined"
+#~ msgstr "لم يتم تحديد أشكال"
+
+#~ msgid "Delete this figure(s)"
+#~ msgstr "احذف هذا الشكل /هذه الأشكال "
+
+#~ msgid "Edit this figure(s)"
+#~ msgstr "تعديل هذا الشكل /هذه الأشكال "
+
+#~ msgid "Figure"
+#~ msgstr "الشكل"
+
+#~ msgid ""
+#~ "A title, title type, and relationship type must be specified.  If "
+#~ "specifying a description, then a description type must be defined as well."
+#~ msgstr "يجب تحديد الوصف، ثم نوع الوصف كذلك"
+
+#~ msgid "This resource has no related files yet"
+#~ msgstr "هذا المورد لاتوجد ملفات خاصة به بعد"
+
+#~ msgid "Related Images"
+#~ msgstr "أشكال ذات صلة"
+
+#~ msgid "Edit this file"
+#~ msgstr "تعديل هذا الملف"
+
+#~ msgid "relation"
+#~ msgstr "علاقة"
+
+#~ msgid "Edit Related File Resource"
+#~ msgstr "تعديل ملف المورد ذو الصلة"
+
+#~ msgid "Description Type"
+#~ msgstr "نوع الوصف"
+
+#~ msgid "Relationship Type"
+#~ msgstr "نوع العلاقة"
+
+#~ msgid "Are you sure you want to delete the relationship to this file?"
+#~ msgstr "هل أنت متأكد أنك تريد حذف العلاقة بهذا الملف؟"
+
+#~ msgid "Remove this file"
+#~ msgstr "احذف هذا الملف"
+
+#~ msgid "Save"
+#~ msgstr "احفظ"
+
+#~ msgid "Part 1: Upload Files"
+#~ msgstr "الجزء الأول: إدخال ملفات"
+
+#~ msgid "Part 2: Title"
+#~ msgstr "الجزء الثاني: العنوان"
+
+#~ msgid "Part 3: Description"
+#~ msgstr "الجزء الثالث: الوصف"
+
+#~ msgid "Part 4: Relationship"
+#~ msgstr "الجزء الرابع: العلاقة"
+
+#~ msgid "Upload Files"
+#~ msgstr "إدخال ملفات"
+
+#~ msgid "File Information"
+#~ msgstr "معلومات الملف"
+
+#~ msgid "Add a name/title and description for each file"
+#~ msgstr "أضف اسم/عنوان ووصف لكل ملف"
+
+#~ msgid "Part 3"
+#~ msgstr "الجزء الثالث"
+
+#~ msgid "Add description and desctiption type for each file"
+#~ msgstr "أضف الوصف ونوع الوصف لكل ملف"
+
+#~ msgid "Part 4"
+#~ msgstr "الجزء الرابع"
+
+#~ msgid "Describe Relationship"
+#~ msgstr "وصف العلاقة"
+
+#~ msgid "Describe the relationship each file has with the current resource"
+#~ msgstr "أوصف علاقة كل ملف بالمورد الحالي"
+
+#~ msgid "Time filter"
+#~ msgstr "مرشح الزمن"
+
+#~ msgid "Actor Roles"
+#~ msgstr "مهام الفاعل"
+
+#~ msgid "Certainty"
+#~ msgstr "مدى التأكد"
+
+#~ msgid "This resource has the following roles:"
+#~ msgstr "هذا المورد له هذه الأدوار"
+
+#~ msgid "No Roles Defined"
+#~ msgstr "لم يتم تحديد أية أدوار"
+
+#~ msgid "Delete this role"
+#~ msgstr "احذف هذا الدور"
+
+#~ msgid "Edit this role"
+#~ msgstr "تعديل هذه المهمة"
+
+#~ msgid "From date"
+#~ msgstr "من تاريخ"
+
+#~ msgid "To date"
+#~ msgstr "إلى تاريخ"
+
+#~ msgid "Shared data source"
+#~ msgstr "مصدر مشاركة البيانات "
+
+#~ msgid "Shared data source project"
+#~ msgstr "مشروع مشاركة مصدر البيانات"
+
+#~ msgid "This resource has these shared data source projects:"
+#~ msgstr "هذا المورد له مشاريع مشاركة مصدر البيانات هذه:"
+
+#~ msgid "This resource has this shared data source:"
+#~ msgstr "هذا المورد له مشاركة مصدر البيانات هذه:"
+
+#~ msgid "No Shared data source project defined"
+#~ msgstr "لم يتم تحديد مشروع مشاركة بيانات"
+
+#~ msgid "Delete this shared data source project"
+#~ msgstr "احذف مشروع مشاركة مصدر البيانات هذا"
+
+#~ msgid "shared data source project"
+#~ msgstr "مشروع مشاركة مصدر البيانات"
+
+#~ msgid "Shared data source date"
+#~ msgstr "تاريخ مشاركة مصدر البيانات"
+
+#~ msgid "This resource has the following ID code:"
+#~ msgstr "هذاالمورد له رمز الهوية التالي"
+
+#~ msgid "No ID Defined"
+#~ msgstr "لم يتم تحديد هوية"
+
+#~ msgid "Resource Name(s)"
+#~ msgstr "اسم (أسماء) المورد"
+
+#~ msgid "Site Function"
+#~ msgstr "وظيفة الموقع"
+
+#~ msgid "Certainty required."
+#~ msgstr "مدى التأكد المطلوب"
+
+#~ msgid "This resource has these functions:"
+#~ msgstr "هذا المورد له هذه الوظائف"
+
+#~ msgid "No Function Defined"
+#~ msgstr "لم يتم تحديد وظيفة"
+
+#~ msgid "Overall Site Morphology"
+#~ msgstr "مورفولوجية الموقع العامة"
+
+#~ msgid "Morphology"
+#~ msgstr "المورفولوجية"
+
+#~ msgid "The keyword must be populated."
+#~ msgstr "يجب إدخال الكلمة المفتاح"
+
+#~ msgid "Delete this keyword"
+#~ msgstr "امسح هذه الكلمة المفتاح"
+
+#~ msgid "Edit this keyword"
+#~ msgstr "تعديل هذه الكلمة المفتاح"
+
+#~ msgid "Overall Site Shape"
+#~ msgstr "الشكل العام للموقع"
+
+#~ msgid "Overall Site Certainty"
+#~ msgstr "مدى التأكد بصورة عامة من الموقع"
+
+#~ msgid "Degree of certainty that this is a cultural heritage resource:"
+#~ msgstr "مدى التأكد من أن هذا مورد تراث ثقافي"
+
+#~ msgid "This resource has these cultural periods assigned:"
+#~ msgstr "لهذا المورد الفترات الثقافية التالية"
+
+#~ msgid "No Cultural Period Defined"
+#~ msgstr "لم يتم تحديد فترات تاريخية"
+
+#~ msgid "Time-Span Phase(s) "
+#~ msgstr "الزمن - مدى المرحلة /المراحل"
+
+#~ msgid "From and To dates required."
+#~ msgstr "مطلوب تاريخي من وإلى"
+
+#~ msgid "Time Span Phase(s):"
+#~ msgstr "الزمن - مدى المرحلة /المراحل"
+
+#~ msgid "from date"
+#~ msgstr "تاريخ من"
+
+#~ msgid "to date"
+#~ msgstr "تاريخ إلى"
+
+#~ msgid "Resource Assessor Name, Assessment Type and Date"
+#~ msgstr "اسم الذي قام بتقييم المورد، ونوع التقييم وتاريخه"
+
+#~ msgid "Assessor name"
+#~ msgstr "اسم القائم بالتقييم"
+
+#~ msgid "Assessment Type"
+#~ msgstr "نوع التقييم"
+
+#~ msgid "Date (yyyy-mm-dd)"
+#~ msgstr "التاريخ (السنة-الشهر-اليوم"
+
+#~ msgid "The name type and date fields must all be populated."
+#~ msgstr "يجب إدخال نوع الاسم والتاريخ"
+
+#~ msgid "This resource has been assessed by :"
+#~ msgstr "تم تقييم هذا المورد بواسطة "
+
+#~ msgid "No Assessment Details Provided"
+#~ msgstr "لم يتم إدخال تفاصيل التقييم"
+
+#~ msgid "Assessor"
+#~ msgstr "المقيم"
+
+#~ msgid "Date of Assessment"
+#~ msgstr "تاريخ التقييم"
+
+#~ msgid "Loading..."
+#~ msgstr "تحميل..."
+
+#~ msgid "Manage"
+#~ msgstr "إدارة"
+
+#~ msgid "Add Top Concept"
+#~ msgstr "أضف المفهوم الأعلى"
+
+#~ msgid "Import Top Concept from SPARQL"
+#~ msgstr "احضر المفهوم الأعلى من SPARQL "
+
+#~ msgid "Add Child"
+#~ msgstr "أضف طفل"
+
+#~ msgid "Import Child from SPARQL"
+#~ msgstr "أحضر طفل من SPARQL "
+
+#~ msgid "Import Child from AAT"
+#~ msgstr "أحضر طفل من AAT "
+
+#~ msgid "Labels"
+#~ msgstr "تسميات"
+
+#~ msgid "Add label"
+#~ msgstr "أضف تسمية"
+
+#~ msgid "Delete this label?"
+#~ msgstr "أحذف هذه التسمية"
+
+#~ msgid "preferred"
+#~ msgstr "مفضل"
+
+#~ msgid "alternate"
+#~ msgstr "بدّل"
+
+#~ msgid "hidden"
+#~ msgstr "مختبئ"
+
+#~ msgid "Notes"
+#~ msgstr "ملاحظات"
+
+#~ msgid "Add note"
+#~ msgstr "أضف ملاحظة"
+
+#~ msgid "Delete this note?"
+#~ msgstr "أحذف هذه الملاحظة؟"
+
+#~ msgid "Broader/Narrower Concepts"
+#~ msgstr "مفاهيم أعرض/أضيق"
+
+#~ msgid "Show graph"
+#~ msgstr "أظهر الرسم التوضيحي"
+
+#~ msgid "Show tree"
+#~ msgstr "أظهر الشجرة"
+
+#~ msgid "Jump to this concept"
+#~ msgstr "أقفز إلى هذا المفهوم"
+
+#~ msgid "Delete this concept?"
+#~ msgstr "احذف هذا المفهوم"
+
+#~ msgid ""
+#~ "By deleting this concept, you will also be deleting the following "
+#~ "concepts as well.  This operation cannot be undone."
+#~ msgstr ""
+#~ "بحذف هذا المفهوم، فأنت تحذف أيضاً المفاهيم التالية أيضاً. هذه العملية لا "
+#~ "يمكن عكسها"
+
+#~ msgid "Related Concepts"
+#~ msgstr "مفاهيم ذات صلة"
+
+#~ msgid "Add related concept"
+#~ msgstr "أضف مفهوم ذو صلة"
+
+#~ msgid "Remove the relationship to this concept?"
+#~ msgstr "احذف الربط بهذا المفهوم"
+
+#~ msgid "Values"
+#~ msgstr "قيم"
+
+#~ msgid "Add value"
+#~ msgstr "أضف قيمة"
+
+#~ msgid "Delete this value?"
+#~ msgstr "احذف هذه القيمة؟"
+
+#~ msgid "Edit this value"
+#~ msgstr "تعديل هذه القيمة"
+
+#~ msgid "Add images"
+#~ msgstr "أضف صور"
+
+#~ msgid "Arches ID:"
+#~ msgstr "هوية آرشز"
+
+#~ msgid "Are you ready to delete this item?"
+#~ msgstr "هل أنت مستعد لحذف هذا البند"
+
+#~ msgid "Unable to Delete"
+#~ msgstr "غير قابل للحذف"
+
+#~ msgid ""
+#~ "This concept or one of it's subconcepts is already in use by an existing "
+#~ "resource."
+#~ msgstr ""
+#~ "هذا المفهوم، أو واحد من المفاهيم الفرعية الخاصة به، يستعمل فعلياً بواسطة "
+#~ "مورد آخر"
+
+#~ msgid "Ok"
+#~ msgstr "موافق"
+
+#~ msgid "Manage the dropdown values that appear in forms here."
+#~ msgstr "إدارة قائمة القيم التي يتم إفرادها وتظهر في الاستبيان هنا"
+
+#~ msgid "Member Hierarchy"
+#~ msgstr "هيكلية العضو"
+
+#~ msgid "Add dropdown entry"
+#~ msgstr "أضف مدخل بقائمة يتم إفرادها"
+
+#~ msgid "Expand this entry"
+#~ msgstr "تمديد هذا المدخل"
+
+#~ msgid "Remove this entry from the dropdown"
+#~ msgstr "احذف هذا المدخل من القائمة التي يتم إفرادها"
+
+#~ msgid "Add Concept"
+#~ msgstr "أضف مفهوم"
+
+#~ msgid "Label"
+#~ msgstr "تسمية"
+
+#~ msgid "Note"
+#~ msgstr "ملاحظة"
+
+#~ msgid "Language"
+#~ msgstr "لغة"
+
+#~ msgid "Relation from Parent"
+#~ msgstr "علاقة من الوالد"
+
+#~ msgid "Save changes"
+#~ msgstr "احفظ التغييرات"
+
+#~ msgid "Add Concept Scheme"
+#~ msgstr "أضف نظام مفاهيمي "
+
+#~ msgid "ConceptScheme Name"
+#~ msgstr "اسم نظام مفاهيمي"
+
+#~ msgid "Scope Note"
+#~ msgstr "ملاحظة نطاق"
+
+#~ msgid "Delete Scheme"
+#~ msgstr "احذف نظام"
+
+#~ msgid "Select scheme to delete"
+#~ msgstr "اختار نظام لحذفه"
+
+#~ msgid "Export Scheme"
+#~ msgstr "تصدير نظام"
+
+#~ msgid "Select scheme to export"
+#~ msgstr "اختار نظام لتصديره"
+
+#~ msgid "Export"
+#~ msgstr "تصدير"
+
+#~ msgid "Import Concept"
+#~ msgstr "احضر مفهوم"
+
+#~ msgid "Search for a concept..."
+#~ msgstr "ابحث عن مفهوم..."
+
+#~ msgid "Organization"
+#~ msgstr "تنظيم"
+
+#~ msgid "Concept Indentifiers"
+#~ msgstr "محددات المفهوم"
+
+#~ msgid "Error"
+#~ msgstr "خطأ"
+
+#~ msgid "Import"
+#~ msgstr "أحضر"
+
+#~ msgid "Import New Concept Scheme"
+#~ msgstr "أحضر نظام مفاهيمي جديد"
+
+#~ msgid "SKOS File"
+#~ msgstr " ملف SKOS "
+
+#~ msgid "Upload File"
+#~ msgstr "تحميل ملف"
+
+#~ msgid "New Parent Concept"
+#~ msgstr "مفهوم والد جديد"
+
+#~ msgid "Relation to Parent"
+#~ msgstr "علاقة بوالد"
+
+#~ msgid "Current Parents"
+#~ msgstr "الوالد الحالي"
+
+#~ msgid "Remove the relationship to this parent concept"
+#~ msgstr "انقل العلاقة إلى مفهوم الوالد هذا"
+
+#~ msgid "Remove the relationship to this parent concept."
+#~ msgstr "احذف العلاقة بمفهوم الوالد هذا"
+
+#~ msgid "Deleting reference to parent:"
+#~ msgstr "احذف الإرجاع إلى الوالد"
+
+#~ msgid "Manage Related Concepts"
+#~ msgstr "إدارة المفاهيم ذات الصلة"
+
+#~ msgid "Country of Origin"
+#~ msgstr "بلد المنشأ"
+
+#~ msgid "No country recorded"
+#~ msgstr "لم يتم تسجيل بلد"
+
+#~ msgid "Roles"
+#~ msgstr "الأدوار"
+
+#~ msgid "No URLs recorded"
+#~ msgstr "لم يتم تسجيل موقع على الانترنت"
+
+#~ msgid "Access date: "
+#~ msgstr "تاريخ الدخول"
+
+#~ msgid "Cartography Description"
+#~ msgstr "وصف الخريطة"
+
+#~ msgid "Shared Dataset Description"
+#~ msgstr "وصف البيانات المشتركة"
+
+#~ msgid "Resource type(s)"
+#~ msgstr "نوع (أنواع) المورد"
+
+#~ msgid "Resource format(s)"
+#~ msgstr "تشكيل المورد"
+
+#~ msgid "Resource Report"
+#~ msgstr "تقرير عن المورد"
+
+#~ msgid "Map"
+#~ msgstr "خريطة"
+
+#~ msgid "Arches ID"
+#~ msgstr "هوية آرشز"
+
+#~ msgid "Overall condition of resource"
+#~ msgstr "الحالة العامة للمورد"
+
+#~ msgid "Cultural periods"
+#~ msgstr "الفترات الثقافية"
+
+#~ msgid "(Certainty:"
+#~ msgstr "مدى التأكد"
+
+#~ msgid "Overall disturbance extent"
+#~ msgstr "المدى العام للاضطرابات"
+
+#~ msgid "Types of disturbances affecting the resource"
+#~ msgstr "أنوا الاضطرابات التي تؤثر في المورد"
+
+#~ msgid "From: "
+#~ msgstr "هيئة"
+
+#~ msgid "To: "
+#~ msgstr "إلى"
+
+#~ msgid "Feature forms within Heritage Resource"
+#~ msgstr "أشكال الملمح ضمن المورد التراثي"
+
+#~ msgid " Certainty"
+#~ msgstr "مدى التأكد"
+
+#~ msgid "(Number)"
+#~ msgstr "الرقم"
+
+#~ msgid "No feature forms recorded"
+#~ msgstr "لم يتم تسجيل أنواع الملمح"
+
+#~ msgid "Feature intepretations within Heritage Resource"
+#~ msgstr "تفسير الملمح ضمن المورد الثقافي"
+
+#~ msgid "No feature interpretations recorded"
+#~ msgstr "لم يتم تسجيل تفسيرات للملمح"
+
+#~ msgid "No Catalog ID recorded"
+#~ msgstr "لم يتم تسجيل هوية كتالوج"
+
+#~ msgid "Imagery Source"
+#~ msgstr "مصدر الصورة"
+
+#~ msgid "No Source recorded"
+#~ msgstr "لم يتم تسجيل مصدر"
+
+#~ msgid "Imagery Creator/Owner"
+#~ msgstr "منشئ/مالك الصورة"
+
+#~ msgid "No Creator/Owner recorded"
+#~ msgstr "لم يتم تسجيل منشئ/مالك"
+
+#~ msgid "No Image Details recorded"
+#~ msgstr "لم يتم تسجيل تفاصيل الصورة"
+
+#~ msgid "(Platform)"
+#~ msgstr "المنصة"
+
+#~ msgid "(Camera Model)"
+#~ msgstr "موديل آلة التصوير"
+
+#~ msgid "(Bands)"
+#~ msgstr "(الزمر (جمع زمرة"
+
+#~ msgid "(Camera Type)"
+#~ msgstr "نوع آلة التصوير"
+
+#~ msgid "(Camera Resolution)"
+#~ msgstr "درجة وضوح آلة التصوير"
+
+#~ msgid "Acquisition Date"
+#~ msgstr "تاريخ الاستحواذ/الالتقاط"
+
+#~ msgid "No Date recorded"
+#~ msgstr "لم يتم تسجيل تاريخ"
+
+#~ msgid "File Date"
+#~ msgstr "تاريخ الملف"
+
+#~ msgid "No Copyright Recorded"
+#~ msgstr "لم يتم تسجيل حقوق نسخ"
+
+#~ msgid "No site certainty recorded"
+#~ msgstr "لم يتم تسجيل مدى التأكد من الموقع"
+
+#~ msgid "No roles recorded"
+#~ msgstr "لم يتم تسجيل أدوار"
+
+#~ msgid "Data Source"
+#~ msgstr "مصدر البيانات"
+
+#~ msgid "Data Source Project/Affiliation"
+#~ msgstr "مشروع/ارتباط مصدر البيانات"
+
+#~ msgid "No Project/Affiliation recorded"
+#~ msgstr "لم يتم تسجيل مشروع/ارتباط"
+
+#~ msgid "Dataset Acquisition"
+#~ msgstr "استحواذ المعلومات"
+
+#~ msgid "Further comments"
+#~ msgstr "تعليقات إضافية"
+
+#~ msgid "No Comments recorded"
+#~ msgstr "لم يتم تسجيل تعليقات"
+
+#~ msgid "No site functions recorded"
+#~ msgstr "لم يتم تسجيل وظائف للموقع"
+
+#~ msgid "Threat(s) to the resource"
+#~ msgstr "مخاطر تهدد المورد"
+
+#~ msgid "Time span"
+#~ msgstr "المدى الزمني"
+
+#~ msgid "Related Heritage Resources E27"
+#~ msgstr "E27 موراد تراثية  ذات صلة"
+
+#~ msgid "Related Heritage Resources E18"
+#~ msgstr "E18 موراد تراثية ذات صلة "
+
+#~ msgid "Data contributed by: "
+#~ msgstr "صاحب الاسهام بالبيانات"
+
+#~ msgid "Maps"
+#~ msgstr "خرائط"
+
+#~ msgid "Map Tools"
+#~ msgstr "أدوات الخريطة"
+
+#~ msgid "Limit search results to map extent"
+#~ msgstr "حدد البحث في مجال الخريطة"
+
+#~ msgid "Draw Polygon to Filter Map"
+#~ msgstr "ارسم مضلع لمرشح الخريطة"
+
+#~ msgid "Draw Line to Filter Map"
+#~ msgstr "ارسم خط لمرشح الخريطة"
+
+#~ msgid "Draw Point to Filter Map"
+#~ msgstr "ارسم نقطة لمرشح الخريطة"
+
+#~ msgid "Buffer (m)"
+#~ msgstr "(منطقة الحماية (متر"
+
+#~ msgid "Range of Years"
+#~ msgstr "مدى من السنوات"
+
+#~ msgid "(show resources with any date that falls between these years)"
+#~ msgstr "عرض موارد بأية تواريخ تقع بين هاتين السنتين"
+
+#~ msgid "Start/End Dates"
+#~ msgstr "تواريخ البداية/النهاية"
+
+#~ msgid "(show resources that meet these date criteria)"
+#~ msgstr "اعرض الموارد حسب المعايير التالية الخاصة بالتاريخ"
+
+#~ msgid "Type of date"
+#~ msgstr "نوع التاريخ"
+
+#~ msgid "Qualifier"
+#~ msgstr "الشخص الذي يعتمد"
+
+#~ msgid "You have selected the following Start/End Date filters:"
+#~ msgstr "لقد اخترت تواريخ البداية والنهاية التالية"
+
+#~ msgid "No Filters Defined"
+#~ msgstr "لم يتم تحديد مرشح"
+
+#~ msgid "The Type of Date, Qualifier, and Date fields must all be populated."
+#~ msgstr "يجب ادخال نوع التاريخ والذي اعتمد والتاريخ"

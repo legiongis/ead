@@ -16,24 +16,40 @@
             </div>
 
             <!-- Topbar Navigation -->
-            <ul class="loginbar pull-right">
+            <ul class="loginbar pull-right" style="font-family:'Open Sans'">
                 
-                <li>
+                <!--<li>
                     <i class="fa fa-globe"></i>
                     <a>{% trans "Languages" %}</a>
                     <ul class="lenguages">
                         <li class="active">
-                            <a href="javascript:void(0);">{% trans "English" %} <i class="fa fa-check"></i></a> 
+                            <a href="javascript:void(0);">{% trans "English" %} <i class="fa fa-check"></i></a>
+                            <a href="javascript:void(0);">{% trans "Arabic" %} <i class="fa"></i></a> 
                         </li>
                     </ul>
-                </li>
-                <li class="topbar-devider"></li>   
+                </li>-->
                 <li><a href="javascript:void(0);" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="{% trans 'Documentation coming soon.' %}">{% trans "Help" %}</a></li>
                 <li class="topbar-devider"></li>   
                 <li>
                     <a id="auth-link" href="{% url 'auth' %}?next={{ request.get_full_path }}{% if user.username != 'anonymous' %}&logout=true{% endif %}">{% if user.username == 'anonymous' %}{% trans "Login" %}{% else %}{% trans "Welcome" %} {{ user.username }} - {% trans "Logout" %}{% endif %}</a>
                 </li>
-                
+                <li class="topbar-devider"></li> 
+                <li>
+                    <form action="{% url 'set_language' %}" method="post" id="languageform" style="display:inline">
+                    {% csrf_token %}
+                      <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+                      <select name="language">
+
+                     <ul class="lenguages" style="height:25px;">
+                        <li class="active">
+                            <option value="en-US" {% if LANGUAGE_CODE == 'en-US' %}selected="selected"{% endif %}><a href="javascript:void(0);">English<i class="fa {% if language.languageid == LANGUAGE_CODE %}fa-check{% endif %}"></i></a></option>
+                            <option value="ar" {% if LANGUAGE_CODE == 'ar' %}selected="selected"{% endif %}><a href="javascript:void(0);">عربي<i class="fa {% if language.languageid == LANGUAGE_CODE %}fa-check{% endif %}"></i></a></option>
+                        </li>
+                    </ul>
+                    </select>&nbsp;
+                    <input type="submit" value="Change" style="height:25px;" />
+                    </form>
+                </li>
             </ul>
             <!-- End Topbar Navigation -->
         </div>
@@ -54,7 +70,7 @@
                 <!-- Default Logo, Replace with your own -->
                 <a class="navbar-brand" href="{% url 'home' %}">
                     <!--<img id="logo-header" class="arches-logo" src="{{ STATIC_URL }}img/arches_logo.png" alt="Logo">-->
-                    <h1><strong> Egyptian Archaeological Database (EAD) </strong></h1>
+                    <h1><strong>{% trans "Egyptian Archaeological Database (EAD)" %}</strong></h1>
                 </a>
                 
             </div>

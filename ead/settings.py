@@ -25,6 +25,25 @@ DATABASES = {
     }
 }
 
+gettext = lambda s: s
+LANGUAGES = (
+    ('en', gettext('English')),
+    ('ar', gettext('Arabic')),
+)
+
+LOCALE_PATHS = (os.path.join(os.path.dirname(PACKAGE_ROOT),'locale'),) + LOCALE_PATHS
+
+MIDDLEWARE_CLASSES = (
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'arches.app.utils.set_anonymous_user.SetAnonymousUser',
+)
+
 ROOT_URLCONF = '%s.urls' % (PACKAGE_NAME)
 
 INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,)
