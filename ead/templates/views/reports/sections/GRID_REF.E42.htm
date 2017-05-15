@@ -15,9 +15,13 @@
                     {% for PLACE_E53 in report_info.source.graph.PLACE_E53 %}
                         {% if 'GRID_REF_E42' in PLACE_E53 %}
                             {% for GRID_REF_E42 in PLACE_E53.GRID_REF_E42 %}
-							<dd class="arches-report-subsection-item">
-                                <span class="arches-report-subsection-item-type">{{GRID_REF_E42.GRID_REF_TYPE.E55__value}}</span>    
-                                {{GRID_REF_E42.GRID_REF_E42__value}} 	
+                                								
+                                <dd class="arches-report-subsection-item report-list-item">
+								{{GRID_REF_E42.GRID_REF_E42__value}} 
+								
+								<span class="arches-report-subsection-item-type">
+								{{GRID_REF_E42.GRID_REF_TYPE_E55__value}}</span>  
+                                	
                             </dd>
                             {% endfor %}                          
                         {% endif %}
