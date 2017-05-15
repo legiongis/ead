@@ -33,6 +33,15 @@ define([
                 });
                 this.addBranchList(adminAreaBranchList);
             }
+            
+            if (includeAdminAreas) {
+                var adminAreaBranchList = new BranchList({
+                    el: this.$el.find('#grid-ref-section')[0],
+                    data: this.data,
+                    dataKey: 'GRID_REF.E42'
+                });
+                this.addBranchList(adminAreaBranchList);
+            }
 
             if (includeMap) {
                 var locationBranchList = new LocationBranchList({
@@ -111,12 +120,6 @@ define([
                     dataKey: 'PLACE_APPELLATION_CADASTRAL_REFERENCE.E44'
                 }));
             }
-
-            this.addBranchList(new BranchList({
-                el: this.$el.find('#address-section')[0],
-                data: this.data,
-                dataKey: 'PLACE_ADDRESS.E45'
-            }));
 
             this.addBranchList(new BranchList({
                 el: this.$el.find('#description-section')[0],

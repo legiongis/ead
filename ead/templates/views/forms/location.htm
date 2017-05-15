@@ -246,7 +246,7 @@
 
 {% endif %}
 
-<div id="address-section">
+<div id="grid-ref-section">
     <!-- Address CRUD Form -->
     <div class="row">
         <div class="col-xs-12">
@@ -347,7 +347,7 @@
 
 
 <!-- Location Description -->
-<div class="row margin-bottom-10" id="description-section">
+<div id="description-section" class="row margin-bottom-10">
     <div class="col-xs-12">
 
         <!-- Resource Location Descriptions -->
@@ -375,7 +375,7 @@
 <!-- End Resource Location Descriptions -->
 
 {% if resourcetypeid != 'ACTOR.E39' %}
-    {% if resourcetypeid != 'ACTIVITY.E7' and resourcetypeid != 'HERITAGE_RESOURCE_GROUP.E27' and resourcetypeid != 'HISTORICAL_EVENT.E5' %}
+    {% if resourcetypeid != 'ACTIVITY.E7' and resourcetypeid != 'HISTORICAL_EVENT.E5' %}
         <hr class="devider arches-RDM-divider">
 
         <div id="setting-section">
@@ -490,9 +490,8 @@
                                     <form class="form-inline arches-form hidden-xs" role="form">
                                         <div class="form-group margin-top-5" style="width: 100%">
                                            
-                                            <input data-bind="select2: {value: getEditedNode('ADMINISTRATIVE_SUBDIVISION_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'ADMINISTRATIVE_SUBDIVISION_TYPE.E55'}" style="width:50%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="Admin Area Type">&nbsp;
-
-                                            <input class="form-control" id="ad_area_type" style="width: 30%; height: 32px;" placeholder="Area Name" data-bind='value: getEditedNode("ADMINISTRATIVE_SUBDIVISION.E48", "value")'>
+                                            <input data-bind="select2: {value: getEditedNode('ADMINISTRATIVE_SUBDIVISION_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'ADMINISTRATIVE_SUBDIVISION_TYPE.E55'}" style="width:40%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="Admin Area Type">&nbsp;
+                                            <input data-bind="select2: {value: getEditedNode('ADMINISTRATIVE_SUBDIVISION.E48', 'value'), placeholder: 'Type', dataKey: 'ADMINISTRATIVE_SUBDIVISION.E48'}" style="width:40%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="Governorate">
 
                                             {% include 'views/components/add-item-button.htm' %}
                                         </div>
@@ -504,11 +503,10 @@
                                         <div class="form-group margin-top-5" style="width: 100%">
                                            
                                             <input data-bind="select2: {value: getEditedNode('ADMINISTRATIVE_SUBDIVISION_TYPE.E55', 'value'), placeholder: 'Type', dataKey: 'ADMINISTRATIVE_SUBDIVISION_TYPE.E55'}" style="width:100%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="Admin Area Type">
-
                                             <!-- Spacer (for xs screens) -->
                                             <div class="margin-top-10 hidden-sm hidden-md hidden-lg"></div>
-
-                                            <input class="form-control" id="ad_area_type" style="width: 100%; height: 32px;" placeholder="Area Name" data-bind='value: getEditedNode("ADMINISTRATIVE_SUBDIVISION.E48", "value")'>
+                                            
+                                            <input data-bind="select2: {value: getEditedNode('ADMINISTRATIVE_SUBDIVISION.E48', 'value'), placeholder: 'Type', dataKey: 'ADMINISTRATIVE_SUBDIVISION.E48'}" style="width:100%; height: 36px; padding-top: 2px;" class="select2 arches-select2-crud-form admin-area-type" placeholder="Governorate">
 
                                             <!-- Spacer (for xs screens) -->
                                             <div class="margin-top-10 hidden-sm hidden-md hidden-lg"></div>
@@ -517,8 +515,6 @@
                                         </div>
                                     </form>
                                     <!-- fEn orm for screens = xs -->
-
-
                                 </div>
                             </div>
                         </dd>
@@ -544,8 +540,8 @@
                         <div data-bind='foreach: getBranchLists()'>
                             <dd class="margin-left-5">
                                 <div class="arches-crud-record">
-                                    <a href="#" class="arches-CRUD-child" title="Remove this relationship" data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
-                                    <a href="#" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('ADMINISTRATIVE_SUBDIVISION.E48', 'value')"></a>&nbsp; <span class="text-muted arches-crud-type-identifier">(<span data-bind="text: nodes.get('ADMINISTRATIVE_SUBDIVISION_TYPE.E55', 'label')"></span>)</span>
+                                    <a href="javascript:void(0);" class="arches-CRUD-child" title="Remove this Administrative Area" data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
+                                    <a href="javascript:void(0);" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('ADMINISTRATIVE_SUBDIVISION.E48', 'label')"></a>&nbsp; <span class="text-muted arches-crud-type-identifier">(<span data-bind="text: nodes.get('ADMINISTRATIVE_SUBDIVISION_TYPE.E55', 'label')"></span>)</span>
                                 </div>
                             </dd>
                         </div>
@@ -634,8 +630,8 @@
                             <div data-bind='foreach: getBranchLists()'>
                                 <dd class="margin-left-5">
                                     <div class="arches-crud-record">
-                                        <a href="#" class="arches-CRUD-child" title="Remove this relationship" data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
-                                        <a href="#" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('PLACE_APPELLATION_CADASTRAL_REFERENCE.E44', 'value')"></a>
+                                        <a href="javascript:void(0);" class="arches-CRUD-child" title="Remove this relationship" data-bind="click: $parent.deleteItem.bind($parent)"><i class="arches-CRUD-delete fa fa-times-circle"></i></a>
+                                        <a href="javascript:void(0);" class="arches-CRUD-child" title="Edit this area" data-bind="click: $parent.editItem.bind($parent), text: nodes.get('PLACE_APPELLATION_CADASTRAL_REFERENCE.E44', 'value')"></a>
                                     </div>
                                 </dd>
                             </div>
