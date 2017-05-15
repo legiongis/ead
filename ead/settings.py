@@ -46,11 +46,13 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = '%s.urls' % (PACKAGE_NAME)
 
-INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,)
+INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,'rosetta')
 STATICFILES_DIRS = (os.path.join(PACKAGE_ROOT, 'media'),) + STATICFILES_DIRS
 TEMPLATE_DIRS = (os.path.join(PACKAGE_ROOT, 'templates'),os.path.join(PACKAGE_ROOT, 'templatetags')) + TEMPLATE_DIRS
 
-TEMPLATE_CONTEXT_PROCESSORS = ('ead.utils.context_processors.saved_search_urls',) + TEMPLATE_CONTEXT_PROCESSORS
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'ead.utils.context_processors.saved_search_urls',
+    ) + TEMPLATE_CONTEXT_PROCESSORS
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT =  os.path.join(PACKAGE_ROOT, 'uploadedfiles')
