@@ -19,7 +19,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 from arches.app.models.models import RelatedResource
 from arches.app.models.entity import Entity
 from arches.app.models.resource import Resource
-from arches.app.models.concept import Concept
 from arches.app.models.forms import ResourceForm
 from arches.app.utils.imageutils import generate_thumbnail
 from arches.app.views.concept import get_preflabel_from_valueid
@@ -29,7 +28,7 @@ from django.forms.models import model_to_dict
 from django.utils.translation import ugettext as _
 from django.forms.models import model_to_dict
 from datetime import datetime
-print "------USING LOCAL FORMS.PY-------" # testing use of EAD forms Nov 9 2016
+from ead.models.concept import Concept
 
 def datetime_nodes_to_dates(branch_list):
     for branch in branch_list:

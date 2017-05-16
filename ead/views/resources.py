@@ -23,7 +23,6 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.conf import settings
 from arches.app.models import models
-from arches.app.models.concept import Concept
 from arches.app.utils.betterJSONSerializer import JSONSerializer, JSONDeserializer
 from arches.app.utils.JSONResponse import JSONResponse
 from arches.app.views.concept import get_preflabel_from_valueid
@@ -31,6 +30,7 @@ from arches.app.views.concept import get_preflabel_from_conceptid
 from arches.app.views.resources import get_related_resources
 from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Query, Terms, Bool, Match
+from ead.models.concept import Concept
 
 
 def report(request, resourceid):
