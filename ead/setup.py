@@ -7,14 +7,14 @@ from django.conf import settings
 def install(path_to_source_data_dir=None):
     setup.install()
     add_arabic()
-    load_authority_files(os.path.join(settings.PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files'))
+    load_authority_files(os.path.normpath(os.path.join(settings.PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')))
     
 
 def load_resource_graphs():
     setup.resource_graphs.load_graphs(break_on_error=True)
 
 def load_authority_files(path_to_files=None):
-    authority_files_utils.load_authority_files(path_to_files,break_on_error=True)
+    authority_files_utils.load_authority_files(path_to_files)
 
 def load_resources(external_file=None):
     setup.load_resources(external_file)

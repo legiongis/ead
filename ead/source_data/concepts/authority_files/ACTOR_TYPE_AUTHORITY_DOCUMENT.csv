@@ -1,8 +1,8 @@
-conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider 
-ACTOR_TYPE:1,Individual,,ACTOR_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
-ACTOR_TYPE:2,Deity,,ACTOR_TYPE:1,Index,TMP
-ACTOR_TYPE:3,Pharaoh,,ACTOR_TYPE:1,Index,TMP
-ACTOR_TYPE:4,Roman Emperor,,ACTOR_TYPE:1,Index,TMP
-ACTOR_TYPE:5,Architect,,ACTOR_TYPE:1,Index,GCI
-ACTOR_TYPE:6,Artist ,,ACTOR_TYPE:1,Index,GCI
-ACTOR_TYPE:7,Tomb owner,,ACTOR_TYPE:1,Index,TMP
+conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
+ACTOR_TYPE:1,Individual,,,ACTOR_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
+ACTOR_TYPE:2,Deity,,,ACTOR_TYPE:1,Index,TMP
+ACTOR_TYPE:3,Pharaoh,,,ACTOR_TYPE:1,Index,TMP
+ACTOR_TYPE:4,Roman Emperor,,,ACTOR_TYPE:1,Index,TMP
+ACTOR_TYPE:5,Architect,,,ACTOR_TYPE:1,Index,GCI
+ACTOR_TYPE:6,Artist ,,,ACTOR_TYPE:1,Index,GCI
+ACTOR_TYPE:7,Tomb owner,,,ACTOR_TYPE:1,Index,TMP

@@ -1,8 +1,8 @@
-conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider
-STYLE:1,Old Kingdom,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
-STYLE:2,Middle Kingdom,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
-STYLE:3,New Kingdom,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
-STYLE:4,Greek/Ptolemaic,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
-STYLE:5,Minoan,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
-STYLE:6,Roman,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
-STYLE:7,Other,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
+STYLE:1,Old Kingdom,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+STYLE:2,Middle Kingdom,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+STYLE:3,New Kingdom,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+STYLE:4,Greek/Ptolemaic,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+STYLE:5,Minoan,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+STYLE:6,Roman,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP
+STYLE:7,Other,,,STYLE_AUTHORITY_DOCUMENT.csv,Index,TMP

@@ -1,0 +1,4 @@
+Conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider
+Eligibility Type:1,Significant Old Kingdom Structure,,ELIGIBILITY_REQUIREMENT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+Eligibility Type:2,Significant Middle Kingdom Structure,,ELIGIBILITY_REQUIREMENT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+Eligibility Type:3,Significant New Kingdom Structure,,ELIGIBILITY_REQUIREMENT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP

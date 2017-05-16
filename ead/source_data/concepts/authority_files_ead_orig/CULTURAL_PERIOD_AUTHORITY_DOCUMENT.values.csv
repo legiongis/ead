@@ -1,0 +1,42 @@
+conceptid,Value,ValueType,Provider
+PERIOD_UID:1,1,sortorder,KW
+PERIOD_UID:2,1,sortorder,KW
+PERIOD_UID:3,2,sortorder,KW
+PERIOD_UID:4,3,sortorder,KW
+PERIOD_UID:5,2,sortorder,KW
+PERIOD_UID:6,1,sortorder,KW
+PERIOD_UID:7,2,sortorder,KW
+PERIOD_UID:8,3,sortorder,KW
+PERIOD_UID:9,4,sortorder,KW
+PERIOD_UID:10,5,sortorder,KW
+PERIOD_UID:11,6,sortorder,KW
+PERIOD_UID:12,7,sortorder,KW
+PERIOD_UID:13,8,sortorder,KW
+PERIOD_UID:14,3,sortorder,KW
+PERIOD_UID:15,1,sortorder,KW
+PERIOD_UID:16,2,sortorder,KW
+PERIOD_UID:17,3,sortorder,KW
+PERIOD_UID:18,4,sortorder,KW
+PERIOD_UID:19,5,sortorder,KW
+PERIOD_UID:20,6,sortorder,KW
+PERIOD_UID:21,1,sortorder,KW
+PERIOD_UID:22,2,sortorder,KW
+PERIOD_UID:23,3,sortorder,KW
+PERIOD_UID:24,4,sortorder,KW
+PERIOD_UID:1,"The Palaeolithic, Neolithic or Chalcolithic periods and Dynasty 0 in the Egyptian archaeological record.",scopeNote,KW
+PERIOD_UID:5,This period extends from the Early Dynastic to the Late period. This is only used to classify a site when more detailed dating is unavailable. ,scopeNote,KW
+PERIOD_UID:6,First and second Dynasties,scopeNote,KW
+PERIOD_UID:7,3rd through 6th dynasties,scopeNote,KW
+PERIOD_UID:8,7th through early 11th dynasties.,scopeNote,KW
+PERIOD_UID:9,Late 11th through 14th dynasties,scopeNote,KW
+PERIOD_UID:10,15th through 17th dynasties,scopeNote,KW
+PERIOD_UID:11,18th through 20th dynasties,scopeNote,KW
+PERIOD_UID:12,21st through 25th dynasties,scopeNote,KW
+PERIOD_UID:13,26th through 31st dynasties including the Persian and Second Persian dynasties,scopeNote,KW
+PERIOD_UID:14,"Used by many writers to refer to the Ptolemaic , Roman and Byzantine/Coptic Periods. This is only used to classifiy a site when no more detailed dating is available.",scopeNote,KW
+PERIOD_UID:15,Macedonian and Ptolemaic rulers,scopeNote,KW
+PERIOD_UID:16,The period of Roman rule in Egypt.,scopeNote,KW
+PERIOD_UID:17,Byzantine or Coptic period in Egypt until the Arab Conquest,scopeNote,KW
+PERIOD_UID:18,Arabic conquest and later,scopeNote,KW
+PERIOD_UID:19,Catchall for sites with no known dates,scopeNote,KW
+PERIOD_UID:20,The chronology for Nubia is divided into four separate cultural periods.,scopeNote,KW

@@ -1,0 +1,4 @@
+conceptid,Preflabel,Altlabels,ParentConceptid,ConceptType,Provider 
+IDENTIFIER:1,URL,Uniform Resource Locator,IDENTIFIER_TYPE_AUTHORITY_DOCUMENT.csv,Index,DC
+IDENTIFIER:2,ISBN,International Standard Book Number,IDENTIFIER_TYPE_AUTHORITY_DOCUMENT.csv,Index,DC
+IDENTIFIER:3,ISSN,International Standard Serial Number,IDENTIFIER_TYPE_AUTHORITY_DOCUMENT.csv,Index,DC

@@ -238,8 +238,10 @@ RESOURCE_GRAPH_LOCATIONS = (
     os.path.join(PACKAGE_ROOT, 'source_data', 'resource_graphs'),
 )
 
+## the path to authority files to be loaded on install is set explicitly in ead/setup.py,
+## where the auth doc loading function is called.
 CONCEPT_SCHEME_LOCATIONS = (
-     os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
+     # os.path.normpath(os.path.join(PACKAGE_ROOT, 'source_data', 'concepts', 'authority_files')),
 )
 
 BUSISNESS_DATA_FILES = (

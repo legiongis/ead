@@ -1,4 +1,4 @@
-conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider 
-SETTING_TYPE:1,Under Lake Nasser,,SETTING_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
-SETTING_TYPE:2,Cut into Rock,,SETTING_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
-SETTING_TYPE:3,On Sand,,SETTING_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
+SETTING_TYPE:1,Under Lake Nasser,,,SETTING_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+SETTING_TYPE:2,Cut into Rock,,,SETTING_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+SETTING_TYPE:3,On Sand,,,SETTING_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP

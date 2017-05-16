@@ -1,3 +1,3 @@
-conceptid,PrefLabel,AltLabels,ParentConceptid,ConceptType,Provider 
-DESIGNATION:1,World Heritage Site,,TYPE_OF_DESIGNATION_OR_PROTECTION_AUTHORITY_DOCUMENT.csv,Index,TMP
-DESIGNATION:2,National Monument,,TYPE_OF_DESIGNATION_OR_PROTECTION_AUTHORITY_DOCUMENT.csv,Index,TMP
+conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
+DESIGNATION:1,World Heritage Site,,,TYPE_OF_DESIGNATION_OR_PROTECTION_AUTHORITY_DOCUMENT.csv,Index,TMP
+DESIGNATION:2,National Monument,,,TYPE_OF_DESIGNATION_OR_PROTECTION_AUTHORITY_DOCUMENT.csv,Index,TMP
