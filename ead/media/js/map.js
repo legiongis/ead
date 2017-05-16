@@ -359,9 +359,9 @@ require([
                                             
                                             var coords = response.features[0].geometry.geometries[0].coordinates;
                                             var lat = ConvertDDToDMS(coords[1]);
-                                            var latstring = lat['deg']+'\xB0 '+lat['min']+"' "+lat['sec']+'" '+lat['dir']
+                                            var latstring = DMSString(lat);
                                             var lon = ConvertDDToDMS(coords[0],true);
-                                            var longstring = lon['deg']+'\xB0 '+lon['min']+"' "+lon['sec']+'" '+lon['dir']
+                                            var longstring = DMSString(lon);
 
                                             var feature = geoJSON.readFeature(response.features[0]);
                                             
