@@ -153,63 +153,63 @@ def RESOURCE_TYPE_CONFIGS():
             },
             'sort_order': 2
         },
-        'ACTIVITY.E7': {
-            'resourcetypeid': 'ACTIVITY.E7',
-            'name': _('Activity'),
-            'icon_class': 'fa fa-tasks',
-            'default_page': 'activity-summary',
-            'default_description': 'No description available',
-            'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
-            'categories': [_('Resource')],
-            'has_layer': True,
-            'on_map': False,
-            'marker_color': '#6DC3FC',
-            'stroke_color': '#88bde0',
-            'fill_color': '#afcce1',
-            'primary_name_lookup': {
-                'entity_type': 'NAME.E41',
-                'lookup_value': ('NAME_TYPE.E55','Primary')
-            },
-            'sort_order': 3
-        },
-        'HISTORICAL_EVENT.E5':{
-            'resourcetypeid': 'HISTORICAL_EVENT.E5',
-            'name': _('Historic Event'),
-            'icon_class': 'fa fa-calendar',
-            'default_page': 'historical-event-summary',
-            'default_description': 'No description available',
-            'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
-            'categories': [_('Resource')],
-            'has_layer': True,
-            'on_map': False,
-            'marker_color': '#4EBF41',
-            'stroke_color': '#61a659',
-            'fill_color': '#c2d8bf',
-            'primary_name_lookup': {
-                'entity_type': 'NAME.E41',
-                'lookup_value': ('NAME_TYPE.E55','Primary')
-            },
-            'sort_order': 4
-        },
-        'ACTOR.E39': {
-            'resourcetypeid': 'ACTOR.E39',
-            'name': _('Person'),
-            'icon_class': 'fa fa-group',
-            'default_page': 'actor-summary',
-            'default_description': 'No description available',
-            'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
-            'categories': [_('Resource')],
-            'has_layer': True,
-            'on_map': False,
-            'marker_color': '#a44b0f',
-            'stroke_color': '#a7673d',
-            'fill_color': '#c8b2a3',
-            'primary_name_lookup': {
-                'entity_type': 'ACTOR_APPELLATION.E82',
-                'lookup_value': ('NAME_TYPE.E55','Primary')
-            },
-            'sort_order': 5
-        },
+        # 'ACTIVITY.E7': {
+            # 'resourcetypeid': 'ACTIVITY.E7',
+            # 'name': _('Activity'),
+            # 'icon_class': 'fa fa-tasks',
+            # 'default_page': 'activity-summary',
+            # 'default_description': 'No description available',
+            # 'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
+            # 'categories': [_('Resource')],
+            # 'has_layer': True,
+            # 'on_map': False,
+            # 'marker_color': '#6DC3FC',
+            # 'stroke_color': '#88bde0',
+            # 'fill_color': '#afcce1',
+            # 'primary_name_lookup': {
+                # 'entity_type': 'NAME.E41',
+                # 'lookup_value': ('NAME_TYPE.E55','Primary')
+            # },
+            # 'sort_order': 3
+        # },
+        # 'HISTORICAL_EVENT.E5':{
+            # 'resourcetypeid': 'HISTORICAL_EVENT.E5',
+            # 'name': _('Historic Event'),
+            # 'icon_class': 'fa fa-calendar',
+            # 'default_page': 'historical-event-summary',
+            # 'default_description': 'No description available',
+            # 'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
+            # 'categories': [_('Resource')],
+            # 'has_layer': True,
+            # 'on_map': False,
+            # 'marker_color': '#4EBF41',
+            # 'stroke_color': '#61a659',
+            # 'fill_color': '#c2d8bf',
+            # 'primary_name_lookup': {
+                # 'entity_type': 'NAME.E41',
+                # 'lookup_value': ('NAME_TYPE.E55','Primary')
+            # },
+            # 'sort_order': 4
+        # },
+        # 'ACTOR.E39': {
+            # 'resourcetypeid': 'ACTOR.E39',
+            # 'name': _('Person'),
+            # 'icon_class': 'fa fa-group',
+            # 'default_page': 'actor-summary',
+            # 'default_description': 'No description available',
+            # 'description_node': _('INSERT RESOURCE DESCRIPTION NODE HERE'),
+            # 'categories': [_('Resource')],
+            # 'has_layer': True,
+            # 'on_map': False,
+            # 'marker_color': '#a44b0f',
+            # 'stroke_color': '#a7673d',
+            # 'fill_color': '#c8b2a3',
+            # 'primary_name_lookup': {
+                # 'entity_type': 'ACTOR_APPELLATION.E82',
+                # 'lookup_value': ('NAME_TYPE.E55','Primary')
+            # },
+            # 'sort_order': 5
+        # },
         'INFORMATION_RESOURCE.E73': {
             'resourcetypeid': 'INFORMATION_RESOURCE.E73',
             'name': _('Biblography/Images/OtherDocs'),
