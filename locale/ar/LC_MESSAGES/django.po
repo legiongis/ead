@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-15 13:26+0200\n"
+"POT-Creation-Date: 2017-05-16 09:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,51 +19,51 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: .\ead\settings.py:33 .\ead\templates\header.htm:26
+#: .\ead\settings.py:30 .\ead\templates\header.htm:26
 msgid "English"
 msgstr "انجليزي"
 
-#: .\ead\settings.py:34 .\ead\templates\header.htm:27
+#: .\ead\settings.py:31 .\ead\templates\header.htm:27
 msgid "Arabic"
 msgstr "عربي"
 
-#: .\ead\settings.py:126
+#: .\ead\settings.py:120
 #, fuzzy
 msgid "Archaeological Site"
 msgstr "مدى التأكد الأثري"
 
-#: .\ead\settings.py:130 .\ead\settings.py:149 .\ead\settings.py:225
+#: .\ead\settings.py:124 .\ead\settings.py:143 .\ead\settings.py:219
 msgid "DESCRIPTION.E62"
 msgstr ""
 
-#: .\ead\settings.py:131 .\ead\settings.py:150 .\ead\settings.py:169
-#: .\ead\settings.py:188 .\ead\settings.py:207 .\ead\settings.py:226
+#: .\ead\settings.py:125 .\ead\settings.py:144 .\ead\settings.py:163
+#: .\ead\settings.py:182 .\ead\settings.py:201 .\ead\settings.py:220
 msgid "Resource"
 msgstr "مورد"
 
-#: .\ead\settings.py:145
+#: .\ead\settings.py:139
 #, fuzzy
 msgid "Archaeological Complex"
 msgstr "مدى التأكد الأثري"
 
-#: .\ead\settings.py:164
+#: .\ead\settings.py:158
 msgid "Activity"
 msgstr "نشاط"
 
-#: .\ead\settings.py:168 .\ead\settings.py:187 .\ead\settings.py:206
+#: .\ead\settings.py:162 .\ead\settings.py:181 .\ead\settings.py:200
 msgid "INSERT RESOURCE DESCRIPTION NODE HERE"
 msgstr "أدخل علامة وصف المصدر هنا"
 
-#: .\ead\settings.py:183
+#: .\ead\settings.py:177
 msgid "Historic Event"
 msgstr "حدث تاريخي"
 
-#: .\ead\settings.py:202
+#: .\ead\settings.py:196
 #, fuzzy
 msgid "Person"
 msgstr "العصر"
 
-#: .\ead\settings.py:221
+#: .\ead\settings.py:215
 msgid "Biblography/Images/OtherDocs"
 msgstr ""
 
@@ -71,7 +71,6 @@ msgstr ""
 #: .\ead\models\forms.py:317 .\ead\models\forms.py:327
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:136
 #: .\ead\templates\views\reports\ACTOR.E39.htm:136
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:136
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:136
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:136
 #: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:136
@@ -80,9 +79,8 @@ msgstr "ملخص المورد"
 
 #: .\ead\models\forms.py:124 .\ead\templates\views\reports\ACTIVITY.E7.htm:328
 #: .\ead\templates\views\reports\ACTOR.E39.htm:406
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:384
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:374
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:388
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:381
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:395
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:337
 #: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:597
 #: .\ead\templates\views\reports\sections\EXTERNAL_XREF.E42.htm:6
@@ -108,9 +106,8 @@ msgid "Descriptions"
 msgstr "الوصف"
 
 #: .\ead\models\forms.py:408
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:353
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:343
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:357
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:350
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:364
 #: .\ead\templates\views\reports\sections\MEASUREMENT_TYPE.E55.htm:6
 msgid "Measurements"
 msgstr "قياسات"
@@ -174,7 +171,6 @@ msgstr "تاريخ النشر"
 #: .\ead\models\resource.py:35
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:113
 #: .\ead\templates\views\reports\ACTOR.E39.htm:113
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:113
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:113
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:113
 #: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:113
@@ -193,6 +189,20 @@ msgstr "إدارة المورد"
 #: .\ead\models\resource.py:199
 msgid "None specified"
 msgstr "غير محدد"
+
+#: .\ead\templates\footer.htm:8
+msgid "About"
+msgstr ""
+
+#: .\ead\templates\footer.htm:10
+msgid ""
+"The EAD was created to collate images, bibliographies and site data in order "
+"to help preserve Egypt’s rich archaeological heritage."
+msgstr ""
+
+#: .\ead\templates\footer.htm:32
+msgid "The Theban Mapping Project"
+msgstr ""
 
 #: .\ead\templates\header.htm:23
 msgid "Languages"
@@ -276,8 +286,6 @@ msgstr "خط الطول، خط العرض"
 #: .\ead\templates\views\reports\ACTOR.E39.htm:90
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:51
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:90
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:51
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:90
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:51
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:90
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:51
@@ -640,6 +648,7 @@ msgid "Location Description"
 msgstr "وصف الموقع"
 
 #: .\ead\templates\views\forms\location.htm:392
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:235
 msgid "Environmental Settings"
 msgstr ""
 
@@ -741,7 +750,7 @@ msgstr "مدى التأكد الأثري"
 #: .\ead\templates\views\forms\summary.htm:108
 #: .\ead\templates\views\forms\summary.htm:119
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:248
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:255
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:262
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:248
 #: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:422
 #: .\ead\templates\views\reports\sections\designation_section.htm:60
@@ -839,8 +848,7 @@ msgstr "تعديل هذا النوع"
 
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:173
 #: .\ead\templates\views\reports\ACTOR.E39.htm:246
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:210
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:176
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:206
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:176
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:173
 msgid "Location Information"
@@ -858,8 +866,8 @@ msgstr "مهام"
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:240
 #: .\ead\templates\views\reports\ACTOR.E39.htm:302
 #: .\ead\templates\views\reports\ACTOR.E39.htm:309
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:239
 #: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:246
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:253
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:233
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:240
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:11
@@ -871,7 +879,7 @@ msgstr "لم يتم تسجيل تصنيفات"
 
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:257
 #: .\ead\templates\views\reports\ACTOR.E39.htm:335
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:282
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:289
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:266
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:92
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:70
@@ -880,8 +888,7 @@ msgstr "تواريخ (من/إلى  "
 
 #: .\ead\templates\views\reports\ACTIVITY.E7.htm:297
 #: .\ead\templates\views\reports\ACTOR.E39.htm:375
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:312
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:326
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:333
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:306
 #: .\ead\templates\views\reports\INFORMATION_RESOURCE.E73.htm:566
 msgid "Resource Descriptions"
@@ -915,15 +922,15 @@ msgstr "لم يتم تسجيل أنواع"
 
 #: .\ead\templates\views\reports\ACTOR.E39.htm:280
 #: .\ead\templates\views\reports\ACTOR.E39.htm:297
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:217
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:234
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:224
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:241
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:6
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:6
 msgid "Classification"
 msgstr "تصنيف"
 
 #: .\ead\templates\views\reports\ACTOR.E39.htm:326
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:273
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:280
 #: .\ead\templates\views\reports\HISTORICAL_EVENT.E5.htm:257
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:48
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:48
@@ -940,37 +947,28 @@ msgstr "مدى التأكد الأثري"
 msgid "Archaeological Site Summary"
 msgstr "مدى التأكد الأثري"
 
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:179
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:175
 #, fuzzy
 msgid "Site Descriptions"
 msgstr "الوصف"
 
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:238
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:199
-msgid "Settings"
-msgstr "الوضعيات"
-
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:242
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:203
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:239
 msgid "No settings recorded"
 msgstr "لم يتم تسجيل وضعيات"
 
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:290
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:251
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:287
 msgid "Classification/Components"
 msgstr "تصنيف/ مكونات"
 
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:313
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:274
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:310
 msgid "Modifications"
 msgstr "تعديلات"
 
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:318
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18_OLD_9_4.htm:279
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE.E18.htm:315
 msgid "No modifications recorded"
 msgstr "لم يتم تسجيل تعديلات"
 
-#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:264
+#: .\ead\templates\views\reports\HERITAGE_RESOURCE_GROUP.E27.htm:271
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment.htm:37
 #: .\ead\templates\views\reports\sections\heritage_resource_phase_type_assignment_old_9_4.htm:37
 msgid "Use"
@@ -1385,6 +1383,9 @@ msgstr "أشخاص/ مؤسسات ذوي صلة"
 #, fuzzy
 msgid "Documents"
 msgstr "مكونات"
+
+#~ msgid "Settings"
+#~ msgstr "الوضعيات"
 
 #~ msgid "Streets"
 #~ msgstr "شوارع"

@@ -1,0 +1,25 @@
+Strings in the website, "Home" or "Search" or the site description in the footer, for example, are translated manually and these translations are used when the user switches the language in the top bar of the site.
+
+Here's how the process works:
+
+0) First, make sure that everything you want to have translated in your app has been properly marked for translation. In .py files this looks like _("translate this string") and in the html templates it looks like {% trans "translate this string" %}. If text is not marked like this, it will be ignored in all of the coming steps.
+
+Longer strings may be trickier to handle in templates. There is another template tag that can be used {% blocktrans %}{% endblocktrans %} for more complicated strings. Trying out different methods of translation may be necessary. Here is the full Django documentation: https://docs.djangoproject.com/en/1.11/topics/i18n/translation/. (Arches v3 uses and earlier version of Django than these docs are for, but all translation content should be applicable.)
+
+1) make messages
+in the command line, with the virtual environment activated, run
+python manage.py makemessages -l ar -e htm
+Django will look through all of the python files and all of the html templates in the app and find any string that has been marked for translation. 
+
+For Arches, we have to add the -e htm argument to tell Django to look inside of .htm files (by default it will look for .html files and won't find any). -l ar indicates that we are making Arabic translations.
+
+The result of this command is a file called django.po in ead/locale/ar/LC_MESSAGES. This file lists all of the invidual strings with their accompanying Arabic translations. If no translation has been provided yet, there will just be a "" for a given entry. Note that some may be marked "fuzzy". This means Django had some concern about the string, and needs you to look into it further. Once it's good, remove the "fuzzy" tag to use the string.
+
+To add more translations, you can 1) edit the django.po file directly in a text editor like notepad++ or 2) in a browser go to localhost:8000/rosetta. This is a django plugin that provides a web interface to facilitate the addition of new translations. Edits made in rosetta will be directly reflected in the django.po file.
+
+2) compile messages
+in the command line, with the virtual environment activated, run
+python manage.py compilemessages
+For Django to use the translations you have created, they must be compiled. Running the command above will create (or re-create) a file called django.mo, alongside the existing django.po file. You must stop and start the webserver for the newly compiled messages to be used.
+
+That's it!
