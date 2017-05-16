@@ -32,7 +32,8 @@
                                 {% else %}
                                     {% trans "none defined" %}
                                 {% endif %}&nbsp;
-
+								
+								<!-- 'Use" not used in EAD May 2017-->
                                 <!--<span class="arches-report-subsection-item-type">
                                     {% trans "Use" %}:
                                 </span>
@@ -45,7 +46,7 @@
                                 {% endif %}&nbsp;-->
 
                                 <span class="arches-report-subsection-item-type">
-                                    {% trans "Period" %}:
+                                    {% trans " Cultural Period" %}:
                                 </span>
                                 {% if 'CULTURAL_PERIOD_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
                                     {% for CULTURAL_PERIOD_E55 in PHASE_TYPE_ASSIGNMENT_E17.CULTURAL_PERIOD_E55 %}
@@ -55,12 +56,13 @@
                                     {% trans "none defined" %}
                                 {% endif %}&nbsp;
 
+								<!-- Dynasty and Ruler values added for EAD --> 
                                  <span class="arches-report-subsection-item-type">
                                     {% trans "Dynasty" %}:
                                 </span>
-                                {% if 'DYNASTY.E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for DYNASTY.E55 in PHASE_TYPE_ASSIGNMENT_E17.DYNASTY.E55 %}
-                                        {{DYNASTY.E55.DYNASTY.E55__value}}
+                                {% if 'DYNASTY_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
+                                    {% for DYNASTY_E55 in PHASE_TYPE_ASSIGNMENT_E17.DYNASTY_E55 %}
+                                        {{DYNASTY_E55.DYNASTY_E55__value}}
                                     {% endfor %}  
                                 {% else %}
                                     {% trans "none defined" %}
@@ -69,14 +71,15 @@
                                 <span class="arches-report-subsection-item-type">
                                     {% trans "Ruler" %}:
                                 </span>
-                                {% if 'RULER.E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for RULER.E55 in PHASE_TYPE_ASSIGNMENT_E17.RULER.E55 %}
-                                        {{RULER.E55.RULER.E55__value}}
+                                {% if 'RULER_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
+                                    {% for RULER_E55 in PHASE_TYPE_ASSIGNMENT_E17.RULER_E55 %}
+                                        {{RULER_E55.RULER_E55__value}}
                                     {% endfor %}  
                                 {% else %}
                                     {% trans "none defined" %}
                                 {% endif %}&nbsp;
 
+								<!-- Style, dates and ancillary feature not used EAD May 2017-->     
                                 <!--<span class="arches-report-subsection-item-type">
                                     {% trans "Style" %}:
                                 </span>
