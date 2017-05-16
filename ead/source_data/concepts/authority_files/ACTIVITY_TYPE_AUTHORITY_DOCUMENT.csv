@@ -1,5 +1,5 @@
 conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
-ACTIVITY_TYPE:25,Investigation,????,,ACTIVITY_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
+ACTIVITY_TYPE:25,Investigation,,,ACTIVITY_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
 ACTIVITY_TYPE:1,archaeological intervention,,,ACTIVITY_TYPE:25,Index,GCI
 ACTIVITY_TYPE:2,archaeological survey,,,ACTIVITY_TYPE:25,Index,GCI
 ACTIVITY_TYPE:3,excavation,,,ACTIVITY_TYPE:25,Index,GCI

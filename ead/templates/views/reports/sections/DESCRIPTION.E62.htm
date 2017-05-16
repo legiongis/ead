@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-xs-12">
         <dl>
-
+            {% if LANGUAGE_CODE == 'en' %}
             {% if 'DESCRIPTION_E62' not in report_info.source.graph %}
                 <dd class="arches-report-subsection-item">
                     {% trans "No descriptions recorded" %}
@@ -22,6 +22,29 @@
 
                     </dd>
                 {% endfor %}            
+            {% endif %}
+            {% endif %}
+            {% if LANGUAGE_CODE == 'ar' %}
+            {% if 'ARABIC_DESCRIPTION_E62' not in report_info.source.graph %}
+                <dd class="arches-report-subsection-item">
+                    {% trans "No descriptions recorded" %}
+                </dd>
+            {% else %}
+                {% for ARABIC_DESCRIPTION_E62 in report_info.source.graph.ARABIC_DESCRIPTION_E62 %}
+                    <dt>
+                        <h5 id="" class="arches-report-subsection-title">{{ARABIC_DESCRIPTION_E62.ARABIC_DESCRIPTION_TYPE_E55__value}}</h5>
+                    </dt>
+                    <dd class="arches-report-subsection-item arches-report-spacer">
+                        {% if report_info.source.graph.ARABIC_DESCRIPTION_E62|length == 1 or report_info.source.graph.ARABIC_DESCRIPTION_E62.last %}
+                            {{ ARABIC_DESCRIPTION_E62.ARABIC_DESCRIPTION_E62__value |safe }}
+                        {% else %}
+                            {{ ARABIC_DESCRIPTION_E62.ARABIC_DESCRIPTION_E62__value |safe }}
+                            <br></br>
+                        {% endif %}
+
+                    </dd>
+                {% endfor %}            
+            {% endif %}
             {% endif %}
 
         </dl>

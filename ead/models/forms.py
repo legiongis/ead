@@ -382,6 +382,8 @@ class DescriptionForm(ResourceForm):
 
     def update(self, data, files):
         self.update_nodes('DESCRIPTION.E62', data)
+        if self.resource.entitytypeid in ['HERITAGE_RESOURCE.E18','HERITAGE_RESOURCE_GROUP.E27']:
+            self.update_nodes('ARABIC_DESCRIPTION.E62', data)
 
     def load(self, lang):
         description_types = Concept().get_e55_domain('DESCRIPTION_TYPE.E55')
@@ -395,6 +397,16 @@ class DescriptionForm(ResourceForm):
                         'DESCRIPTION_TYPE.E55': default_description_type['id'],
                     }
                 }
+                if self.resource.entitytypeid in ['HERITAGE_RESOURCE.E18','HERITAGE_RESOURCE_GROUP.E27']:
+                    description_types = Concept().get_e55_domain('ARABIC_DESCRIPTION_TYPE.E55')
+                    self.data['ARABIC_DESCRIPTION.E62'] = {
+                        'branch_lists': self.get_nodes('ARABIC_DESCRIPTION.E62'),
+                        'domains': {'ARABIC_DESCRIPTION_TYPE.E55' : description_types},
+                        'defaults': {
+                            'ARABIC_DESCRIPTION_TYPE.E55': default_description_type['id'],
+                        }
+                    }
+                
         except IndexError:
             pass
 
