@@ -1,0 +1,14 @@
+To support the loading of Arabic language prefLabels in authority files, a new column called "ArLabel" has been add to all authority documents. This column should be filled out with Arabic labels where possible. During the load_authority_documents method that is run on install, a new conditional statement will add these labels as prefLabels with language = 'ar' (Arabic). Then, while viewing the site in Arabic, these Arabic prefLabels will show up in the reports.
+
+MS Excel doesn't handle the utf-8 encoding needed to support these labels very well. To edit the authority files and add Arabic labels in the new column, you must use Apache OpenOffice Calc (a free/open source spreadsheet application very similar to excel).
+
+1) open the authority file csv
+   -- open OpenOffice, and open the csv file. you will be prompted to enter some settings for how Open Office should read the file.
+   -- set the Character Set to "Unicode (UTF-8)"
+   -- set (or leave) language as Default - English (USA)
+   -- in separator options, choose "comma" as the only separator
+   -- the data preview at the bottom of the window should look good, with columns properly split
+   -- click OK
+2) copy/paste or type all new arabic labels into the ArLabel column
+3) save the authority file
+   -- if prompted, choose to "Keep current format"
