@@ -350,14 +350,27 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     </div>
                     <!-- End Project Information -->
                     
-                </div>   
+                </div>
+                <div class="">
+                    <i class="center-icon rounded-x fa fa-folder-open"></i>
+                    <div class="">
+                        <h2 class="arches-report-section-header">{% trans "Related Resources" %}</h2>
+                    </div> 
+                </div>
+                <div class="row">
+                    <!-- Resource Summary Info -->
+                    <div class="col-xs-12">
+                        <div class="col-xs-12 right-inner arches-box-grey-border">
+                            {% include "views/reports/sections/related_resource_section.htm" %}
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
             <!-- End Project Summary -->
         </div>
     </div>
     <!-- End Resource Description Section -->
-
-    {% include "views/reports/sections/related_resource_section.htm" %}
 
     {% include 'footer.htm' %}
 

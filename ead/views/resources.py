@@ -17,6 +17,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 
 import re
+import os
+import json
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.conf import settings
@@ -32,7 +34,6 @@ from arches.app.search.elasticsearch_dsl_builder import Query, Terms, Bool, Matc
 
 
 def report(request, resourceid):
-    print "IEEEEEEEEEEEEVNVVNVN"
     lang = request.GET.get('lang', request.LANGUAGE_CODE)
     se = SearchEngineFactory().create()
     report_info = se.search(index='resource', id=resourceid)
@@ -161,12 +162,33 @@ def report(request, resourceid):
             entitytypeidkey = '%s_%s' % (entitytypeidkey, information_resource_type)
         related_resource_dict[entitytypeidkey].append(related_resource)
 
+    # set boolean to trigger display of related resource graph
+    related_resource_flag = False
+    for k,v in related_resource_dict.iteritems():
+        if len(v) > 0:
+            related_resource_flag = True
+            break
+            
+    if settings.DEBUG:
+        related_dict_log_path = os.path.join(settings.PACKAGE_ROOT,'logs','current_related_resource_dict.log')
+        with open(related_dict_log_path,"w") as log:
+            print >> log, json.dumps(related_resource_dict, sort_keys=True,indent=2, separators=(',', ': '))
+            
+        related_info_log_path = os.path.join(settings.PACKAGE_ROOT,'logs','current_related_resource_info.log')
+        with open(related_info_log_path,"w") as log:
+            print >> log, json.dumps(related_resource_info, sort_keys=True,indent=2, separators=(',', ': '))
+            
+        graph_log_path = os.path.join(settings.PACKAGE_ROOT,'logs','current_graph.json')
+        with open(graph_log_path,"w") as log:
+            print >> log, json.dumps(report_info['source']['graph'], sort_keys=True,indent=2, separators=(',', ': '))
+        
     return render_to_response('resource-report.htm', {
             'geometry': JSONSerializer().serialize(report_info['source']['geometry']),
             'resourceid': resourceid,
             'report_template': 'views/reports/' + report_info['type'] + '.htm',
             'report_info': report_info,
             'related_resource_dict': related_resource_dict,
+            'related_resource_flag': related_resource_flag,
             'main_script': 'resource-report',
             'active_page': 'ResourceReport'
         },
