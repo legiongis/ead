@@ -1,25 +1,25 @@
 conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
-PERIOD_UID:1,Predynastic,,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
+PERIOD_UID:1,Predynastic,عصر ماقبل الاسرات,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
 PERIOD_UID:2,Palaeolithic/Epi Palaeolithic,,,PERIOD_UID:1,Index,TMP
 PERIOD_UID:3,Neolithic/Chalcolithic,,,PERIOD_UID:1,Index,TMP
 PERIOD_UID:4,Proto-Dynastic,,,PERIOD_UID:1,Index,TMP
-PERIOD_UID:5,Dynastic Period,,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
-PERIOD_UID:6,Early Dynastic Period,,,PERIOD_UID:5,Index,BM
-PERIOD_UID:7,Old Kingdom,,,PERIOD_UID:5,Index,Shaw
-PERIOD_UID:8,First Intermediate Period,,,PERIOD_UID:5,Index,Shaw
-PERIOD_UID:9,Middle Kingdom,,,PERIOD_UID:5,Index,Shaw
-PERIOD_UID:10,Second Intermediate Period,,,PERIOD_UID:5,Index,BM
-PERIOD_UID:11,New Kingdom,,,PERIOD_UID:5,Index,BM
-PERIOD_UID:12,Third Intermediate Period,,,PERIOD_UID:5,Index,BM
-PERIOD_UID:13,Late Period,,,PERIOD_UID:5,Index,BM
+PERIOD_UID:5,Dynastic Period,عصر الاسرات,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
+PERIOD_UID:6,Early Dynastic Period,عصر الاسرات المبكر,,PERIOD_UID:5,Index,BM
+PERIOD_UID:7,Old Kingdom,الدولة القديمة,,PERIOD_UID:5,Index,Shaw
+PERIOD_UID:8,First Intermediate Period,عصر الانتقال(الاضمحلال)الاول,,PERIOD_UID:5,Index,Shaw
+PERIOD_UID:9,Middle Kingdom,الدولة الوسطي,,PERIOD_UID:5,Index,Shaw
+PERIOD_UID:10,Second Intermediate Period,عصر الانتقال(الاضمحلال)الثاني,,PERIOD_UID:5,Index,BM
+PERIOD_UID:11,New Kingdom,الدولة الحديثة,,PERIOD_UID:5,Index,BM
+PERIOD_UID:12,Third Intermediate Period,عصر الانتقال(الاضمحلال)الثالث,,PERIOD_UID:5,Index,BM
+PERIOD_UID:13,Late Period,العصور المتأخرة,,PERIOD_UID:5,Index,BM
 PERIOD_UID:14,Late Antiquity,,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
 PERIOD_UID:15,Ptolemaic,,,PERIOD_UID:14,Index,BM
-PERIOD_UID:16,Roman,,,PERIOD_UID:14,Index,BM
+PERIOD_UID:16,Roman,العصر الروماني,,PERIOD_UID:14,Index,BM
 PERIOD_UID:17,Byzantine Period/Coptic,,,PERIOD_UID:14,Index,BM
-PERIOD_UID:18,Modern/Islamic,,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
-PERIOD_UID:19,Unknown,,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
+PERIOD_UID:18,Modern/Islamic,العصر الاسلامي الحديث,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
+PERIOD_UID:19,Unknown,غير معرف,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Index,TMP
 PERIOD_UID:20,Nubian Periods,,,CULTURAL_PERIOD_AUTHORITY_DOCUMENT.csv,Collector,TMP
-PERIOD_UID:21,A-Group ,,,PERIOD_UID:20,Index,TMP
+PERIOD_UID:21,A-Group ,الدولة الحديثة,,PERIOD_UID:20,Index,TMP
 PERIOD_UID:22,C-Group ,,,PERIOD_UID:20,Index,TMP
 PERIOD_UID:23,X-Group ,,,PERIOD_UID:20,Index,TMP
-PERIOD_UID:24,Meroitic Period ,,,PERIOD_UID:20,Index,TMP
+PERIOD_UID:24,Meroitic Period ,العصر المروي,,PERIOD_UID:20,Index,TMP
