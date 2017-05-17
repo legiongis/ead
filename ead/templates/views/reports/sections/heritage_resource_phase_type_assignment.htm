@@ -18,12 +18,15 @@
                             {% trans "No classifications recorded" %}
                         </dd>
                     {% else %}
-
+                        <!-- for listing multiple values, need separate section for Arabic that does it right to left -->
+                        <!-- show this section for left to right -->
+                        {% get_current_language_bidi as LANGUAGE_BIDI %}
+                        {# if not LANGUAGE_BIDI #}
                         {% for PHASE_TYPE_ASSIGNMENT_E17 in PRODUCTION_E12.PHASE_TYPE_ASSIGNMENT_E17 %}
                             <dd class="arches-report-subsection-item arches-report-spacer">
                                 
                                 <span class="arches-report-subsection-item-type">
-                                    {% trans "Type" %}:
+                                    {% trans "Type" %}&#8203;d
                                 </span>
                                 {% if 'HERITAGE_RESOURCE_TYPE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
                                     {% for HERITAGE_RESOURCE_TYPE_E55 in PHASE_TYPE_ASSIGNMENT_E17.HERITAGE_RESOURCE_TYPE_E55 %}
@@ -32,94 +35,85 @@
                                 {% else %}
                                     {% trans "none defined" %}
                                 {% endif %}&nbsp;
-								
-								<!-- 'Use" not used in EAD May 2017-->
-                                <!--<span class="arches-report-subsection-item-type">
-                                    {% trans "Use" %}:
-                                </span>
-                                {% if 'HERITAGE_RESOURCE_USE_TYPE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for HERITAGE_RESOURCE_USE_TYPE_E55 in PHASE_TYPE_ASSIGNMENT_E17.HERITAGE_RESOURCE_USE_TYPE_E55 %}
-                                        {{HERITAGE_RESOURCE_USE_TYPE_E55.HERITAGE_RESOURCE_USE_TYPE_E55__value}}
-                                    {% endfor %}
-                                {% else %}
-                                    {% trans "none defined" %}
-                                {% endif %}&nbsp;-->
 
                                 <span class="arches-report-subsection-item-type">
-                                    {% trans " Cultural Period" %}:
+                                    {% trans "Cultural Period" %}
                                 </span>
                                 {% if 'CULTURAL_PERIOD_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for CULTURAL_PERIOD_E55 in PHASE_TYPE_ASSIGNMENT_E17.CULTURAL_PERIOD_E55 %}
-                                        {{CULTURAL_PERIOD_E55.CULTURAL_PERIOD_E55__value}}
+                                    {% for item in PHASE_TYPE_ASSIGNMENT_E17.CULTURAL_PERIOD_E55 %}
+                                        {{item.CULTURAL_PERIOD_E55__value}}
+                                        <span class="arches-report-subsection-item-type">
+                                            {% trans "Dynasty" %}
+                                        </span>
+                                        {% if item.DYNASTY_E55__value %}
+                                            {{item.DYNASTY_E55__value}}
+                                        {% else %}
+                                            {% trans "none defined" %}
+                                        {% endif %}
+                                        <span class="arches-report-subsection-item-type">
+                                            {% trans "Ruler" %}
+                                        </span>
+                                        {% if item.RULER_E55__value %}
+                                            {{item.RULER_E55__value}}
+                                        {% else %}
+                                            {% trans "none defined" %}
+                                        {% endif %}
                                     {% endfor %}  
                                 {% else %}
                                     {% trans "none defined" %}
                                 {% endif %}&nbsp;
-
-								<!-- Dynasty and Ruler values added for EAD --> 
-                                 <span class="arches-report-subsection-item-type">
-                                    {% trans "Dynasty" %}:
-                                </span>
-                                {% if 'DYNASTY_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for DYNASTY_E55 in PHASE_TYPE_ASSIGNMENT_E17.DYNASTY_E55 %}
-                                        {{DYNASTY_E55.DYNASTY_E55__value}}
-                                    {% endfor %}  
-                                {% else %}
-                                    {% trans "none defined" %}
-                                {% endif %}&nbsp;
-
-                                <span class="arches-report-subsection-item-type">
-                                    {% trans "Ruler" %}:
-                                </span>
-                                {% if 'RULER_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for RULER_E55 in PHASE_TYPE_ASSIGNMENT_E17.RULER_E55 %}
-                                        {{RULER_E55.RULER_E55__value}}
-                                    {% endfor %}  
-                                {% else %}
-                                    {% trans "none defined" %}
-                                {% endif %}&nbsp;
-
-								<!-- Style, dates and ancillary feature not used EAD May 2017-->     
-                                <!--<span class="arches-report-subsection-item-type">
-                                    {% trans "Style" %}:
-                                </span>
-                                {% if 'STYLE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for STYLE_E55 in PHASE_TYPE_ASSIGNMENT_E17.STYLE_E55 %}
-                                        {{STYLE_E55.STYLE_E55__value}}
-                                    {% endfor %}  
-                                {% else %}
-                                    {% trans "none defined" %}
-                                {% endif %}&nbsp;
-
-                                <span class="arches-report-subsection-item-type">
-                                    {% trans "Dates (from/to)" %}:
-                                </span>
-                                {% if 'TIME___SPAN_PHASE_E52' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for TIME___SPAN_PHASE_E52 in PHASE_TYPE_ASSIGNMENT_E17.TIME___SPAN_PHASE_E52 %}
-                                        {% for FROM_DATE_E49 in TIME___SPAN_PHASE_E52.FROM_DATE_E49 %}
-                                            {{FROM_DATE_E49.FROM_DATE_E49__value}}
-                                        {% endfor %} -
-                                        {% for TO_DATE_E49 in TIME___SPAN_PHASE_E52.TO_DATE_E49 %}
-                                            {{TO_DATE_E49.TO_DATE_E49__value}}
-                                        {% endfor %} 
-                                    {% endfor %} 
-                                {% else %}
-                                    {% trans "none defined" %}
-                                {% endif %}&nbsp;
-
-                                <span class="arches-report-subsection-item-type">
-                                    {% trans "Related Features" %}:
-                                </span>
-                                {% if 'ANCILLARY_FEATURE_TYPE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                    {% for ANCILLARY_FEATURE_TYPE_E55 in PHASE_TYPE_ASSIGNMENT_E17.ANCILLARY_FEATURE_TYPE_E55 %}
-                                        {{ANCILLARY_FEATURE_TYPE_E55.ANCILLARY_FEATURE_TYPE_E55__value}}
-                                    {% endfor %}  
-                                {% else %}
-                                    {% trans "none defined" %}                             
-                                {% endif %}-->
 
                             </dd>
                         {% endfor %}
+                        {# else #}
+                        <!-- show this section for Arabic -->
+                        {% trans "Cultural Period" as cultural_period %}
+                        {% trans "Ruler" as ruler %}
+                        {% trans "Dynasty" as dynasty %}
+                        {% trans "Type" as type %}
+                        {% trans "none defined" as none %}
+                        {% for phase in PRODUCTION_E12.PHASE_TYPE_ASSIGNMENT_E17 %}
+                            <dd class="arches-report-subsection-item arches-report-spacer">
+                                {% if 'CULTURAL_PERIOD_E55' in phase %}
+                                    {% if phase.CULTURAL_PERIOD_E55.0.RULER_E55__value %}
+                                        {{phase.CULTURAL_PERIOD_E55.0.RULER_E55__value}}
+                                    {% else %}
+                                        {{ none }}
+                                    {% endif %}
+                                    <span class="arches-report-subsection-item-type">
+                                        {{ ruler }}
+                                    </span>
+                                    {% if phase.CULTURAL_PERIOD_E55.0.DYNASTY_E55__value %}
+                                        {{phase.CULTURAL_PERIOD_E55.0.DYNASTY_E55__value}}
+                                    {% else %}
+                                        {{ none }}
+                                    {% endif %}
+                                    <span class="arches-report-subsection-item-type">
+                                        {{ dynasty }}
+                                    </span>
+                                {% endif %}
+                                <div style="display:inline;background-color:azure">
+                                    {% if 'CULTURAL_PERIOD_E55' in phase %}
+                                        {{phase.CULTURAL_PERIOD_E55.0.CULTURAL_PERIOD_E55__value}}
+                                    {% else %}
+                                        {{ none }}
+                                    {% endif %}
+                                </div>
+                                <div style="display:inline;background-color:blue">
+                                {{ phase.HERITAGE_RESOURCE_TYPE_E55.0.HERITAGE_RESOURCE_TYPE_E55__value}}{% trans "Cultural Period" %}d
+                                </div>
+                                <div style="display:inline;background-color:orange">
+                                    <span class="arches-report-subsection-item-type">{% trans "Cultural Period" %}</span>
+                                </div>
+                                
+                                
+                                <div style="display:inline;background-color:red">
+                                    <span class="arches-report-subsection-item-type">{% trans "Type" %}</span>
+                                </div>
+
+                            </dd>
+                        {% endfor %}
+                        {# endif #}
 
                     {% endif %}   
 

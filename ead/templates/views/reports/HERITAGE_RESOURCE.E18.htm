@@ -24,9 +24,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 <!-- End Fixed Nav for Report -->
 <div id="report-body" class="report-body">
     
-     {% if geometry != 'null' %}
+    <div id="report-body-content">
+    <div class="report-title" style="visibility:hidden;height:0px;">
+        <h1 class="pull-left arches-breadcrumb-title"><i class="fa {{icon_class}}"></i>{{ report_info.source.primaryname }}<small style="padding-left: 8px;">{{resource_type_name}}</small></h1>
+    </div>
+    {% if geometry != 'null' %}
         <!--=== Map Block ===-->
-        <div id="map-container">
+        <div id="map-container" style="margin-top:-60px">
 
             <div id="map" class="map map-report-panel" style="display: block;">
                 <div id="olmap" class="fill"></div>
@@ -108,14 +112,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Section Header -->
                 <div class="">
-                    <i class="center-icon rounded-x fa fa-folder-open"></i>
-                    <div class="">
-                        <h2 class="arches-report-section-header">{% trans "Archaeological Site Description" %}</h2>
-                    </div> 
+                    <h2 class="arches-report-section-header" style="{% if geometry == 'null' %}text-align:start;{% endif %}">{% trans "Archaeological Site Description" %}</h2>
                 </div>
 
                 <!-- Anchor for in=page navigation from "report options" menu -->
-                <a href="overview" id="overview" style="top: 250px;"></a>
+                
 
 
                 <!-- Resource Description Content -->
@@ -299,37 +300,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                         <!-- Classification -->
                                         {% include "views/reports/sections/heritage_resource_phase_type_assignment.htm" %}
 
-                                        <!-- Components -->
-                                        <!--{% include "views/reports/sections/COMPONENT.E18.htm" %} -->
-
-                                        <!-- Modifications -->
-                                       <!-- <div class="row">
-                                            <div class="col-xs-12">
-                                                <dl>
-                                                    <dt>
-                                                        <h5 id="" class="arches-report-subsection-title">{% trans "Modifications" %}</h5>
-                                                    </dt>
-
-                                                    {% if 'MODIFICATION_EVENT_E11' not in report_info.source.graph %}
-                                                        <dd class="arches-report-subsection-item">
-                                                            {% trans "No modifications recorded" %}
-                                                        </dd>
-                                                    {% else %}
-                                                        {% for MODIFICATION_EVENT_E11 in report_info.source.graph.MODIFICATION_EVENT_E11 %}
-                                                            <dd class="arches-report-subsection-item arches-report-spacer">
-                                                                <span class="arches-report-subsection-item-type">{{ MODIFICATION_EVENT_E11.MODIFICATION_TYPE_E55.0.MODIFICATION_TYPE_E55__value }}:</span>
-                                                                {{ MODIFICATION_EVENT_E11.MODIFICATION_DESCRIPTION_E62.0.MODIFICATION_DESCRIPTION_E62__value }}
-                                                            </dd>
-                                                        {% endfor %}            
-                                                    {% endif %}
-
-                                                </dl>
-
-                                            </div>
-                                        </div> -->
-
-
-                                    </div>
+                                        </div>
                                 </div>
                                 <!-- End Section Content-->
 
@@ -407,7 +378,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div class="hidden-sm hidden-md hidden-lg margin-bottom-20"></div>
                 </div>
                 <div class="">
-                    <i class="center-icon rounded-x fa fa-folder-open"></i>
                     <div class="">
                         <h2 class="arches-report-section-header">{% trans "Related Resources" %}</h2>
                     </div> 
@@ -440,9 +410,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     {% if 'RIGHT_E30' in report_info.source.graph %}
         {% include 'views/reports/sections/designation_section.htm' %}
     {% endif %}
+    
+    </div>
 
     {% include 'footer.htm' %}
 
     {% include 'copyright.htm' %}
-
 </div>
+
