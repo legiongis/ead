@@ -6,25 +6,13 @@
                 <h5 id="" class="arches-report-subsection-title">{% trans "Location Coordinates" %}</h5>
             </dt>
 
+            {% if geometry == 'null' %}
             <dd class="arches-report-subsection-item empty-message" style="display:none;">
                 {% trans "No coordinates recorded" %}
             </dd>
-
-            {% if 'PLACE_E53' in report_info.source.graph %}
-                {% for PLACE_E53 in report_info.source.graph.PLACE_E53 %}
-                    {% if 'SPATIAL_COORDINATES_GEOMETRY.E47' in PLACE_E53 %}
-                        {% for SPATIAL_COORDINATES_GEOMETRY.E47 in PLACE_E53.SPATIAL_COORDINATES_GEOMETRY.E47 %}
-                            <dd class="arches-report-subsection-item report-list-item">
-                                {{SPATIAL_COORDINATES_GEOMETRY.E47.SPATIAL_COORDINATES_GEOMETRY.E47__value}}
-                                <span class="arches-report-subsection-item-type">
-                                    ({{SPATIAL_COORDINATES_GEOMETRY.E47.SPATIAL_COORDINATES_GEOMETRY.E47__value}})
-                                </span>
-                            </dd>
-                        {% endfor %}                      
-                    {% endif %}
-                {% endfor %}             
+            {% else %}
+            <dd id="dms-coords-section" class="arches-report-subsection-item"></dd>
             {% endif %}
-
         </dl>
     </div>
 </div>
