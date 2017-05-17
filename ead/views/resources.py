@@ -185,6 +185,8 @@ def report(request, resourceid):
     return render_to_response('resource-report.htm', {
             'geometry': JSONSerializer().serialize(report_info['source']['geometry']),
             'resourceid': resourceid,
+            'resource_type_name': settings.RESOURCE_TYPE_CONFIGS()[report_info['type']]['name'],
+            'icon_class': settings.RESOURCE_TYPE_CONFIGS()[report_info['type']]['icon_class'],
             'report_template': 'views/reports/' + report_info['type'] + '.htm',
             'report_info': report_info,
             'related_resource_dict': related_resource_dict,
