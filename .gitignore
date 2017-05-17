@@ -3,6 +3,9 @@ ead/elasticsearch
 ead/logs
 ead/uploadedfiles
 
+# apache open office lock files
+.~lock.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
