@@ -140,7 +140,7 @@ class Resource(ArchesResource):
             if lookup:
                 name_type_nodes = name.find_entities_by_type_id(lookup[0])
                 if len(name_type_nodes) == 0:
-                    break
+                    continue
                 if name.find_entities_by_type_id(lookup[0])[0].label == lookup[1]:
                     displayname = name.label
             else:
