@@ -628,7 +628,7 @@ class Concept(object):
 
         sql = """
         WITH RECURSIVE children AS (
-            SELECT d.conceptidfrom, d.conceptidto, c2.value, c2.valueid as valueid, c.value as valueto, c.valueid as valueidto, c.valuetype as vtype, 1 AS depth, array[d.conceptidto] AS conceptpath, array[c.valueid] AS idpath        ---|NonRecursive Part
+            SELECT d.conceptidfrom, d.conceptidto, c2.value, c.languageid, c2.valueid as valueid, c.value as valueto, c.valueid as valueidto, c.valuetype as vtype, 1 AS depth, array[d.conceptidto] AS conceptpath, array[c.valueid] AS idpath        ---|NonRecursive Part
                 FROM concepts.relations d
                 JOIN concepts.values c ON(c.conceptid = d.conceptidto) 
                 JOIN concepts.values c2 ON(c2.conceptid = d.conceptidfrom) 
@@ -637,7 +637,7 @@ class Concept(object):
                 and c.valuetype in ('prefLabel', 'sortorder', 'collector')
                 and (d.relationtype = 'member' or d.relationtype = 'hasTopConcept')
                 UNION
-                SELECT d.conceptidfrom, d.conceptidto, v2.value, v2.valueid as valueid, v.value as valueto, v.valueid as valueidto, v.valuetype as vtype, depth+1, (conceptpath || d.conceptidto), (idpath || v.valueid)   ---|RecursivePart
+                SELECT d.conceptidfrom, d.conceptidto, v2.value, v.languageid, v2.valueid as valueid, v.value as valueto, v.valueid as valueidto, v.valuetype as vtype, depth+1, (conceptpath || d.conceptidto), (idpath || v.valueid)   ---|RecursivePart
                 FROM concepts.relations  d
                 JOIN children b ON(b.conceptidto = d.conceptidfrom) 
                 JOIN concepts.values v ON(v.conceptid = d.conceptidto) 
@@ -645,11 +645,11 @@ class Concept(object):
                 WHERE  v2.valuetype = 'prefLabel'
                 and v.valuetype in ('prefLabel','sortorder', 'collector')
                 and (d.relationtype = 'member' or d.relationtype = 'hasTopConcept')
-            ) SELECT conceptidfrom, conceptidto, value, valueid, valueto, valueidto, depth, idpath, conceptpath, vtype FROM children ORDER BY depth, conceptpath;
+            ) SELECT conceptidfrom, conceptidto, value, languageid, valueid, valueto, valueidto, depth, idpath, conceptpath, vtype FROM children ORDER BY depth, conceptpath;
         """.format(entitytype.conceptid_id)
 
 
-        column_names = ['conceptidfrom', 'conceptidto', 'value', 'valueid', 'valueto', 'valueidto', 'depth', 'idpath', 'conceptpath', 'vtype']
+        column_names = ['conceptidfrom', 'conceptidto', 'value', 'languageid', 'valueid', 'valueto', 'valueidto', 'depth', 'idpath', 'conceptpath', 'vtype']
         cursor.execute(sql)
         rows = cursor.fetchall()
 
@@ -695,9 +695,15 @@ class Concept(object):
 
         for row in rows:
             rec = dict(zip(column_names, row))
+            
+            ## skip this row if it's an Arabic label. Forcing all dropdowns to English
+            ## must test positive for 'ar' instead of != 'en-US' (or settings.LANGUAGE_CODE)
+            ## in order to retain sortorder (which are recs with no language)
+            if str(rec['languageid']) == 'ar':
+                continue
+                
             path = rec['conceptpath'][1:-1].split(',')
             _findNarrower(result, path, rec)
-
         return JSONSerializer().serializeToPython(result)['children']
 
     @staticmethod
