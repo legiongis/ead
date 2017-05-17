@@ -6,7 +6,8 @@ require([
     'views/map',
     'openlayers', 
     'knockout',
-    'utils'
+    'utils',
+    'map/map-tools'
 ], function($, _, arches, bootstrap, MapView, ol, ko, utils) {
     var ReportView = Backbone.View.extend({
 
@@ -89,6 +90,15 @@ require([
                 window.print();
             });
             
+            var geomval = JSON.parse(resource_geometry.val())
+            var lat = geomval['geometries'][0]['coordinates'][1];
+            var latdms = ConvertDDToDMS(lat);
+            var latdmsstring = DMSString(latdms);
+            var lon = geomval['geometries'][0]['coordinates'][1];
+            var londms = ConvertDDToDMS(lon,true);
+            var londmsstring = DMSString(londms);
+            $("#dms-coords-section").html(latdmsstring+", "+londmsstring)
+            console.log(latdmsstring,londmsstring)
             
 
         },
