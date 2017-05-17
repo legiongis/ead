@@ -83,6 +83,13 @@ require([
                     $(list).find('.empty-message').show();
                 }
             })
+            
+            $("#print-btn").click( function() {
+                // there is @media print styling in package.css that makes this work
+                window.print();
+            });
+            
+            
 
         },
 
