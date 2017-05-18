@@ -1,0 +1,93 @@
+{
+    "csv": {
+        "NAME": "ead_site_export",
+        "SCHEMA": [
+            {"field_name": "PRIMARY NAME","source": "primaryname"},
+            {"field_name": "OTHER NAMES","source": "alternatename"},
+            {"field_name": "ARCHES ID","source": "entityid"},
+            {"field_name": "ARCHES RESOURCE TYPE","source": "resource_name"},
+            {"field_name": "TYPE","source": "field_map"},
+            {"field_name": "PRIMARY ADDRESS/LOCATION DESCRIPTION","source": "field_map"},
+            {"field_name": "DESIGNATIONS","source": "field_map"}
+        ],
+        "RESOURCE_TYPES": {
+            "HERITAGE_RESOURCE.E18": {
+                "FIELD_MAP": [
+                    {
+                        "field_name": "type",
+                        "entitytypeid": "HERITAGE_RESOURCE_TYPE.E55"
+                    }
+                ]
+            },
+            "HERITAGE_RESOURCE_GROUP.E27": {
+                "FIELD_MAP": [
+                    {
+                        "field_name": "type",
+                        "entitytypeid": "HERITAGE_RESOURCE_GROUP_TYPE.E55"
+                    }
+                ]
+            }
+        }
+    },
+    "kml": {
+        "NAME": "ead_site_export",
+        "SCHEMA": [
+            {"field_name": "primary_name","source": "primaryname"},
+            {"field_name": "other_names","source": "alternatename"},
+            {"field_name": "arches_id","source": "entityid"},
+            {"field_name": "arches_resource_type","source": "resource_name"},
+            {"field_name": "geometry","source": "geometries"},
+            {"field_name": "type","source": "field_map"},
+            {"field_name": "primary_address_or_description","source": "field_map"},
+            {"field_name": "designations","source": "field_map"}
+        ],
+        "RESOURCE_TYPES": {
+            "HERITAGE_RESOURCE.E18": {
+                "FIELD_MAP": [
+                    {
+                        "field_name": "type",
+                        "entitytypeid": "HERITAGE_RESOURCE_TYPE.E55"
+                    }
+                ]
+            },
+            "HERITAGE_RESOURCE_GROUP.E27": {
+                "FIELD_MAP": [
+                    {
+                        "field_name": "type",
+                        "entitytypeid": "HERITAGE_RESOURCE_GROUP_TYPE.E55"
+                    }
+                ]
+            }
+        }
+    },
+    "shp": {
+        "NAME": "ead_site_export",
+        "SCHEMA": [
+            {"field_name": "prime_name","source": "primaryname","data_type": "str","data_length": "128"},
+            {"field_name": "arches_id","source": "entityid","data_type": "str","data_length": "128"},
+            {"field_name": "resource","source": "resource_name","data_type": "str","data_length": "128"},
+            {"field_name": "othernames","source": "alternatename","data_type": "str","data_length": "128"},
+            {"field_name": "type","source": "field_map","data_type": "str","data_length": "128"},
+            {"field_name": "address","source": "field_map","data_type": "str","data_length": "128"},
+            {"field_name": "designatns","source": "field_map","data_type": "str","data_length": "128"}
+        ],
+        "RESOURCE_TYPES": {
+            "HERITAGE_RESOURCE.E18": {
+                "FIELD_MAP": [
+                    {
+                        "field_name": "type",
+                        "entitytypeid": "HERITAGE_RESOURCE_TYPE.E55"
+                    }
+                ]
+            },
+            "HERITAGE_RESOURCE_GROUP.E27": {
+                "FIELD_MAP": [
+                    {
+                        "field_name": "type",
+                        "entitytypeid": "HERITAGE_RESOURCE_GROUP_TYPE.E55"
+                    }
+                ]
+            }
+        }
+    }
+}
