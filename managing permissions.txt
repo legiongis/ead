@@ -1,0 +1,19 @@
+By default, this app will have three users, each with different access permissions for different parts of the app. These permissions are defined as "groups" to which a user can be assigned. Any number of new users can be created, and their permissions individually defined.
+
+To create a user, access the Django admin page at localhost:8000/admin. You must sign in with a user that has staff privileges. Once you make a new user, assign them the appropriate group for the permission level desired (see below). Staff privileges are assigned with a checkbox in admin page, not by group assignment. (By default, only the 'admin' user has staff privileges.)
+
+Users and Groups are managed in the Django admin interface, which can be accessed by any user with staff privileges. 
+The default users, which should serve as models for new users that will be created, are:
+
+1) admin (default password=admin)
+groups assigned: 'edit' and 'rdm'
+staff privileges: yes
+  This user can create new resources ('edit'), access the RDM ('rdm'), and access the admin page (staff priliveges)
+
+2) editor (default password=editor)
+groups assigned: 'edit'
+staff privileges: no
+  This use can create new resources, but cannot edit the RDM, nor access the admin page.
+
+3) anonymous (no password)
+This is the user that is assigned by default to any unauthorized vistor to the website. No access to any edit, rdm, or staff privileges.
