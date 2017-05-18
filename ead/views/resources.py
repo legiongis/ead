@@ -35,6 +35,7 @@ from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Query, Terms, Bool, Match
 from ead.models.concept import Concept
 from django.db.models import Max, Min
+from django.db import transaction
 
 @permission_required('ead.edit')
 @csrf_exempt
