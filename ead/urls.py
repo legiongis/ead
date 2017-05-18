@@ -24,7 +24,7 @@ uuid_regex = '[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-
 
 urlpatterns = patterns('',
     
-    
+    url(r'^resources/(?P<resourcetypeid>[0-9a-zA-Z_.]*)/(?P<form_id>[a-zA-Z_-]*)/(?P<resourceid>%s|())$' % uuid_regex, 'ead.views.resources.resource_manager', name="resource_manager"),
     url(r'^rdm/(?P<conceptid>%s|())$' % uuid_regex , 'ead.views.concept.rdm', name='rdm'),
     url(r'^concepts/(?P<conceptid>%s|())$' % uuid_regex , 'ead.views.concept.concept', name="concept"),
     url(r'^reports/(?P<resourceid>%s)$' % uuid_regex , 'ead.views.resources.report', name='report'),

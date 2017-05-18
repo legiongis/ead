@@ -25,6 +25,7 @@ from django.conf import settings
 from django.contrib.auth.decorators import permission_required
 from django.views.decorators.csrf import csrf_exempt
 from arches.app.models import models
+from arches.app.models.resource import Resource
 from arches.app.utils.betterJSONSerializer import JSONSerializer, JSONDeserializer
 from arches.app.utils.JSONResponse import JSONResponse
 from arches.app.views.concept import get_preflabel_from_valueid
@@ -33,6 +34,7 @@ from arches.app.views.resources import get_related_resources
 from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Query, Terms, Bool, Match
 from ead.models.concept import Concept
+from django.db.models import Max, Min
 
 @permission_required('ead.edit')
 @csrf_exempt
