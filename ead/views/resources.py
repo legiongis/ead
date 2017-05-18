@@ -20,7 +20,7 @@ import re
 import os
 import json
 from django.template import RequestContext
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.conf import settings
 from django.contrib.auth.decorators import permission_required
 from django.views.decorators.csrf import csrf_exempt
