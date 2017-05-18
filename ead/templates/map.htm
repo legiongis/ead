@@ -310,7 +310,7 @@ till here -->
                                     {% trans 'View Report' %}
                                 </button>
                             </a>
-                            {% if 'edit' in user.user_groups %}
+                            {% if perms.ead.edit %}
                             <a href="javascript:void(0);" class="text-primary" target="_blank" data-bind="attr:{ href: selectedResource() ? 'resources/' +  selectedResource().entitytypeid + '/default/' + selectedResource().id : 'javascript:void(0);'}">
                                 <button type="button" class="btn btn-primary">
                                     {% trans 'Edit' %}
