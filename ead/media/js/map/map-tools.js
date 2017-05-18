@@ -19,3 +19,11 @@ function DMSString(dmsobj){
     return dmsobj['deg']+'\xB0 '+dmsobj['min']+"' "+dmsobj['sec']+'" '+dmsobj['dir']
 }
 
+// works but is not used, much simpler construction is in resource-report.js
+function MakeGoogleMapsLink(latdmsobj,longdmsobj){
+    var gmaps = 'https://google.com/maps/place/';
+    var latstr = latdmsobj['deg']+'\xB0'+latdmsobj['min']+"'"+latdmsobj['sec']+'"'+latdmsobj['dir']
+    var lonstr = longdmsobj['deg']+'\xB0'+longdmsobj['min']+"'"+longdmsobj['sec']+'"'+longdmsobj['dir']
+    return gmaps+latstr+"+"+lonstr
+}
+

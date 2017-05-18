@@ -94,12 +94,16 @@ require([
             var lat = geomval['geometries'][0]['coordinates'][1];
             var latdms = ConvertDDToDMS(lat);
             var latdmsstring = DMSString(latdms);
-            var lon = geomval['geometries'][0]['coordinates'][1];
+            var lon = geomval['geometries'][0]['coordinates'][0];
             var londms = ConvertDDToDMS(lon,true);
             var londmsstring = DMSString(londms);
             $("#dms-coords-section").html(latdmsstring+", "+londmsstring)
-            console.log(latdmsstring,londmsstring)
-            
+
+            // construct the link with this formula
+            // https://stackoverflow.com/questions/2660201/what-parameters-should-i-use-in-a-google-maps-url-to-go-to-a-lat-lon?answertab=votes#tab-top
+            // zoom parameter doesn't work though
+            var gm = 'http://maps.google.com/maps?z=7&t=k&q=loc:'+lat+'+'+lon
+            $("#gmaps-link").attr('href',gm)
 
         },
 
