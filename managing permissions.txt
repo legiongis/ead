@@ -1,19 +1,15 @@
-By default, this app will have three users, each with different access permissions for different parts of the app. These permissions are defined as "groups" to which a user can be assigned. Any number of new users can be created, and their permissions individually defined.
+This app will have two types of authenticated ("logged in") user permissions: 'edit' and 'rdm'. 'Edit' permission allows a user to create new resources or edit existing resources. 'RDM' permission allows a user to access the RDM (Reference Data Manager) to change dropdown menus and concepts. By default the app will have an 'editor' user and an 'admin' user, as described below. Any number of new users can be created, and their permission levels individually defined.
 
-To create a user, access the Django admin page at localhost:8000/admin. You must sign in with a user that has staff privileges. Once you make a new user, assign them the appropriate group for the permission level desired (see below). Staff privileges are assigned with a checkbox in admin page, not by group assignment. (By default, only the 'admin' user has staff privileges.)
+Users and permissions are managed in the Django admin page, which can be accessed at <localhost>:8000/admin. To create a new user, you must sign in to that page as the 'admin' user. Once you make a new user, you can assign them the desired permission levels, as well as a name and e-mail address. Usually, Django allows you to give users access to the admin page by designating them as 'staff' users. In the case of the EAD app, this is not sufficient. Use the default 'admin' user for all user management.
 
-Users and Groups are managed in the Django admin interface, which can be accessed by any user with staff privileges. 
 The default users, which should serve as models for new users that will be created, are:
 
 1) admin (default password=admin)
-groups assigned: 'edit' and 'rdm'
-staff privileges: yes
-  This user can create new resources ('edit'), access the RDM ('rdm'), and access the admin page (staff priliveges)
+permissions granted: 'edit' and 'rdm'
+  This user can create new resources ('edit'), access the RDM ('rdm'), and access the admin page.
 
 2) editor (default password=editor)
-groups assigned: 'edit'
-staff privileges: no
-  This use can create new resources, but cannot edit the RDM, nor access the admin page.
+permissions granted: 'edit'
+  This user can create new resources, but cannot edit the RDM, nor access the admin page.
 
-3) anonymous (no password)
-This is the user that is assigned by default to any unauthorized vistor to the website. No access to any edit, rdm, or staff privileges.
+Note that there is also an 'anonymous' user, which is assign to any visitor that is not logged in. This user has no 'edit' or 'rdm' privileges, and it should always stay that way.

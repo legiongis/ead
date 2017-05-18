@@ -101,9 +101,9 @@
                             {% trans "Map View" %}
                         </a>
                     </li>
+                    
                     <!-- End Map-->
-
-                    {% if 'edit' in user.user_groups %}
+                    {% if perms.ead.edit %}
                     <!-- Resource Editor-->
                     <li class="dropdown {% if active_page = 'ResourceManger' %}active{% endif %}">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -119,7 +119,7 @@
 					<!--I added this -->
 					{% endif %}
 
-					{% if 'rdm' in user.user_groups %}
+					{% if perms.ead.rdm %}
 					<!--till here -->
                      <!-- RDM-->
                     <li class="{% if active_page = 'RDM' %}active{% endif %}">

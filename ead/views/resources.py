@@ -22,6 +22,8 @@ import json
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.conf import settings
+from django.contrib.auth.decorators import permission_required
+from django.views.decorators.csrf import csrf_exempt
 from arches.app.models import models
 from arches.app.utils.betterJSONSerializer import JSONSerializer, JSONDeserializer
 from arches.app.utils.JSONResponse import JSONResponse
@@ -32,6 +34,69 @@ from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Query, Terms, Bool, Match
 from ead.models.concept import Concept
 
+@permission_required('ead.edit')
+@csrf_exempt
+def resource_manager(request, resourcetypeid='', form_id='default', resourceid=''):
+
+    if resourceid != '':
+        resource = Resource(resourceid)
+    elif resourcetypeid != '':
+        resource = Resource({'entitytypeid': resourcetypeid})
+
+    if form_id == 'default':
+        form_id = resource.form_groups[0]['forms'][0]['id']
+
+    form = resource.get_form(form_id)
+
+    if request.method == 'DELETE':
+        resource.delete_index()
+        se = SearchEngineFactory().create()
+        realtionships = resource.get_related_resources(return_entities=False)
+        for realtionship in realtionships:
+            se.delete(index='resource_relations', doc_type='all', id=realtionship.resourcexid)
+            realtionship.delete()
+        resource.delete()
+        return JSONResponse({ 'success': True })
+
+    if request.method == 'POST':
+        data = JSONDeserializer().deserialize(request.POST.get('formdata', {}))
+        form.update(data, request.FILES)
+
+        with transaction.atomic():
+            if resourceid != '':
+                resource.delete_index()
+            resource.save(user=request.user)
+            resource.index()
+            resourceid = resource.entityid
+
+            return redirect('resource_manager', resourcetypeid=resourcetypeid, form_id=form_id, resourceid=resourceid)
+
+    min_max_dates = models.Dates.objects.aggregate(Min('val'), Max('val'))
+    
+    if request.method == 'GET':
+        if form != None:
+            lang = request.GET.get('lang', settings.LANGUAGE_CODE)
+            form.load(lang)
+            return render_to_response('resource-manager.htm', {
+                    'form': form,
+                    'formdata': JSONSerializer().serialize(form.data),
+                    'form_template': 'views/forms/' + form_id + '.htm',
+                    'form_id': form_id,
+                    'resourcetypeid': resourcetypeid,
+                    'resourceid': resourceid,
+                    'main_script': 'resource-manager',
+                    'active_page': 'ResourceManger',
+                    'resource': resource,
+                    'resource_name': resource.get_primary_name(),
+                    'resource_type_name': resource.get_type_name(),
+                    'form_groups': resource.form_groups,
+                    'min_date': min_max_dates['val__min'].year if min_max_dates['val__min'] != None else 0,
+                    'max_date': min_max_dates['val__max'].year if min_max_dates['val__min'] != None else 1,
+                    'timefilterdata': JSONSerializer().serialize(Concept.get_time_filter_data()),
+                },
+                context_instance=RequestContext(request))
+        else:
+            return HttpResponseNotFound('<h1>Arches form not found.</h1>')
 
 def report(request, resourceid):
     lang = request.GET.get('lang', request.LANGUAGE_CODE)
