@@ -80,36 +80,37 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 
 ## SAVED_SEARCHES urls must be defined in settings_local.py because they are different in each
 ## installation icons are defined by their class as listed here: http://fontawesome.io/cheatsheet/
-SAVED_SEARCHES = {
-    'al_jizah_bibliography': {
-        'title':'Giza Bibliography',
-        'url':'XXX',
-        'icon_class':'fa-file-text-o',
-        'desc':'Find and print out the bibliography for the pyramids of Giza (Al Jizah)',
-        'sort_order':1
-    },
-    'all_sites': {
-        'title':'All Sites',
-        'url':'XXX',
-        'icon_class':'fa-file-text-o',
-        'desc':'Search for all sites and complexes',
-        'sort_order':2
-    },
-    'isis_temples': {
-        'title':'Isis Temples',
-        'url':'XXX',
-        'icon_class':'fa-bank',
-        'desc':'Find and print out the bibliography for the pyramids of Giza (Al Jizah)',
-        'sort_order':3
-    },
-    'isis_templese': {
-        'title':'Isis Temples2',
-        'url':'XXX',
-        'icon_class':'fa-file-text-o',
-        'desc':'Find and print out the bibliography for the pyramids of Giza (Al Jizah)',
-        'sort_order':4
+def SAVED_SEARCHES():
+    return {
+        'al_jizah_bibliography': {
+            'title':_('Giza Bibliography'),
+            'url':'XXX',
+            'icon_class':'fa-file-text-o',
+            'desc':_('Find and print out the bibliography for the pyramids of Giza (Al Jizah)'),
+            'sort_order':1
+        },
+        'all_sites': {
+            'title':_('All Sites'),
+            'url':'XXX',
+            'icon_class':'fa-file-text-o',
+            'desc':_('Search for all sites and complexes'),
+            'sort_order':2
+        },
+        'isis_temples': {
+            'title':_('Isis Temples'),
+            'url':'XXX',
+            'icon_class':'fa-bank',
+            'desc':_('Find and print out the bibliography for the pyramids of Giza (Al Jizah)'),
+            'sort_order':3
+        },
+        'isis_templese': {
+            'title':_('Isis Temples2'),
+            'url':'XXX',
+            'icon_class':'fa-file-text-o',
+            'desc':_('Find and print out the bibliography for the pyramids of Giza (Al Jizah)'),
+            'sort_order':4
+        }
     }
-}
 
 RESOURCE_MODEL = {'default':'{}.models.resource.Resource'.format(PACKAGE_NAME)}
 

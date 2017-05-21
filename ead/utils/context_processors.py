@@ -64,5 +64,5 @@ from arches.app.utils.decorators import deprecated
     
 def saved_search_urls(request):
     return {
-        'saved_search_urls':sorted(settings.SAVED_SEARCHES.items(), key=lambda v: v[1]['sort_order'])
+        'saved_search_urls':sorted(settings.SAVED_SEARCHES().items(), key=lambda v: v[1]['sort_order'])
     }
