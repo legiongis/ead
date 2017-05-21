@@ -3,7 +3,7 @@ function round(value, precision) {
     return Math.round(value * multiplier) / multiplier;
 }
 
-function ConvertDDToDMS(D, lng){
+function ConvertDDToDMS(D, lng, precision=1){
     // this could properly round the seconds, but does not "cascade" the rounding up into minutes...
     //round((0|D*60%1*600)/10,1));    
     
@@ -11,17 +11,17 @@ function ConvertDDToDMS(D, lng){
     var d = Math.floor(Math.abs(D));
     var minFloat = (Math.abs(D) - d) * 60;
     var m = Math.floor(minFloat)
-    var s = Math.round((minFloat - m) * 60);
-        
+    var s = round((minFloat - m) * 60, precision);
+    
     // Handles cascading the value at 60
     if ( s == 60 ) { m++; s = 0 }
     if ( m == 60 ) { d++; m = 0 }
-
+    
     return {
         dir : dir,
-        deg : 0|(d<0?d=-d:d),
-        min : 0|m,
-        sec : 0|s
+        deg : (d<0?d=-d:d),
+        min : m,
+        sec : s
     };
 }
 
