@@ -1,0 +1,20 @@
+On the EAD production server, apache is used as the webserver for the app, instead of the django webserver that is used on the development server. This means that deploying changes to the production server requires a couple extra steps so that apache will use these changes.
+
+First, as with the development server, enter the ead directory and run
+git pull
+to pull new code changes from github.
+
+Now, depending on what type(s) of files have been changed, you may need to complete one or two more steps so that apache will recognize the changes.
+
+IF any changes have been made to .py files (settings.py, forms.py, etc.) you must restart apache in order for these changes to take effect. Run this command
+sudo service apache2 restart
+You'll get a notification that apache has been stopped and restarted OK.
+
+IF changes have been made to static files, such as .css, .js, or any image files, you must run a django command that collects these files into a central location where apache knows to look for them. Run this command (with the virtual environment activated) from the root app folder (the one that contains manage.py)
+python manage.py collectstatic
+You will be prompted to make sure you want to follow through with the command. Type
+yes
+and hit enter. Now all of your app's static files, including those that are in arches and arches_hip in ENV/.../site-packages, will be collected into a centralized location, and if any files have been changed since the command was run last, they will be used to overwrite the existing version. Now apache will be able to find all of the updated static files.
+
+IF changes have been made to .htm (HTML) templates, these changes will be used with no further action needed.
+
