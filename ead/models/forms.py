@@ -574,7 +574,8 @@ class LocationForm(ResourceForm):
             self.update_nodes('ADMINISTRATIVE_SUBDIVISION.E48', data)
         if self.resource.entitytypeid not in ['ACTOR.E39', 'ACTIVITY.E7', 'HISTORICAL_EVENT.E5']:
             self.update_nodes('PLACE_APPELLATION_CADASTRAL_REFERENCE.E44', data)
-        if self.resource.entitytypeid not in ['ACTOR.E39', 'ACTIVITY.E7', 'HERITAGE_RESOURCE_GROUP.E27', 'HISTORICAL_EVENT.E5']:
+        #if self.resource.entitytypeid not in ['ACTOR.E39', 'ACTIVITY.E7', 'HERITAGE_RESOURCE_GROUP.E27', 'HISTORICAL_EVENT.E5']:
+		if self.resource.entitytypeid not in ['ACTOR.E39', 'ACTIVITY.E7', 'HISTORICAL_EVENT.E5']:
             self.update_nodes('SETTING_TYPE.E55', data)
         self.update_nodes('DESCRIPTION_OF_LOCATION.E62', data)
         return
