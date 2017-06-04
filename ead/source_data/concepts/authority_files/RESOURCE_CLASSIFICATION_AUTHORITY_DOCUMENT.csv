@@ -1,2 +1,3 @@
 conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
-RESOURCE_CLASSIFICATION:1,Archaeological Site,,,RESOURCE_CLASSIFICATION_AUTHORITY_DOCUMENT.csv,Index,TMP
+RESOURCE_CLASSIFICATION:1,Archaeological Site,الموقع الاثري,,RESOURCE_CLASSIFICATION_AUTHORITY_DOCUMENT.csv,Index,TMP
+RESOURCE_CLASSIFICATION:2,Archaeological Complex,مجموعة أثرية,,RESOURCE_CLASSIFICATION_AUTHORITY_DOCUMENT.csv,Index,TMP

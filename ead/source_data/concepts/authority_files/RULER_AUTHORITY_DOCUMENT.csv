@@ -1,152 +1,153 @@
 conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
-RULER_UID:1,Aha,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:2,Djer,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:3,Djet,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:4,Den,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:5,Merneith,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:6,Anedjib,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:7,Qa'a,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:8,Hetepsekhemwy,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:9,Reneb,,Raneb,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:10,Nynetjer,,Ninetjer,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:11,Weneg,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:12,Sened,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:13,Peribsen,,Perabsen,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:14,Khasekhem,,Khasekhemwy,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:15,Djoser,,Netjerikhet,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:16,Sekhemkhet,,Sechemchet,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:17,Snefru,,Snofru;Seneferu,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:18,Khufu ,,Cheops;Kheops,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:19,Redjedef,,Djedfru;Djedefre,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:20,Khephren,,Chephren;Chefren;Khafre,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:21,Menkaure,,Mycerinus,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:22,Shepseskaf,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:23,Userkaf,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:24,Sahure,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:25,Neferirkare,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:26,Niuserre,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:27,Djedkare,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:28,Unas,,Wenis,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:29,Teti,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:30,Pepi I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:31,Pepi II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:32,Nebhepetre Mentuhotep,,Mentuhotep II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:33,Sankhkare Mentuhotep,,Mentuhotep III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:34,Nebtawyre Mentuhotep,,Mentuhotep IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:35,Amenemhet I,,Amenemhat I;Ammenemes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:36,Sesostris I,,Senwosret I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:37,Amenemhet II,,Amenemhat II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:38,Sesostris II,,Senwosret II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:39,Sesostris III,,Senwosret III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:40,Amenemhet III,,Amenemhat III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:41,Amenemhet IV,,Amenemhat IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:42,Sobekneferu,,Nefrusobk,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:43,Seqenenre Tao I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:44,Seqenenre Tao II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:45,Kamose,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:46,Ahmose,,Amosis;Ahmes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:47,Amenhotep I,,Amenophis I;Amenhetep I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:48,Thutmosis I,,Thutmose I;Tutmose I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:49,Thutmosis II,,Thutmose II;Tutmose II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:50,Thutmosis III,,Thutmose III;Tutmose III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:51,Hatshepsut,,Hatschepsut,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:52,Amenhotep II,,Amenophis II;Amenhetep II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:53,Thutmosis IV,,Thutmose IV;Tutmose IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:54,Amenhotep III,,Amenophis III;Amenhetep III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:55,Akhenaten,,Amenhotep IV;Amenhetep IV;Ikhnaton,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:56,Smenkhkare,,Semenkara;Smenkhare,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:57,Tutankhamun,,Tutanchamon;Tutankhaten,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:58,Ay,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:59,Horemhab,,Haremhab,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:60,Ramesses I,,Ramses I;Rameses I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:61,Seti I,,Sety I;Sethos I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:62,Ramesses II,,Ramses II;Rameses II;Ramesses the Great,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:63,Merenptah,,Merneptah,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:64,Seti II,,Sety II;Sethos II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:65,Amenmesse,,Amenemes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:66,Siptah,,Merenptah Siptah,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:67,Tawosret,,Twosre;Tausert,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:68,Setnakht,,Sethnakht,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:69,Ramesses III,,Ramses III;Rameses III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:70,Ramesses IV,,Ramses IV;Rameses IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:71,Ramesses V,,Ramses V;Rameses V,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:72,Ramesses VI,,Ramses VI;Rameses VI,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:73,Ramesses VII,,Ramses VII;Rameses VII,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:74,Ramesses VIII,,Ramses VIII;Rameses VIII,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:75,Ramesses IX,,Ramses IX;Rameses IX,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:76,Ramesses X,,Ramses X;Rameses X,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:77,Ramesses XI,,Ramses XI;Rameses XI,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:78,Smendes,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:79,Psusennes,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:80,Shoshenq I,,Sheshenq I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:81,Osorkon I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:82,Takelot I,,Takeloth I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:83,Osorkon II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:84,Shoshenq III,,Sheshenq III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:85,Kashta,,Kaschta,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:86,Piye,,Piya,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:87,Shabaqa,,Shabaka,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:88,Taharqa,,Taharka,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:89,Psammetichus I,,Psammetichos I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:90,Necho II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:91,Psammetichus II,,Psammetichos II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:92,Apries,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:93,Amasis,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:94,Psammetichus III,,Psammetichos III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:95,Cambyses,,Kambyses,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:96,Darius I,,Darios I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:97,Xerxes I,,Xerxes the Great,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:98,Amyrtaios,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:99,Nectanebo I,,Nektanebo I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:100,Nectanebo II,,Nektanebo II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:101,Artaxerxes III,,Schabaka,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:102,Alexander III ,,Alexander the Great,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:103,Philip Arrhidaeus,,Philip III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:104,Ptolemy I Soter I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:105,Ptolemy II Philadelphus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:106,Ptolemy III Eugertes I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:107,Ptolemy IV Philopator,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:108,Ptolemy V Epiphanes,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:109,Ptolemy VI Philometer,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:110,Ptolemy VII Neos Philopator,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:111,Ptolemy VIII Eugertes II,,Physcon,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:112,Ptolemy IX  Soter II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:113,Ptolemy X Alexander I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:114,Ptolemy XI Alexander II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:115,Ptolemy XII Neos Dionysus,,Auletes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:116,Ptolemy XIII Theos Philopator I,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:117,Cleopatra VII,,Cleopatra,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:118,Augustus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:119,Tiberius,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:120,Gaius Caligula,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:121,Claudius,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:122,Nero,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:123,Galba,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:124,Otho,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:125,Vespasian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:126,Titus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:127,Domitian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:128,Nerva,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:129,Trajan,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:130,Hadrian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:131,Antoninus Pius,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:133,Marcus Arelius,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:132,Lucius Verus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:134,Commodus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:135,Septimus Severus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:136,Caracalla,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:137,Macrinus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:138,Antoninus,,Elegabalus,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:139,Severus Alexander,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:140,Maximinus the Thracian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:141,Gordian III,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:142,Philip,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:143,Decius,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:144,Trebonianus Gallus ,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:145,Valerian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:146,Gallienus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:147,Claudius II,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:148,Aurelian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:149,Tacitus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:150,Probus,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
-RULER_UID:151,Diocletian,,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:1,Aha,عحا,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:2,Djer,جر,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:3,Djet,جت,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:4,Den,دن,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:5,Merneith,مريت نيت,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:6,Anedjib,عج اب,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:7,Qa'a,قا عا,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:8,Hetepsekhemwy,حتب سخموي,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:9,Reneb,رع نب,Raneb,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:10,Nynetjer,ني نثر,Ninetjer,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:11,Weneg,ونج,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:12,Sened,سند,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:13,Peribsen,برإب سن,Perabsen,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:14,Khasekhem,خع سخموي,Khasekhemwy,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:15,Djoser,زوسر,Netjerikhet;نثر-خت,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:16,Sekhemkhet,سخم خت,Sechemchet,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:17,Snefru,سنفرو,Snofru;Seneferu,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:18,Khufu ,خوفو,Cheops;Kheops,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:19,Redjedef,جدف-رع,Djedfru;Djedefre,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:20,Khephren,خفرع,Chephren;Chefren;Khafre,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:21,Menkaure,منكاورع,Mycerinus,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:22,Shepseskaf,شبسكاف,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:23,Userkaf,وسركاف,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:24,Sahure,ساحو-رع,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:25,Neferirkare,نفر اركارع,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:26,Niuserre,ني وسر رع,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:27,Djedkare,جد كارع,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:28,Unas,اوناس,Wenis;ونيس,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:29,Teti,تيتي,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:30,Pepi I,بيبي الأول,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:31,Pepi II,بيبي الثاني,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:32,Nebhepetre Mentuhotep,نب حتب رع- منتوحتب,Mentuhotep II;منتوحت الثاني,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:33,Sankhkare Mentuhotep,ساعنخ كارع- منتوحتب,Mentuhotep III;منتوحتب الثالث,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:34,Nebtawyre Mentuhotep,نب تاوي رع - منتو حتب,Mentuhotep IV;منتوحتب الرابع,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:35,Amenemhet I,أمنمحات الأول,Amenemhat I;Ammenemes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:36,Sesostris I,سنوسرت الأول,Senwosret I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:37,Amenemhet II,أمنمحات الثاني,Amenemhat II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:38,Sesostris II,سنوسرت الثاني,Senwosret II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:39,Sesostris III,سنوسرت الثالث,Senwosret III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:40,Amenemhet III,أمنمحات الثالث,Amenemhat III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:41,Amenemhet IV,أمنمحات الرابع,Amenemhat IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:42,Sobekneferu,سبك-نفرو ,Nefrusobk,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:43,Seqenenre Tao I,سقنن رع - تاعا الأول,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:44,Seqenenre Tao II,سقنن رع -تاعا الثاني,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:45,Kamose,كامس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:46,Ahmose,أحمس,Amosis;Ahmes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:47,Amenhotep I,أمنحتب الأول,Amenophis I;Amenhetep I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:48,Thutmosis I,تحتمس الأول,Thutmose I;Tutmose I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:49,Thutmosis II,تحتمس الثاني,Thutmose II;Tutmose II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:50,Thutmosis III,تحتمس الثالث,Thutmose III;Tutmose III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:51,Hatshepsut,حتشبسوت,Hatschepsut;حاتشبسوت,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:52,Amenhotep II,أمنحتب الثاني,Amenophis II;Amenhetep II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:53,Thutmosis IV,تحتمس الرابع,Thutmose IV;Tutmose IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:54,Amenhotep III,أمنحتب الثالث,Amenophis III;Amenhetep III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:55,Akhenaten,أمنحتب الرابع,Amenhotep IV;Amenhetep IV;Ikhnaton;أخناتون,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:56,Smenkhkare,سمنخ كارع,Semenkara;Smenkhare,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:57,Tutankhamun,توت عنخ امون,Tutanchamon;Tutankhaten; توت عنخ اتون,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:58,Ay,آي,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:59,Horemhab,حورمحب,Haremhab,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:60,Ramesses I,رمسيس الأول,Ramses I;Rameses I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:61,Seti I,سيتي الأول,Sety I;Sethos I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:62,Ramesses II,رمسيس الثاني,Ramses II;Rameses II;Ramesses the Great,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:63,Merenptah,مرنبتاح,Merneptah,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:64,Seti II,سيتي الثاني,Sety II;Sethos II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:65,Amenmesse,أمون- مس,Amenemes,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:66,Siptah,سبتاح,Merenptah Siptah; مرينبتاح سابتاح,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:67,Tawosret,تا-وسرت,Twosre;Tausert,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:68,Setnakht,ست-نخت,Sethnakht,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:69,Ramesses III,رمسيس الثالث,Ramses III;Rameses III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:70,Ramesses IV,رمسيس الرابع,Ramses IV;Rameses IV,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:71,Ramesses V,رمسيس الخامس,Ramses V;Rameses V,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:72,Ramesses VI,رمسيس السادس,Ramses VI;Rameses VI,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:73,Ramesses VII,رمسيس السابع,Ramses VII;Rameses VII,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:74,Ramesses VIII,رمسيس الثامن,Ramses VIII;Rameses VIII,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:75,Ramesses IX,رمسيس التاسع,Ramses IX;Rameses IX,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:76,Ramesses X,رمسيس العاشر,Ramses X;Rameses X,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:77,Ramesses XI,رمسيس الحادي عشر,Ramses XI;Rameses XI,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:78,Smendes,سمندس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:79,Psusennes,بسوسنس الأول,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:80,Shoshenq I,شوشنق الأول,Sheshenq I;شاشانق الآول,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:81,Shoshenq II,شوشنق الثاني,Sheshenq II;شاشانق الثاني,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:82,Osorkon I,وسركون الأول,اوسركون الأول,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:83,Takelot I,تكلوت الأول,Takeloth I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:84,Osorkon II,وسركون الثاني,اوسركون الثاني,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:85,Shoshenq III,شوشنق  الثالث,Sheshenq III; شاشانق الثالث,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:86,Kashta,كاشتا,Kaschta,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:87,Piye,بي,Piya,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:88,Shabaqa,شباكا,Shabaka;Schabaka,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:89,Taharqa,طهرقا,Taharka,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:90,Psammetichus I,بسمتك الأول,Psammetichos I,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:91,Necho II,نكاو الثاني,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:92,Psammetichus II,بسمتك الثاني,Psammetichos II,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:93,Apries,أبريس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:94,Amasis,أمازيس,Ahmose II; أحمس الثاني,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:95,Psammetichus III,بسمتك الثالث,Psammetichos III,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:96,Cambyses,قمبيز,Kambyses,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:97,Darius I,دارا الأول,Darios I; داريوس الأول,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:98,Xerxes I,إكسركسيس الأول,Xerxes the Great; إكسركسيس العظيم,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:99,Amyrtaios,أمير تايوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:100,Nectanebo I,نختنبو الأول,Nektanebo I; نكتانبو الأول,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:101,Nectanebo II,نختنبو الثاني,Nektanebo II;نكتانبو الثاني,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:102,Artaxerxes III,إكسركسيس الثالث,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:103,Alexander III ,إسكندر الثالث,Alexander the Great;اسكندر الاكبر,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:104,Philip Arrhidaeus,فليب ارهيدايوس,Philip III;فيليب الثالث,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:105,Ptolemy I Soter I,بطليموس الاول - سوتر الأول,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:106,Ptolemy II Philadelphus,بطليموس الثاني - فيلادلفوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:107,Ptolemy III Eugertes I,بطليموس الثالث -يوارجيتس الأول,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:108,Ptolemy IV Philopator,بطليموس الرابع - فيلوباتور,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:109,Ptolemy V Epiphanes,بطليموس الخامس  - إبيفانيس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:110,Ptolemy VI Philometer,بطليموس السادس  - فيلوماتور,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:111,Ptolemy VII Neos Philopator,بطليموس السابع  - -نيوس فيلوباتور,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:112,Ptolemy VIII Eugertes II,بطليموس الثامن - يوارجيتس الثاني,Physcon; فيسكون,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:113,Ptolemy IX  Soter II,بطليموس التاسع - سوتر الثاني,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:114,Ptolemy X Alexander I,بطليموس العاشر- اسكندر الآول,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:115,Ptolemy XI Alexander II,بطليموس الحادي عشر- اسكندر الثاني,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:116,Ptolemy XII Neos Dionysus,بطليموس الثاني عشر - نيوس ديونوسوس,Auletes; الزمار,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:117,Ptolemy XIII Theos Philopator I,بطليموس الثالث عشر,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:118,Cleopatra VII,كليوباترا السابعه,Cleopatra; كليوبترا,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:119,Augustus,اغسطس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:120,Tiberius,تبيريوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:121,Gaius Caligula, جايوس -كاليجولا,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:122,Claudius,كلوديوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:123,Nero,نيرون,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:124,Galba,جالبا,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:125,Otho,اوتو,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:126,Vespasian,فسبسيان,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:127,Titus,تيتوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:128,Domitian,دوميتيان,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:129,Nerva,نرفا,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:130,Trajan,تراجان,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:131,Hadrian,هادريان,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:133,Antoninus Pius,انطونينوس بيوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:132,Marcus Arelius,ماركوس اوريليوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:134,Lucius Verus,لوكيوس فيروس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:135,Commodus,كومودس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:136,Septimus Severus,سبتميوس سفيروس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:137,Caracalla,كراكلا,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:138,Macrinus,ماكرينوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:139,Antoninus,انطونيوس,Elegabalus;الجبالوس,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:140,Severus Alexander,سفيروس -إسكنر,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:141,Maximinus the Thracian,مكسيمينوس - ثراكس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:142,Gordian III,جورديان  الثالث,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:143,Philip,فيليب,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:144,Decius,داكيوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:145,Trebonianus Gallus ,تريبونيانوس جالوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:146,Valerian,فاليريانوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:147,Gallienus,جاللينوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:148,Claudius II,كلوديوس الثاني,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:149,Aurelian,اوريليان,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:150,Tacitus,تاكيتوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:151,Probus,بروبوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP
+RULER_UID:152,Diocletian,دقلديانوس,,RULER_AUTHORITY_DOCUMENT.csv,Index,BM/TMP

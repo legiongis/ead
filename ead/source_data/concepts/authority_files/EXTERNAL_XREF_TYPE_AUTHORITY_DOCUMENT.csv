@@ -1,3 +1,3 @@
 conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
-XREF_TYPE:1,MSA Reference,,,EXTERNAL_XREF_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
-XREF_TYPE:2,EES Reference,,,EXTERNAL_XREF_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+XREF_TYPE:1,MSA Reference,رقم الموقع طبقا لخرائط وزارة الآثار,,EXTERNAL_XREF_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+XREF_TYPE:2,EES Reference,رقم الموقع طبقا لجمعية الاستكشافات المصرية (EES),,EXTERNAL_XREF_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
