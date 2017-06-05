@@ -26,7 +26,7 @@
                             <dd class="arches-report-subsection-item arches-report-spacer">
                                 
                                 <span class="arches-report-subsection-item-type">
-                                    {% trans "Type" %}&#8203;d
+                                    {% trans "Type" %}
                                 </span>
                                 {% if 'HERITAGE_RESOURCE_TYPE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
                                     {% for HERITAGE_RESOURCE_TYPE_E55 in PHASE_TYPE_ASSIGNMENT_E17.HERITAGE_RESOURCE_TYPE_E55 %}
@@ -65,7 +65,7 @@
 
                             </dd>
                         {% endfor %}
-                        {# else #}
+                        { else }
                         <!-- show this section for Arabic -->
                         {% trans "Cultural Period" as cultural_period %}
                         {% trans "Ruler" as ruler %}
@@ -100,7 +100,7 @@
                                     {% endif %}
                                 </div>
                                 <div style="display:inline;background-color:blue">
-                                {{ phase.HERITAGE_RESOURCE_TYPE_E55.0.HERITAGE_RESOURCE_TYPE_E55__value}}{% trans "Cultural Period" %}d
+                                {{ phase.HERITAGE_RESOURCE_TYPE_E55.0.HERITAGE_RESOURCE_TYPE_E55__value}}{% trans "Cultural Period" %}
                                 </div>
                                 <div style="display:inline;background-color:orange">
                                     <span class="arches-report-subsection-item-type">{% trans "Cultural Period" %}</span>
@@ -113,7 +113,7 @@
 
                             </dd>
                         {% endfor %}
-                        {# endif #}
+                        { endif }
 
                     {% endif %}   
 
