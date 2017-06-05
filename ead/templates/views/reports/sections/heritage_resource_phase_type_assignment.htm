@@ -21,7 +21,7 @@
                         <!-- for listing multiple values, need separate section for Arabic that does it right to left -->
                         <!-- show this section for left to right -->
                         {% get_current_language_bidi as LANGUAGE_BIDI %}
-                        {# if not LANGUAGE_BIDI #}
+                        { if not LANGUAGE_BIDI }
                         {% for PHASE_TYPE_ASSIGNMENT_E17 in PRODUCTION_E12.PHASE_TYPE_ASSIGNMENT_E17 %}
                             <dd class="arches-report-subsection-item arches-report-spacer">
                                 
@@ -34,7 +34,7 @@
                                     {% endfor %} 
                                 {% else %}
                                     {% trans "none defined" %}
-                                {% endif %}&nbsp;
+                                {% endif %}
 
                                 <span class="arches-report-subsection-item-type">
                                     {% trans "Cultural Period" %}
@@ -61,7 +61,7 @@
                                     {% endfor %}  
                                 {% else %}
                                     {% trans "none defined" %}
-                                {% endif %}&nbsp;
+                                {% endif %}
 
                             </dd>
                         {% endfor %}
