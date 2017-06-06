@@ -18,10 +18,6 @@
                             {% trans "No classifications recorded" %}
                         </dd>
                     {% else %}
-                        <!-- for listing multiple values, need separate section for Arabic that does it right to left -->
-                        <!-- show this section for left to right -->
-                        {% get_current_language_bidi as LANGUAGE_BIDI %}
-                        {# if not LANGUAGE_BIDI #}
                         {% for PHASE_TYPE_ASSIGNMENT_E17 in PRODUCTION_E12.PHASE_TYPE_ASSIGNMENT_E17 %}
                             <dd class="arches-report-subsection-item arches-report-spacer">
                                 
@@ -35,7 +31,6 @@
                                 {% else %}
                                     {% trans "none defined" %}
                                 {% endif %}
-
                                 <span class="arches-report-subsection-item-type">
                                     {% trans "Cultural Period" %}
                                 </span>
@@ -62,65 +57,11 @@
                                 {% else %}
                                     {% trans "none defined" %}
                                 {% endif %}&nbsp;
-
                             </dd>
                         {% endfor %}
-                        {# else #}
-                        <!-- show this section for Arabic -->
-                        {% trans "Cultural Period" as cultural_period %}
-                        {% trans "Ruler" as ruler %}
-                        {% trans "Dynasty" as dynasty %}
-                        {% trans "Type" as type %}
-                        {% trans "none defined" as none %}
-                        {% for phase in PRODUCTION_E12.PHASE_TYPE_ASSIGNMENT_E17 %}
-                            <dd class="arches-report-subsection-item arches-report-spacer">
-                                {% if 'CULTURAL_PERIOD_E55' in phase %}
-                                    {% if phase.CULTURAL_PERIOD_E55.0.RULER_E55__value %}
-                                        {{phase.CULTURAL_PERIOD_E55.0.RULER_E55__value}}
-                                    {% else %}
-                                        {{ none }}
-                                    {% endif %}
-                                    <span class="arches-report-subsection-item-type">
-                                        {{ ruler }}
-                                    </span>
-                                    {% if phase.CULTURAL_PERIOD_E55.0.DYNASTY_E55__value %}
-                                        {{phase.CULTURAL_PERIOD_E55.0.DYNASTY_E55__value}}
-                                    {% else %}
-                                        {{ none }}
-                                    {% endif %}
-                                    <span class="arches-report-subsection-item-type">
-                                        {{ dynasty }}
-                                    </span>
-                                {% endif %}
-                                <div style="display:inline;background-color:azure">
-                                    {% if 'CULTURAL_PERIOD_E55' in phase %}
-                                        {{phase.CULTURAL_PERIOD_E55.0.CULTURAL_PERIOD_E55__value}}
-                                    {% else %}
-                                        {{ none }}
-                                    {% endif %}
-                                </div>
-                                <div style="display:inline;background-color:blue">
-                                {{ phase.HERITAGE_RESOURCE_TYPE_E55.0.HERITAGE_RESOURCE_TYPE_E55__value}}{% trans "Cultural Period" %}
-                                </div>
-                                <div style="display:inline;background-color:orange">
-                                    <span class="arches-report-subsection-item-type">{% trans "Cultural Period" %}</span>
-                                </div>
-                                
-                                
-                                <div style="display:inline;background-color:red">
-                                    <span class="arches-report-subsection-item-type">{% trans "Type" %}</span>
-                                </div>
-
-                            </dd>
-                        {% endfor %}
-                        {# endif #}
-
                     {% endif %}   
-
                 {% endfor %} 
-
             {% endif %}   
-
         </dl>
     </div>
 </div>
