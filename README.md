@@ -1,5 +1,5 @@
 # Egyptian Archaeological Database
-Arches v3 app in development by the Theban Mapping Project, at the American University in Cairo. Until the official EAD is released, you can view a demo version of this app at arches3.legiongis.com/ead. Feel free to login with `admin` for both user name and password. No resource data will be retained in this demo installation.
+Arches v3 app in development by the Theban Mapping Project, at the American University in Cairo. Until the official EAD is released, you can view a demo version of this app at [arches3.legiongis.com/ead](http://arches3.legiongis.com/ead). Feel free to login with `admin` for both user name and password. No resource data will be retained in this demo installation.
 
 ### features
 + Arabic translation, added rosetta plugin to facilitate translation
