@@ -125,7 +125,7 @@ def RESOURCE_TYPE_CONFIGS():
             'description_node': _('DESCRIPTION.E62'),
             'categories': [_('Resource')],
             'has_layer': True,
-            'on_map': False,
+            'on_map': True,
             'marker_color': '#fa6003',
             'stroke_color': '#fb8c49',
             'fill_color': '#ffc29e',
@@ -144,7 +144,7 @@ def RESOURCE_TYPE_CONFIGS():
             'description_node': _('DESCRIPTION.E62'), # changed node for EAD Apr 5 2017
             'categories': [_('Resource')],
             'has_layer': True,
-            'on_map': False,
+            'on_map': True,
             'marker_color': '#FFC53D',
             'stroke_color': '#d9b562',
             'fill_color': '#eedbad',
