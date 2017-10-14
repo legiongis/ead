@@ -111,11 +111,12 @@ till here -->
         <!-- Map: Project Info Panel -->
         <div class="container">
             
-            <!-- Map Tools Panel -->
+            
             <div class="row">
-                <div class="col-xs-4" style="">
-
-                    <div id="basemaps-panel" class="tools-panel hidden" style="overflow-y: scroll; border-top-left-radius: 3px; border-top-right-radius: 3px;">
+                <div class="col-xs-6" style="">
+                    
+                    <!-- Basemaps Panel -->
+                    <div id="basemaps-panel" class="tools-panel hidden" style="border-top-left-radius: 3px; border-top-right-radius: 3px;">
                         <div class="modal-header arches-modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                 ×
@@ -126,25 +127,29 @@ till here -->
                         </div>
 
                         <!-- Body Content -->
-                        <div class="modal-body padding-top-0 padding-bottom-0" data-bind='foreach: baseLayers'>
-
-                            <div class="row">
-                                <hr class="arches-layer-divider" style="border-top: 0px; margin-top: 5px;">
-
-                                <div class="arches-basemap-entry" style="">
+                        <div class="modal-body padding-top-0 padding-bottom-0" style="overflow-y: scroll; height: 325px;">
                             
-                                    <div class="">
-                                        <a data-bind="attr: { id: id, title: name }" class="basemap info-click" data-rel="" href="javascript:void(0);">
-                                            <span class="">  
-                                                <img data-bind="attr: { src: icon }" class="arches-basemap-thumbnail" alt="" />
-                                                <span class="zoom-icon"></span>                   
-                                            </span>                                              
-                                        </a>                    
-                                        <span class="arches-basemap-caption">
-                                            <a data-bind="attr: { id: id }, text: name" class="caption-text hover-effect basemap info-click" href="javascript:void(0);"> </a>
-                                        </span>
-                                    </div>
+                            <!-- List overlays -->
+                            <div class="row">
+                                <div class="col-xs-12" data-bind="foreach: baseLayers">
+                                
+                                    <hr class="arches-layer-divider" style="border-top: 0px; margin-top: 5px;">
 
+                                    <div class="arches-basemap-entry" style="">
+                                
+                                        <div class="">
+                                            <a data-bind="attr: { id: id, title: name }" class="basemap info-click" data-rel="" href="javascript:void(0);">
+                                                <span class="">  
+                                                    <img data-bind="attr: { src: icon }" class="arches-basemap-thumbnail" alt="" />
+                                                    <span class="zoom-icon"></span>                   
+                                                </span>                                              
+                                            </a>                    
+                                            <span class="arches-basemap-caption">
+                                                <a data-bind="attr: { id: id }, text: name" class="caption-text hover-effect basemap info-click" href="javascript:void(0);"> </a>
+                                            </span>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                             
@@ -152,14 +157,8 @@ till here -->
                         <!-- End Body Content -->
 
                     </div>
-                </div>
-            </div>
-            <!-- End Map Tools Panel -->
 
-            <!-- Overlays Panel -->
-            <div class="row">
-                <div class="col-xs-4" style="">
-
+                    <!-- Overlays Panel -->
                     <div id="overlay-panel" class="tools-panel hidden" style="border-top-left-radius: 3px; border-top-right-radius: 3px;">
                         <div class="modal-header arches-modal-header">
 
@@ -180,7 +179,7 @@ till here -->
                         </div>
             
                         <!-- Body Content -->
-                        <div class="modal-body padding-top-0 padding-bottom-0" style="overflow-y: scroll; height: 395px;">
+                        <div class="modal-body padding-top-0 padding-bottom-0" style="overflow-y: scroll; height: 325px;">
                             
                             <!-- List overlays -->
                             <div class="row">
