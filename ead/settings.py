@@ -78,6 +78,12 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 # MAP_MAX_ZOOM = 19
 # MAP_EXTENT = '-13228037.69691764,3981296.0184014924,-13123624.71628009,4080358.407059081'
 
+## set the node to sort search results on
+## valid entries are 'primaryname' to sort (case-sensitive!) on the calculated primary name,
+## or the name of any node, like "NAME.E41". if the node is not found in the resource, it
+## falls to the bottom of the sort list (no errors)
+SORT_RESULTS_BY = "primaryname"
+
 ## SAVED_SEARCHES urls must be defined in settings_local.py because they are different in each
 ## installation icons are defined by their class as listed here: http://fontawesome.io/cheatsheet/
 def SAVED_SEARCHES():
