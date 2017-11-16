@@ -249,9 +249,17 @@ def report(request, resourceid):
         graph_log_path = os.path.join(settings.PACKAGE_ROOT,'logs','current_graph.json')
         with open(graph_log_path,"w") as log:
             print >> log, json.dumps(report_info['source']['graph'], sort_keys=True,indent=2, separators=(',', ': '))
+
+    centroid_coords = False
+    try:
+        src = se.search(index='maplayers', id=resourceid)['_source']
+        centroid_coords = src['properties']['centroid']['coordinates']
+    except:
+        pass
         
     return render_to_response('resource-report.htm', {
             'geometry': JSONSerializer().serialize(report_info['source']['geometry']),
+            'centroid_coords': centroid_coords,
             'resourceid': resourceid,
             'resource_type_name': settings.RESOURCE_TYPE_CONFIGS()[report_info['type']]['name'],
             'icon_class': settings.RESOURCE_TYPE_CONFIGS()[report_info['type']]['icon_class'],
