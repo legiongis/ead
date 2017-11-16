@@ -34,8 +34,9 @@
     
     <div class="col-sm-8">
         <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
-                    {% for related_resource in related_resource_dict.HERITAGE_RESOURCE %}
+            <div class="col-xs-12">
+                <div class=" arches-report-subsection-content">
+                {% for related_resource in related_resource_dict.HERITAGE_RESOURCE %}
                     <p class="arches-report-subsection-item">
                         <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
                             {{related_resource.primaryname}}
@@ -47,6 +48,7 @@
                         </span>
                     </p>
                 {% endfor %}
+                </div>
             </div>
         </div>
     </div>
@@ -59,8 +61,9 @@
     
     <div class="col-sm-8">
         <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
-                    {% for related_resource in related_resource_dict.HERITAGE_RESOURCE_GROUP %}
+            <div class="col-xs-12">
+                <div class=" arches-report-subsection-content">
+                {% for related_resource in related_resource_dict.HERITAGE_RESOURCE_GROUP %}
                     <p class="arches-report-subsection-item">
                         <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
                             {{related_resource.primaryname}}
@@ -72,114 +75,7 @@
                         </span>
                     </p>
                 {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    
-    {% if related_resource_dict.ACTOR|length > 0 %}
-    <div class="col-sm-4">
-        <h3 class="arches-report-subsection">{% trans "Related People/Organizations" %}</h3>
-    </div>
-    
-    <div class="col-sm-8">
-        <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
-                {% for related_resource in related_resource_dict.ACTOR %}
-                <p class="arches-report-subsection-item">
-                    <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
-                        {{related_resource.primaryname}}
-                    </a>
-                    <span class="arches-report-subsection-item-type">
-                        {% if related_resource.relationship|length > 0 %}
-                            ({{related_resource.relationship|join:", "}})
-                        {% endif %}
-                    </span>
-                </p>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    
-    {% if related_resource_dict.ACTIVITY|length > 0 %}
-    <div class="col-sm-4">
-        <h3 class="arches-report-subsection">{% trans "Related Management Activities" %}</h3>
-    </div>
-    
-    <div class="col-sm-8">
-        <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
-                {% for related_resource in related_resource_dict.ACTIVITY %}
-                <p class="arches-report-subsection-item">
-                    <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
-                        {{related_resource.primaryname}}
-                    </a>
-                    <span class="arches-report-subsection-item-type">
-                        {% if related_resource.relationship|length > 0 %}
-                            ({{related_resource.relationship|join:", "}})
-                        {% endif %}
-                    </span>
-                </p>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    
-    {% if related_resource_dict.HISTORICAL_EVENT|length > 0 %}
-    <div class="col-sm-4">
-        <h3 class="arches-report-subsection">{% trans "Related Historical Events" %}</h3>
-    </div>
-    
-    <div class="col-sm-8">
-        <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
-                {% for related_resource in related_resource_dict.HISTORICAL_EVENT %}
-                <p class="arches-report-subsection-item">
-                    <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
-                        {{related_resource.primaryname}}
-                    </a>
-                    <span class="arches-report-subsection-item-type">
-                        {% if related_resource.relationship|length > 0 %}
-                            ({{related_resource.relationship|join:", "}})
-                        {% endif %}
-                    </span>
-                </p>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    
-    {% if related_resource_dict.INFORMATION_RESOURCE_IMAGE|length > 0 %}
-    <div class="col-sm-4">
-        <h3 class="arches-report-subsection">{% trans "Related Images" %}</h3>
-    </div>
-    
-    <div class="col-sm-8">
-        <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
-                {% for related_resource in related_resource_dict.INFORMATION_RESOURCE_IMAGE %}
-                <div class="col-xs-12 col-sm-4">
-                <div class="arches-report-subsection-item">
-                    <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
-                        {{related_resource.primaryname}}
-                    </a>
-                    <span class="arches-report-subsection-item-type">
-                        {% if related_resource.relationship|length > 0 %}
-                            <br>({{related_resource.relationship|join:", "}})
-                        {% endif %}
-                    </span>
                 </div>
-                <div class="arches-report-subsection-item" style="text-align:center;">
-                    <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}">
-                        <img src="{{related_resource.thumbnail}}" alt="" class="arches-report-image-thumbnail" style="margin-bottom: 20px; border: solid 1px #999;" onerror="this.src='{{STATIC_URL}}img/photo_missing.png';">
-                    </a>
-                </div>
-                
-                </div>
-                {% endfor %}
             </div>
         </div>
     </div>
@@ -192,7 +88,8 @@
     
     <div class="col-sm-8">
         <div class="row">
-            <div class="col-xs-12 arches-report-subsection-content">
+            <div class="col-xs-12">
+                <div class=" arches-report-subsection-content">
                 {% for related_resource in related_resource_dict.INFORMATION_RESOURCE_DOCUMENT %}
                 <p class="arches-report-subsection-item">
                     <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}">
@@ -205,7 +102,120 @@
                     </span>
                 </p>
                 {% endfor %}
+                </div>
             </div>
         </div>
     </div>
     {% endif %}
+    
+    {% if related_resource_dict.INFORMATION_RESOURCE_IMAGE|length > 0 %}
+    <div class="col-sm-4">
+        <h3 class="arches-report-subsection">{% trans "Related Images" %}</h3>
+    </div>
+    
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="arches-report-subsection-content">
+                {% for related_resource in related_resource_dict.INFORMATION_RESOURCE_IMAGE %}
+                <div class="col-xs-12 col-sm-4">
+                    <div class="arches-report-subsection-item">
+                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
+                            {{related_resource.primaryname}}
+                        </a>
+                        <span class="arches-report-subsection-item-type">
+                            {% if related_resource.relationship|length > 0 %}
+                                <br>({{related_resource.relationship|join:", "}})
+                            {% endif %}
+                        </span>
+                    </div>
+                    <div class="arches-report-subsection-item" style="text-align:center;">
+                        <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}">
+                            <img src="{{related_resource.thumbnail}}" alt="" class="arches-report-image-thumbnail" style="margin-bottom: 20px; border: solid 1px #999;" onerror="this.src='{{STATIC_URL}}img/photo_missing.png';">
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    <!-- removing references to relationships with resource types that don't exist 11-16-17-->
+    <!-- formatting will need to be updated if these are ever implemented -->
+    <!--
+    {# if related_resource_dict.ACTOR|length > 0 #}
+    <div class="col-sm-4">
+        <h3 class="arches-report-subsection">{% trans "Related People/Organizations" %}</h3>
+    </div>
+    
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-xs-12 arches-report-subsection-content">
+                {# for related_resource in related_resource_dict.ACTOR #}
+                <p class="arches-report-subsection-item">
+                    <a href="{# url 'report' related_resource.entityid #}" class="" title="{# trans 'View Report' #}">
+                        {{related_resource.primaryname}}
+                    </a>
+                    <span class="arches-report-subsection-item-type">
+                        {# if related_resource.relationship|length > 0 #}
+                            ({{related_resource.relationship|join:", "}})
+                        {# endif #}
+                    </span>
+                </p>
+                {# endfor #}
+            </div>
+        </div>
+    </div>
+    {# endif #}
+    
+    {# if related_resource_dict.ACTIVITY|length > 0 #}
+    <div class="col-sm-4">
+        <h3 class="arches-report-subsection">{# trans "Related Management Activities" #}</h3>
+    </div>
+    
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-xs-12 arches-report-subsection-content">
+                {# for related_resource in related_resource_dict.ACTIVITY #}
+                <p class="arches-report-subsection-item">
+                    <a href="{# url 'report' related_resource.entityid #}" class="" title="{# trans 'View Report' #}">
+                        {{related_resource.primaryname}}
+                    </a>
+                    <span class="arches-report-subsection-item-type">
+                        {# if related_resource.relationship|length > 0 #}
+                            ({{related_resource.relationship|join:", "}})
+                        {# endif #}
+                    </span>
+                </p>
+                {# endfor #}
+            </div>
+        </div>
+    </div>
+    {# endif #}
+    
+    {# if related_resource_dict.HISTORICAL_EVENT|length > 0 #}
+    <div class="col-sm-4">
+        <h3 class="arches-report-subsection">{# trans "Related Historical Events" #}</h3>
+    </div>
+    
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-xs-12 arches-report-subsection-content">
+                {# for related_resource in related_resource_dict.HISTORICAL_EVENT #}
+                <p class="arches-report-subsection-item">
+                    <a href="{# url 'report' related_resource.entityid #}" class="" title="{# trans 'View Report' #}">
+                        {{related_resource.primaryname}}
+                    </a>
+                    <span class="arches-report-subsection-item-type">
+                        {# if related_resource.relationship|length > 0 #}
+                            ({{related_resource.relationship|join:", "}})
+                        {# endif #}
+                    </span>
+                </p>
+                {# endfor #}
+            </div>
+        </div>
+    </div>
+    {# endif #}
+    -->
+    
