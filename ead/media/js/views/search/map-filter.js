@@ -9,7 +9,8 @@ define(['jquery',
     'knockout',
     'map/resource-layer-model',
     'utils',
-    'resource-types',], 
+    'resource-types',
+    'map/map-tools'], 
     function($, jqui, _, Backbone, bootstrap, arches, MapView, ol, ko, ResourceLayerModel, utils, resourceTypes) {
         var geoJSON = new ol.format.GeoJSON();
         return Backbone.View.extend({
@@ -297,6 +298,9 @@ define(['jquery',
                     _.each(feature.getKeys(), function (key) {
                         resourceData[key] = feature.get(key);
                     });
+                    
+                    display_coords = MakeCoordDisplayString(resourceData.centroid['coordinates'],include_dd=true);
+                    resourceData.display_coords = display_coords;
                     
                     selectFeatureOverlay.getFeatures().clear();
                     selectFeatureOverlay.getFeatures().push(feature);

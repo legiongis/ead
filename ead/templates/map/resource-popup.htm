@@ -26,7 +26,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().cultural_period : ''"></dd>
     
         <dt class="txt-color-blue">{% trans 'Location Coordinates' %}</dt>
-        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().lat+', '+selectedResource().long : ''"></dd>
+        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().display_coords : ''"></dd>
+        
     </div>
     <div data-bind="if: selectedResource()['entitytypeid'] === 'HERITAGE_RESOURCE_GROUP.E27'">
         <dt class="txt-color-blue">{% trans 'Complex Type' %}</dt>
@@ -36,7 +37,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
         <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().cultural_period : ''"></dd>
     
         <dt class="txt-color-blue">{% trans 'Location Coordinates' %}</dt>
-        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().lat+', '+selectedResource().long : ''"></dd>
+        <dd class="txt-color-blue arches-map-panel-list" data-bind="text:selectedResource() ? selectedResource().display_coords : ''"></dd>
     </div>
     <div data-bind="if: selectedResource()['entitytypeid'] === 'ACTIVITY.E7'">
         <dt class="txt-color-blue">{% trans 'Activity Type' %}</dt>

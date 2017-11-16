@@ -284,6 +284,9 @@ require([
                 _.each(feature.getKeys(), function (key) {
                     resourceData[key] = feature.get(key);
                 });
+
+                display_coords = MakeCoordDisplayString(resourceData.centroid['coordinates'],include_dd=true);
+                resourceData.display_coords = display_coords;
                 
                 selectFeatureOverlay.getFeatures().clear();
                 selectFeatureOverlay.getFeatures().push(feature);
@@ -356,12 +359,6 @@ require([
                                     $.ajax({
                                         url: arches.urls.map_markers + 'all?entityid=' + clickFeature.getId(),
                                         success: function(response) {
-                                            
-                                            var coords = response.features[0].geometry.geometries[0].coordinates;
-                                            var lat = ConvertDDToDMS(coords[1]);
-                                            var latstring = DMSString(lat);
-                                            var lon = ConvertDDToDMS(coords[0],true);
-                                            var longstring = DMSString(lon);
 
                                             var feature = geoJSON.readFeature(response.features[0]);
                                             
@@ -370,8 +367,6 @@ require([
 
                                             feature.set('select_feature', true);
                                             feature.set('entityid', feature.getId());
-                                            feature.set('lat',latstring);
-                                            feature.set('long',longstring);
 
                                             archesFeaturesCache[clickFeature.getId()] = feature;
                                             $('.map-loading').hide();
