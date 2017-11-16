@@ -34,6 +34,10 @@
     position: relative;
 }
 
+.arches-report-subsection-content {
+    min-height: 40px;
+}
+
 @media print {
   body * {
     visibility: hidden;
