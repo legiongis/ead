@@ -32,7 +32,10 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^rosetta/', include('rosetta.urls')),
-    
+    url(r'^search$', 'ead.views.search.home_page', name="search_home"),
+    url(r'^search/terms$', 'ead.views.search.search_terms', name="search_terms"),
+    url(r'^search/resources$', 'ead.views.search.search_results', name="search_results"),
+    url(r'^search/export$', 'ead.views.search.export_results', name="search_results_export"),
 )
 
 # if 'rosetta' in settings.INSTALLED_APPS:

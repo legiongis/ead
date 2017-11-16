@@ -34,7 +34,7 @@ from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Bool, Match, Query, Nested, Terms, GeoShape, Range
 from arches.app.utils.data_management.resources.exporter import ResourceExporter
 
-
+print "using local search.py"
 import csv
 
 try:
