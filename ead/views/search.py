@@ -33,8 +33,6 @@ from arches.app.views.concept import get_preflabel_from_conceptid
 from arches.app.search.search_engine_factory import SearchEngineFactory
 from arches.app.search.elasticsearch_dsl_builder import Bool, Match, Query, Nested, Terms, GeoShape, Range
 from arches.app.utils.data_management.resources.exporter import ResourceExporter
-
-print "using local search.py"
 import csv
 
 try:
@@ -53,7 +51,7 @@ def home_page(request):
             'min_date': min_max_dates['val__min'].year if min_max_dates['val__min'] != None else 0,
             'max_date': min_max_dates['val__max'].year if min_max_dates['val__min'] != None else 1,
             'timefilterdata': JSONSerializer().serialize(Concept.get_time_filter_data()),
-            'saved_searches': settings.SAVED_SEARCH_URLS
+            # 'saved_searches': settings.SAVED_SEARCH_URLS
         }, 
         context_instance=RequestContext(request))
         
@@ -78,7 +76,6 @@ def build_search_terms_dsl(request):
     boolquery.should(Match(field='term.folded', query=searchString.lower(), type='phrase_prefix', fuzziness='AUTO'))
     boolquery.should(Match(field='term.folded', query=searchString.lower(), fuzziness='AUTO'))
     query.add_query(boolquery)
-
     return query
 
 def search_results(request):
