@@ -28,7 +28,7 @@ urlpatterns = patterns('',
     url(r'^rdm/(?P<conceptid>%s|())$' % uuid_regex , 'ead.views.concept.rdm', name='rdm'),
     url(r'^concepts/(?P<conceptid>%s|())$' % uuid_regex , 'ead.views.concept.concept', name="concept"),
     url(r'^reports/(?P<resourceid>%s)$' % uuid_regex , 'ead.views.resources.report', name='report'),
-    url(r'', include(arches_hip_urls)),
+    
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^rosetta/', include('rosetta.urls')),
@@ -38,6 +38,7 @@ urlpatterns = patterns('',
     url(r'^search/export$', 'ead.views.search.export_results', name="search_results_export"),
     url(r'^geocoder', 'ead.views.search.geocode', name="geocoder"),
     url(r'^buffer/$', 'ead.views.search.buffer', name="buffer"),
+    url(r'', include(arches_hip_urls)),
 )
 
 # if 'rosetta' in settings.INSTALLED_APPS:
