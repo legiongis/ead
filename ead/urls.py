@@ -36,6 +36,8 @@ urlpatterns = patterns('',
     url(r'^search/terms$', 'ead.views.search.search_terms', name="search_terms"),
     url(r'^search/resources$', 'ead.views.search.search_results', name="search_results"),
     url(r'^search/export$', 'ead.views.search.export_results', name="search_results_export"),
+    url(r'^geocoder', 'ead.views.search.geocode', name="geocoder"),
+    url(r'^buffer/$', 'ead.views.search.buffer', name="buffer"),
 )
 
 # if 'rosetta' in settings.INSTALLED_APPS:
