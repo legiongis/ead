@@ -36,6 +36,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div id="olmap" class="fill"></div>
                     <div style="display:none;" id="map-data">
                         <input type="hidden" id="resource_geometry" value='{{ geometry }}' />
+                        <input type="hidden" id="resource_centroid" value='{{ centroid_coords }}' />
                     </div>
                 </div>
 
@@ -112,7 +113,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                     <!-- Section Header -->
                     <div class="">
-                        <h2 class="arches-report-section-header" style="{% if geometry == 'null' %}text-align:start;{% endif %}">{% trans "Archaeological Site Description" %}</h2>
+                        <h2 class="arches-report-section-header" style="{% if geometry == 'null' %}text-align:start;{% endif %}">{% trans "Description" %}</h2>
                     </div>
 
                     <!-- Anchor for in=page navigation from "report options" menu -->
@@ -241,9 +242,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                                     </dl>
                                                 </div>
                                             </div>
-
-                                            <!-- Keywords -->
-                                            {% include 'views/reports/sections/KEYWORD.E55.htm' %}
 
                                         </div>
                                     </div>

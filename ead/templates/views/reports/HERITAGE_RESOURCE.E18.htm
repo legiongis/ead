@@ -36,6 +36,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div id="olmap" class="fill"></div>
                     <div style="display:none;" id="map-data">
                         <input type="hidden" id="resource_geometry" value='{{ geometry }}' />
+                        <input type="hidden" id="resource_centroid" value='{{ centroid_coords }}' />
                     </div>
                 </div>
 
@@ -264,7 +265,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                             {% include 'views/reports/sections/ADMINISTRATIVE_SUBDIVISION.E48.htm' %}
 
                                             <!-- Parcels -->
-                                            {% include 'views/reports/sections/PLACE_APPELLATION_CADASTRAL_REFERENCE.E44.htm' %}
+                                            {% if 'PLACE_E53' in report_info.source.graph %}
+                                                {% for PLACE_E53 in report_info.source.graph.PLACE_E53 %}
+                                                    {% if 'PLACE_CADASTRAL_REFERENCE_E53' in PLACE_E53 %}
+                                                        {% include 'views/reports/sections/PLACE_APPELLATION_CADASTRAL_REFERENCE.E44.htm' %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
 
                                             
                                         </div>
@@ -305,42 +312,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                 </div>
                                 <!-- End Classification Section -->
 
-
-
-
-                                <!-- <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr> -->
-
-
-                                <!-- Measurements -->
-                                <!-- <div class="row"> -->
-
-                                    <!-- Section sub-header -->
-                                    <!--<div class="col-sm-4">
-                                        <h3 class="arches-report-subsection">{% trans "Measurements" %}</h3>
-                                    </div> -->
-                                    <!-- End Section sub-header -->
-
-                                     <!-- Section Content -->
-                                   <!-- <div class="col-sm-8"> -->
-
-                                        <!-- Spacer -->
-                                       <!-- <div class="arches-report-spacer hidden-xs"></div>
-
-                                        <div class="arches-report-subsection-content"> -->
-
-                                            <!-- Measurements -->
-                                            <!--{% include 'views/reports/sections/MEASUREMENT_TYPE.E55.htm' %} -->
-
-                                   <!--     </div>
-                                    </div> -->
-                                    <!-- End Section Content-->
-
-                               <!-- </div> -->
-                                <!-- End Measuerments Section -->
-
-
                                 <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
-
 
                                 <!-- External System References -->
                                 <div class="row">

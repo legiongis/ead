@@ -35,6 +35,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div id="olmap" class="fill"></div>
                     <div style="display:none;" id="map-data">
                         <input type="hidden" id="resource_geometry" value='{{ geometry }}' />
+                        <input type="hidden" id="resource_centroid" value='{{ centroid_coords }}' />
                     </div>
                 </div>
 
@@ -113,13 +114,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     <div class="">
                         <i class="center-icon rounded-x fa fa-folder-open"></i>
                         <div class="">
-                            <h2 class="arches-report-section-header">{% trans "Resource Description" %}</h2>
+                            <h2 class="arches-report-section-header">{% trans "Archaeological Complex Description" %}</h2>
                         </div> 
                     </div>
-
-                    <!-- Anchor for in=page navigation from "report options" menu -->
-                    <a href="overview" id="overview" style="top: 250px;"></a>
-
 
                     <!-- Resource Description Content -->
                     <div class="row">
@@ -136,7 +133,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                                     <!-- Section sub-header -->
                                     <div class="col-sm-4">
-                                        <h3 class="arches-report-subsection">{% trans "Resource Summary" %}</h3>
+                                        <h3 class="arches-report-subsection">{% trans "Archaeological Complex Summary" %}</h3>
                                     </div>
                                     <!-- End Section sub-header -->
 
@@ -153,13 +150,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                             
                                             <!-- Resource Type -->
                                             {% include 'views/reports/sections/RESOURCE_TYPE_CLASSIFICATION.E55.htm' %}
-                                            
-                                            <!-- Important Dates -- Removed for EAD -->
-                                            
 
                                             <!-- Keywords -->
                                             {% include 'views/reports/sections/KEYWORD.E55.htm' %}
-
+                                            
                                         </div>
                                     </div>
                                     <!-- End Section Content-->
@@ -167,9 +161,34 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                 </div>
                                 <!-- End Names/Type Section -->
 
-
                                 <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
 
+                                <!-- Descriptions -->
+                                <div class="row">
+
+                                    <!-- Section sub-header -->
+                                    <div class="col-sm-4">
+                                        <h3 class="arches-report-subsection">{% trans "Site Descriptions" %}</h3>
+                                    </div>
+                                    <!-- End Section sub-header -->
+
+                                     <!-- Section Content -->
+                                    <div class="col-sm-8">
+
+                                        <!-- Spacer -->
+                                        <div class="arches-report-spacer hidden-xs"></div>
+
+                                        <div class="arches-report-subsection-content">
+
+                                            <!-- Descriptions -->
+                                            {% include 'views/reports/sections/DESCRIPTION.E62.htm' %}
+
+                                        </div>
+                                    </div>
+                                    <!-- End Section Content-->
+
+                                </div>
+                                <!-- End Descriptions Section -->
                                 
                                 <!-- Location -->
                                 <div class="row">
@@ -205,8 +224,14 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                             {% include 'views/reports/sections/ADMINISTRATIVE_SUBDIVISION.E48.htm' %}
 
                                             <!-- Parcels -->
-                                            {% include 'views/reports/sections/PLACE_APPELLATION_CADASTRAL_REFERENCE.E44.htm' %}
-
+                                            <!-- only show if there's something to show -->
+                                            {% if 'PLACE_E53' in report_info.source.graph %}
+                                                {% for PLACE_E53 in report_info.source.graph.PLACE_E53 %}
+                                                    {% if 'PLACE_CADASTRAL_REFERENCE_E53' in PLACE_E53 %}
+                                                        {% include 'views/reports/sections/PLACE_APPELLATION_CADASTRAL_REFERENCE.E44.htm' %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
                                             
                                         </div>
                                     </div>
@@ -227,95 +252,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                         <h3 class="arches-report-subsection">{% trans "Classification" %}</h3>
                                     </div>
                                     <!-- End Section sub-header -->
+                                    
+                                    
 
                                      <!-- Section Content -->
                                     <div class="col-sm-8">
-
+                                        
                                         <!-- Spacer -->
                                         <div class="arches-report-spacer hidden-xs"></div>
 
                                         <div class="arches-report-subsection-content">
-
-                                            <!-- Classification -->
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <dl>
-                                                        <dt>
-                                                            <h5 id="" class="arches-report-subsection-title">{% trans "Classification" %}</h5>
-                                                        </dt>
-
-                                                        {% if 'PRODUCTION_E12' not in report_info.source.graph %}
-                                                            <dd class="arches-report-subsection-item">
-                                                                {% trans "No classifications recorded" %}
-                                                            </dd>
-                                                        {% else %}
-
-                                                            {% for PRODUCTION_E12 in report_info.source.graph.PRODUCTION_E12 %}
-                                                                {% if 'PHASE_TYPE_ASSIGNMENT_E17' not in PRODUCTION_E12 %}
-                                                                    <dd class="arches-report-subsection-item">
-                                                                        {% trans "No classifications recorded" %}
-                                                                    </dd>
-                                                                {% else %}
-
-                                                                    {% for PHASE_TYPE_ASSIGNMENT_E17 in PRODUCTION_E12.PHASE_TYPE_ASSIGNMENT_E17 %}
-                                                                        <dd class="arches-report-subsection-item arches-report-spacer">
-
-                                                                            {% if 'HERITAGE_RESOURCE_GROUP_TYPE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                                                                <span class="arches-report-subsection-item-type">
-                                                                                    {% trans "Type" %}:
-                                                                                </span>
-                                                                                {% for HERITAGE_RESOURCE_GROUP_TYPE_E55 in PHASE_TYPE_ASSIGNMENT_E17.HERITAGE_RESOURCE_GROUP_TYPE_E55 %}
-                                                                                    {{HERITAGE_RESOURCE_GROUP_TYPE_E55.HERITAGE_RESOURCE_GROUP_TYPE_E55__value}}
-                                                                                {% endfor %} 
-                                                                            {% endif %}
-
-                                                                            {% if 'HERITAGE_RESOURCE_GROUP_USE_TYPE_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                                                                <span class="arches-report-subsection-item-type">
-                                                                                    {% trans "Use" %}:
-                                                                                </span>
-                                                                                {% for HERITAGE_RESOURCE_GROUP_USE_TYPE_E55 in PHASE_TYPE_ASSIGNMENT_E17.HERITAGE_RESOURCE_GROUP_USE_TYPE_E55 %}
-                                                                                    {{HERITAGE_RESOURCE_GROUP_USE_TYPE_E55.HERITAGE_RESOURCE_GROUP_USE_TYPE_E55__value}}
-                                                                                {% endfor %}
-                                                                            {% endif %}
-
-                                                                            {% if 'CULTURAL_PERIOD_E55' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                                                                 <span class="arches-report-subsection-item-type">
-                                                                                    {% trans "Period" %}:
-                                                                                </span>
-                                                                                {% for CULTURAL_PERIOD_E55 in PHASE_TYPE_ASSIGNMENT_E17.CULTURAL_PERIOD_E55 %}
-                                                                                    {{CULTURAL_PERIOD_E55.CULTURAL_PERIOD_E55__value}}
-                                                                                {% endfor %}  
-                                                                            {% endif %}
-
-                                                                            {% if 'TIME___SPAN_PHASE_E52' in PHASE_TYPE_ASSIGNMENT_E17 %}
-                                                                                <span class="arches-report-subsection-item-type">
-                                                                                    {% trans "Dates (from/to)" %}:
-                                                                                </span>
-                                                                                {% for TIME___SPAN_PHASE_E52 in PHASE_TYPE_ASSIGNMENT_E17.TIME___SPAN_PHASE_E52 %}
-                                                                                    {% for FROM_DATE_E49 in TIME___SPAN_PHASE_E52.FROM_DATE_E49 %}
-                                                                                        {{FROM_DATE_E49.FROM_DATE_E49__value}}
-                                                                                    {% endfor %} -
-                                                                                    {% for TO_DATE_E49 in TIME___SPAN_PHASE_E52.TO_DATE_E49 %}
-                                                                                        {{TO_DATE_E49.TO_DATE_E49__value}}
-                                                                                    {% endfor %} 
-                                                                                {% endfor %} 
-                                                                            {% endif %}
-
-                                                                        </dd>
-                                                                    {% endfor %}
-                                                                    
-                                                                {% endif %}   
-
-                                                            {% endfor %} 
-
-                                                        {% endif %}   
-
-                                                    </dl>
-                                                </div>
-                                            </div>
-
-                                            <!-- Related Features -->
-                                            {% include 'views/reports/sections/ANCILLARY_FEATURE_TYPE.E55.htm' %}
+                                            {% include "views/reports/sections/heritage_resource_phase_type_assignment.htm" %}
 
                                         </div>
                                     </div>
@@ -355,40 +302,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                 </div>
                                 <!-- End Descriptions Section -->
 
-
                                 <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
-
-
-                                <!-- Measurements -->
-                                <div class="row">
-
-                                    <!-- Section sub-header -->
-                                    <div class="col-sm-4">
-                                        <h3 class="arches-report-subsection">{% trans "Measurements" %}</h3>
-                                    </div>
-                                    <!-- End Section sub-header -->
-
-                                     <!-- Section Content -->
-                                    <div class="col-sm-8">
-
-                                        <!-- Spacer -->
-                                        <div class="arches-report-spacer hidden-xs"></div>
-
-                                        <div class="arches-report-subsection-content">
-
-                                            <!-- Measurements -->
-                                            {% include 'views/reports/sections/MEASUREMENT_TYPE.E55.htm' %}
-
-                                        </div>
-                                    </div>
-                                    <!-- End Section Content-->
-
-                                </div>
-                                <!-- End Measuerments Section -->
-
-
-                                <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
-
 
                                 <!-- External System References -->
                                 <div class="row">
