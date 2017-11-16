@@ -29,6 +29,26 @@ function DMSString(dmsobj){
     return dmsobj['deg']+'\xB0 '+dmsobj['min']+"' "+dmsobj['sec']+'" '+dmsobj['dir']
 }
 
+function MakeCoordDisplayString(latlong,include_dd=false,dms_prec=1,dd_prec=5) {
+
+    var lat = latlong[1];
+    var lon = latlong[0];
+    
+    var latdms = ConvertDDToDMS(lat,false,precision=dms_prec);
+    var latdmsstring = DMSString(latdms);
+    var londms = ConvertDDToDMS(lon,true,precision=dms_prec);
+    var londmsstring = DMSString(londms);
+    
+    var dms_string = latdmsstring+", "+londmsstring;
+    if (include_dd) {
+        latround = round(lat,dd_prec)
+        lonround = round(lon,dd_prec)
+        dms_string+=" ("+latround+", "+lonround+")"
+    }
+    
+    return dms_string;
+}
+
 // works but is not used, much simpler construction is in resource-report.js
 function MakeGoogleMapsLink(latdmsobj,longdmsobj){
     var gmaps = 'https://google.com/maps/place/';

@@ -15,6 +15,7 @@ require([
             var resize;
             var self = this;
             var resource_geometry = $('#resource_geometry');
+            var resource_centroid = $('#resource_centroid');
             
             if(resource_geometry.length > 0){
                 var geom = JSON.parse(resource_geometry.val());
@@ -64,6 +65,17 @@ require([
                 $(".close").click(function (){ 
                     hideAllPanels();
                 });
+                
+                // DO DISPLAY STUFF WITH THE CENTROID
+                var centroid = JSON.parse(resource_centroid.val())
+                var coord_display = MakeCoordDisplayString(centroid,include_dd=true);
+                $("#dms-coords-section").html(coord_display);
+                // construct the google maps link with this formula
+                // https://stackoverflow.com/questions/2660201/what-parameters-should-i-use-in-a-google-maps-url-to-go-to-a-lat-lon?answertab=votes#tab-top
+                // zoom parameter doesn't work though
+                
+                var gm = 'http://maps.google.com/maps?z=7&t=k&q=loc:'+centroid[1]+'+'+centroid[0]
+                $("#gmaps-link").attr('href',gm)
                
             }else{
                 $('.block-description').css('marginTop', '-40px');
@@ -89,21 +101,6 @@ require([
                 // there is @media print styling in package.css that makes this work
                 window.print();
             });
-            
-            var geomval = JSON.parse(resource_geometry.val())
-            var lat = geomval['geometries'][0]['coordinates'][1];
-            var latdms = ConvertDDToDMS(lat);
-            var latdmsstring = DMSString(latdms);
-            var lon = geomval['geometries'][0]['coordinates'][0];
-            var londms = ConvertDDToDMS(lon,true);
-            var londmsstring = DMSString(londms);
-            $("#dms-coords-section").html(latdmsstring+", "+londmsstring)
-
-            // construct the link with this formula
-            // https://stackoverflow.com/questions/2660201/what-parameters-should-i-use-in-a-google-maps-url-to-go-to-a-lat-lon?answertab=votes#tab-top
-            // zoom parameter doesn't work though
-            var gm = 'http://maps.google.com/maps?z=7&t=k&q=loc:'+lat+'+'+lon
-            $("#gmaps-link").attr('href',gm)
 
         },
 
