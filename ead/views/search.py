@@ -94,19 +94,6 @@ def search_results(request):
 
 def build_search_results_dsl(request):
 
-    if settings.SORT_RESULTS_BY == "primaryname":
-        sorting = [{"primaryname" : {"order" : "asc"}}][{"primaryname" : {"order" : "asc"}}]
-    else:
-        sorting = {
-            "child_entities.label":  {
-                "order" : "asc",
-                "nested_path": "child_entities",
-                "nested_filter": {
-                    "term": {"child_entities.entitytypeid" : settings.SORT_RESULTS_BY}
-                }            
-            }
-        }
-
     term_filter = request.GET.get('termFilter', '')
     spatial_filter = JSONDeserializer().deserialize(request.GET.get('spatialFilter', None)) 
     export = request.GET.get('export', None)
@@ -197,8 +184,23 @@ def build_search_results_dsl(request):
 
     if not boolfilter.empty:
         query.add_filter(boolfilter)
-
+    print "pre-sorting"
+    if settings.SORT_RESULTS_BY == "primaryname":
+        sorting = [{"primaryname" : {"order" : "asc"}}]
+    else:
+        sorting = {
+            "child_entities.label":  {
+                "order" : "asc",
+                "nested_path": "child_entities",
+                "nested_filter": {
+                    "term": {"child_entities.entitytypeid" : settings.SORT_RESULTS_BY}
+                }            
+            }
+        }
+    print sorting
+        
     query.dsl.update({'sort': sorting})
+    
     return query
 
 def buffer(request):
