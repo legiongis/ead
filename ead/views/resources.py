@@ -110,6 +110,9 @@ def report(request, resourceid):
     report_info['source']['graph'] = report_info['source']['graph']
     del report_info['_source']
     del report_info['_type']
+    
+    primary_label = settings.RESOURCE_TYPE_CONFIGS()[report_info['type']]['primary_name_lookup']['lookup_value'][1]
+    print "primary_label",primary_label
 
     def get_evaluation_path(valueid):
         value = models.Values.objects.get(pk=valueid)
@@ -256,7 +259,7 @@ def report(request, resourceid):
         centroid_coords = src['properties']['centroid']['coordinates']
     except:
         pass
-        
+    
     return render_to_response('resource-report.htm', {
             'geometry': JSONSerializer().serialize(report_info['source']['geometry']),
             'centroid_coords': centroid_coords,
@@ -268,6 +271,7 @@ def report(request, resourceid):
             'related_resource_dict': related_resource_dict,
             'related_resource_flag': related_resource_flag,
             'main_script': 'resource-report',
-            'active_page': 'ResourceReport'
+            'active_page': 'ResourceReport',
+            'primary_name_label': primary_label,
         },
         context_instance=RequestContext(request))        
