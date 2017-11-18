@@ -75,6 +75,7 @@ define(['jquery',
                     $.each(this._source.child_entities, function(i, entity){
                         if (entity.entitytypeid === descriptionNode){
                             description = entity.value;
+                            return false
                         }
                     })
 
