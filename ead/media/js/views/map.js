@@ -147,8 +147,10 @@ define([
             });
             
             coords = point.transform("EPSG:3857", "EPSG:4326").getCoordinates();
+            // swap order of coords so that they read "lat, long" not "long, lat"
+            var coords_latlong = [Number(coords[1]), Number(coords[0])];
             if (coords.length > 0) {
-                this.trigger('mousePositionChanged', format(coords), pixels, overFeature);
+                this.trigger('mousePositionChanged', format(coords_latlong), pixels, overFeature);
             } else {
                 this.trigger('mousePositionChanged', '');
             }
