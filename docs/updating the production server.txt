@@ -1,6 +1,25 @@
+Github is used for adding changes to the software. Weekstmp user (on the desktop in the TMP office) has a local repository: ArchesEADGithub, which contains the latest Arches EAD cutomized software. This is connected to Adam Cox's EAD github repository. 
+
+Changes can be checked using the interface 'SourceTree'. By using refresh and pull commands can pull down the changes into my local repo from Adam's repo. 
+
+You can upload any changes you make to the software by also using source tree:
+Update program
+Stage it
+Commit it
+Push to repo on Github 
+
+
+To update the Arches EAD software from github, use the console app: 'VMware vSphere Client'. 
+Sign in using 
+1. IP address/Name 10.2.49.60 
+2. User name:      AUC\[your AUC email user name]
+3. Password:       [your AUC email password]
+
+Navigate to the production server L-Arches and right click to select 'open console'. You now have the console and can input commands. 
+
 On the EAD production server, apache is used as the webserver for the app, instead of the django webserver that is used on the development server. This means that deploying changes to the production server requires a couple extra steps so that apache will use these changes.
 
-First, as with the development server, enter the ead directory and run
+First, as with the development server, enter the ead directory (cd /opt/arches/ead and run
 git pull
 to pull new code changes from github.
 
