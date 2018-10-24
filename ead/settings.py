@@ -61,7 +61,7 @@ DEFAULT_MAP_X = 3450904
 DEFAULT_MAP_Y = 2968150
 DEFAULT_MAP_ZOOM = 6
 MAP_MIN_ZOOM = 1
-MAP_MAX_ZOOM = 20
+MAP_MAX_ZOOM = 22
 MAP_EXTENT = '2616008,2154396,4285800,3829124'
 
 #DEFAULT_MAP_X = 3061141 #2875745 #-13179347.3099
@@ -88,32 +88,32 @@ SORT_RESULTS_BY = "primaryname"
 ## installation icons are defined by their class as listed here: http://fontawesome.io/cheatsheet/
 def SAVED_SEARCHES():
     return {
-        'al_jizah_bibliography': {
-            'title':_('Giza Bibliography'),
-            'url':'XXX',
-            'icon_class':'fa-file-text-o',
-            'desc':_('Find and print out the bibliography for the pyramids of Giza (Al Jizah)'),
-            'sort_order':1
-        },
         'all_sites': {
             'title':_('All Sites'),
             'url':'XXX',
             'icon_class':'fa-file-text-o',
             'desc':_('Search for all sites and complexes'),
-            'sort_order':2
+            'sort_order':1
         },
-        'isis_temples': {
-            'title':_('Isis Temples'),
-            'url':'XXX',
-            'icon_class':'fa-bank',
-            'desc':_('Find and print out the bibliography for the pyramids of Giza (Al Jizah)'),
-            'sort_order':3
-        },
-        'isis_templese': {
-            'title':_('Isis Temples2'),
+        'tawd_temple': {
+            'title':_('Tawd Temple'),
             'url':'XXX',
             'icon_class':'fa-file-text-o',
-            'desc':_('Find and print out the bibliography for the pyramids of Giza (Al Jizah)'),
+            'desc':_('An Upper Egyptian Temple Dedicated to Montu'),
+            'sort_order':2
+        },
+        'qift_town_temples': {
+            'title':_('Qift: Town and Temples'),
+            'url':'XXX',
+            'icon_class':'fa-bank',
+            'desc':_('An Upper Egyptian Town and Temples site on an important trade route'),
+            'sort_order':3
+        },
+        'bir_Fawakhir': {
+            'title':_('Bir Umm al Fawakhir'),
+            'url':'XXX',
+            'icon_class':'fa-file-text-o',
+            'desc':_('One of the largest and most productive gold mines in Ancient Egypt'),
             'sort_order':4
         }
     }
