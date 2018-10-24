@@ -1,0 +1,28 @@
+
+Github is used for adding changes to the software. Weekstmp user (on the desktop in the TMP office) has a local repository: ArchesEADGithub, which contains the latest software. This is connected to legiongis EAD github repository (https://github.com/legiongis/ead. 
+Changes can be checked using the interface 'SourceTree'. By using refresh and pull commands can pull down the changes into my local repo from Adam's repo. 
+
+You can upload any changes you make to the software by also using source tree:
+Update program
+Stage it
+Commit it
+Push to repo on Github 
+
+
+To update the Arches EAD software from github, use the console app: 'VMware vSphere Client' and navigate to the development server L-Django-T
+On the EAD development server, django webserver is used.
+
+1. Stop the server by selecting ctrl-C. 
+
+2. Check it is stopped by running: ps aux | grep runserver There should only be one process running - elastic search.
+
+3. If not stopped, kill it using: kill 'process #'
+ 
+4. Enter the ead directory (/opt/arches/ead) and run
+git pull to pull new code changes from github.
+
+5. Check the files are downloaded, ensure the directory is still /opt/arches/ead, then start the server again using: python manage.py runserver 0:8000
+
+6. Test the changes!!!
+
+
