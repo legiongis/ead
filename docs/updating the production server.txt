@@ -1,4 +1,4 @@
-Github is used for adding changes to the software. Weekstmp user (on the desktop in the TMP office) has a local repository: ArchesEADGithub, which contains the latest Arches EAD cutomized software. This is connected to Adam Cox's EAD github repository. 
+Github is used for adding changes to the software. Weekstmp user (on the desktop in the TMP office) has a local repository: ArchesEADGithub, which contains the latest Arches EAD cutomized software. This is connected to legiongis EAD github repository - https://github.com/legiongis/ead. 
 
 Changes can be checked using the interface 'SourceTree'. By using refresh and pull commands can pull down the changes into my local repo from Adam's repo. 
 
