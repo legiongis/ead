@@ -219,7 +219,7 @@ def RESOURCE_TYPE_CONFIGS():
         # },
         'INFORMATION_RESOURCE.E73': {
             'resourcetypeid': 'INFORMATION_RESOURCE.E73',
-            'name': _('Biblography/Images/OtherDocs'),
+            'name': _('Bibliography/Images/OtherDocs'),
             'icon_class': 'fa fa-file-text-o',
             'default_page': 'information-resource-summary',
             'default_description': 'No description available',
