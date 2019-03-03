@@ -17,7 +17,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 {% extends "base.htm" %}
 {% load staticfiles %}
-
+{% load i18n %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'plugins/layer_slider/css/layerslider.css' %}" type="text/css">
 {{ block.super }}
@@ -37,16 +37,16 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:22px; font-weight: 200; color:#fff; top:100px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                EAD Includes
+               {% trans "EAD Includes" %}
                 </span>
 
                 <span class="ls-s-1" style="line-height: 42px; font-size:42px; font-weight: 200; color:#fff; top:140px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Egypt's pre-Islamic Archaeological Sites
+                {% trans "Egypt's pre-Islamic Archaeological Sites" %}
                 </span>
 
                 <!-- Photo Credit -->
                 <span class="ls-s-1" style="line-height: 16px; font-size:12px; color:#fff; top:570px; left: 900px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Photo: Pyramids of Giza from the TMP Archive
+                {% trans "Photo: Pyramids of Giza from the TMP Archive" %}
                 </span>
 
              </div>
@@ -60,17 +60,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:22px; font-weight: 200; color:#fff; top:100px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                EAD Includes
+                {% trans "EAD Includes" %}
                 </span>
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:42px; font-weight: 200; color:#fff; top:140px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Photographs, Plans, and other Images
+                {% trans "Photographs, Plans, and other Images" %}
                 </span>
 
                 <!-- Photo Credit -->
                 <span class="ls-s-1" style="line-height: 16px; font-size:12px; color:#fff; top:570px; left: 900px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Historical Reconstruction of Madinat Habu from the Oriental Institute, University of Chicago
+                {% trans "Historical Reconstruction of Madinat Habu from the Oriental Institute, University of Chicago" %}
                 </span>
 
              </div>
@@ -84,17 +84,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:22px; font-weight: 200; color:#fff; top:100px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                EAD Includes
+                {% trans "EAD Includes" %}
                 </span>
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:42px; font-weight: 200; color:#fff; top:140px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Site Bibliographies and other Documents
+                {% trans "Site Bibliographies and other Documents" %}
                 </span>
 
                 <!-- Photo Credit -->
                 <span class="ls-s-1" style="line-height: 16px; font-size:12px; color:#fff; top:570px; left: 900px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Photo: Madinat Habu Temple from the TMP Archive
+                {% trans "Photo: Madinat Habu Temple from the TMP Archive" %}
                 </span>
 
              </div>
@@ -108,17 +108,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:22px; font-weight: 200; color:#fff; top:100px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                EAD is about
+                {% trans "EAD is about" %}
                 </span>
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:42px; font-weight: 200; color:#fff; top:140px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Preserving Ancient</br> Egypt's Art
+                {% blocktrans %}Preserving Ancient</br> Egypt's Art{% endblocktrans %}
                 </span>
 
                 <!-- Photo Credit -->
                 <span class="ls-s-1" style="line-height: 16px; font-size:12px; color:#fff; top:570px; left: 900px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Photo: Decoration in Tomb of Haremhab from the TMP Archive
+                {% trans "Photo: Decoration in Tomb of Haremhab from the TMP Archive" %}
                 </span>
 
              </div>
@@ -132,17 +132,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:22px; font-weight: 200; color:#fff; top:100px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                EAD is about
+                {% trans "EAD is about" %}
                 </span>
 
                 <!-- Text -->
                 <span class="ls-s-1" style="line-height: 42px; font-size:42px; font-weight: 200; color:#fff; top:140px; left: 0px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Preserving Egypt’s Rich Archaeological Heritage
+                {% trans "Preserving Egypt’s Rich Archaeological Heritage" %}
                 </span>
 
                 <!-- Photo Credit -->
                 <span class="ls-s-1" style="line-height: 16px; font-size:12px; color:#fff; top:570px; left: 900px; slidedirection: top; slideoutdirection: bottom; durationin: 0; durationout: 3500;">
-                Photo: Abu Simbel, Photographer Name: Lucy Fletcher-Jones
+                {% trans "Photo: Abu Simbel, Photographer Name: Lucy Fletcher-Jones" %}
                 </span>
 
              </div>
@@ -159,59 +159,60 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <div class="container">
         <div class="row">
             <div class="col-md-9 animated fadeInLeft">
-                <span>The Egyptian Archaeological Database</span>
-                <p>The EAD presently includes over 1600 pre-Islamic sites ranging from small Palaeolithic workstations to 
+                <span>{% trans "The Egyptian Archaeological Database" %}</span>
+                <p>{% blocktrans %}The EAD presently includes over 1600 pre-Islamic sites ranging from small Palaeolithic workstations to 
 				large complexes such as Abydos and Tall al Dabah (Avaris). The EAD's primary purpose is to enable preservation and conservation of these sites.
 				This is a demonstration version of the EAD with a limited number of sites showing the type of data, bibliography and imagery 
 				that will be collected and displayed for all sites. We welcome your comments and ideas for improvement on the type of information we have collected. 
-				Please send them to our email address below. Thank you very much for your help!</p>
+				Please send them to our email address below. Thank you very much for your help!{% endblocktrans %}</p>
             </div>            
-            <div class="col-md-3 btn-buy animated fadeInRight">
-                <a href="javascript:void(0);" class="btn-u btn-u-lg"><i class="fa fa-plus-square"></i>Learn More</a>
-            </div>
+	<!-- Not using the extra page-->	
+      <!--      <div class="col-md-3 btn-buy animated fadeInRight">
+                <a href="javascript:void(0);" class="btn-u btn-u-lg"><i class="fa fa-plus-square"></i>{% trans "Learn More" %}</a>
+            </div> -->
         </div>
     </div>
 </div><!--/row-->
 <!-- End HIP Title Block -->
 
 
-<!--=== Content Part ===-->
-<div class="block-description">
-    <div class="container content padding-top-20">
+<!--=== Content Part Removed for demo system===-->
+<!-- <div class="block-description"> -->
+    <!-- <div class="container content padding-top-20"> -->
 
-        <!--Title Box-->        
-        <div class="title-box no-border margin-top-minus-10" style="border-bottom-color: #dcdcdc;">
-            <div class="title-box-text"><span class="color-green">Featured Searches</span></div>
-        </div>
-        <!-- End Title Box -->    
+        <!-- <!--Title Box-->         
+        <!-- <div class="title-box no-border margin-top-minus-10" style="border-bottom-color: #dcdcdc;"> -->
+            <!-- <div class="title-box-text"><span class="color-green">Featured Searches</span></div> -->
+        <!-- </div> -->
+        <!-- <!-- End Title Box -->     
 
-        <!-- Promo Box -->    
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="servive-block servive-block-default" style="background: #ffffff;">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-bank"></i>
-                    <a class="" href='reports/60acc878-e51d-4ab8-a92f-740769d0aaa6'><h2 class="txt-color-blue">Tawd Temple</h2></a>
-                    <p>An Upper Egyptian Temple Dedicated to Montu</p>                        
-                </div>
-            </div>
+        <!-- <!-- Promo Box -->     
+        <!-- <div class="row"> -->
+            <!-- <div class="col-sm-4"> -->
+                <!-- <div class="servive-block servive-block-default" style="background: #ffffff;"> -->
+                    <!-- <i class="icon-custom rounded-x icon-bg-dark fa fa-bank"></i> -->
+                    <!-- <a class="" href='reports/60acc878-e51d-4ab8-a92f-740769d0aaa6'><h2 class="txt-color-blue">Tawd Temple</h2></a> -->
+                    <!-- <p>An Upper Egyptian Temple Dedicated to Montu</p>                         -->
+                <!-- </div> -->
+            <!-- </div> -->
 
-            <div class="col-sm-4">
-                <div class="servive-block servive-block-default" style="background: #ffffff;">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-bank"></i>
-                    <a class="" href='reports/6a7bda59-8720-49d3-9734-81400676df3b'><h2 class="txt-color-blue">Qift: Town and Temples</h2></a>
-                    <p>An Upper Egyptian Town and Temples site on an important trade route</p>                       
-                </div>
-            </div>
+            <!-- <div class="col-sm-4"> -->
+                <!-- <div class="servive-block servive-block-default" style="background: #ffffff;"> -->
+                    <!-- <i class="icon-custom rounded-x icon-bg-dark fa fa-bank"></i> -->
+                    <!-- <a class="" href='reports/6a7bda59-8720-49d3-9734-81400676df3b'><h2 class="txt-color-blue">Qift: Town and Temples</h2></a> -->
+                    <!-- <p>An Upper Egyptian Town and Temples site on an important trade route</p>                        -->
+                <!-- </div> -->
+            <!-- </div> -->
 
-            <div class="col-sm-4">
-                <div class="servive-block servive-block-default" style="background: #ffffff;">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-gavel"></i>
-                    <a class="" href='reports/d64e5a59-d637-49a3-ba81-e4205e4115ff'><h2 class="txt-color-blue">Umm al Fawakhir, Bir</h2></a>
-                    <p>One of the largest and most productive gold mines in Ancient Egypt</p>                        
-                </div>
-            </div>
-        </div>
-        <!-- End Promo Box -->
+            <!-- <div class="col-sm-4"> -->
+                <!-- <div class="servive-block servive-block-default" style="background: #ffffff;"> -->
+                    <!-- <i class="icon-custom rounded-x icon-bg-dark fa fa-gavel"></i> -->
+                    <!-- <a class="" href='reports/d64e5a59-d637-49a3-ba81-e4205e4115ff'><h2 class="txt-color-blue">Umm al Fawakhir, Bir</h2></a> -->
+                    <!-- <p>One of the largest and most productive gold mines in Ancient Egypt</p>                         -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!--End Promo Box-->
 
 
 
