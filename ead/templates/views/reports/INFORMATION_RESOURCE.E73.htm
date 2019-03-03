@@ -179,29 +179,29 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                                 </div>
                                             </div>
 
-                                            <!-- Identifiers -->
-                                            <div class="row">
-                                                 <div class="col-xs-12">
-                                                    <dl>
-                                                        <dt>
-                                                            <h5 id="" class="arches-report-subsection-title">{% trans "Identifiers" %}</h5>
-                                                        </dt>
+                                            <!-- Identifiers not used in EAD -->
+                                            <!-- <div class="row"> -->
+                                                 <!-- <div class="col-xs-12"> -->
+                                                    <!-- <dl> -->
+                                                        <!-- <dt> -->
+                                                            <!-- <h5 id="" class="arches-report-subsection-title">{% trans "Identifiers" %}</h5> -->
+                                                        <!-- </dt> -->
 
-                                                        {% if 'IDENTIFIER_E42' not in report_info.source.graph %}
-                                                            <dd class="arches-report-subsection-item">
-                                                                {% trans "No identifiers recorded" %}
-                                                            </dd>
-                                                        {% else %}
-                                                            {% for IDENTIFIER_E42 in report_info.source.graph.IDENTIFIER_E42 %}
-                                                                <dd class="arches-report-subsection-item">
-                                                                    {{ IDENTIFIER_E42.IDENTIFIER_TYPE_E55__value }}
-                                                                </dd>
-                                                            {% endfor %}            
-                                                        {% endif %}
+                                                        <!-- {% if 'IDENTIFIER_E42' not in report_info.source.graph %} -->
+                                                            <!-- <dd class="arches-report-subsection-item"> -->
+                                                                <!-- {% trans "No identifiers recorded" %} -->
+                                                            <!-- </dd> -->
+                                                        <!-- {% else %} -->
+                                                            <!-- {% for IDENTIFIER_E42 in report_info.source.graph.IDENTIFIER_E42 %} -->
+                                                                <!-- <dd class="arches-report-subsection-item"> -->
+                                                                    <!-- {{ IDENTIFIER_E42.IDENTIFIER_TYPE_E55__value }} -->
+                                                                <!-- </dd> -->
+                                                            <!-- {% endfor %}             -->
+                                                        <!-- {% endif %} -->
 
-                                                    </dl>
-                                                </div>
-                                            </div>
+                                                    <!-- </dl> -->
+                                                <!-- </div> -->
+                                            <!-- </div> -->
 
                                             <!-- Formats -->
                                             <div class="row">
@@ -234,7 +234,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                                 <div class="col-xs-12">
                                                     <dl>
                                                         <dt>
-                                                            <h5 id="" class="arches-report-subsection-title">Languages</h5>
+                                                            <h5 id="" class="arches-report-subsection-title">{% trans "Languages" %}</h5>
                                                         </dt>
 
                                                         {% if 'LANGUAGE_E55' not in report_info.source.graph %}
@@ -259,6 +259,35 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                                 </div>
                                 <!-- End Names/Type Section -->
+
+                                <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
+
+                                <!-- Descriptions moved to before image-->
+                                <div class="row">
+
+                                    <!-- Section sub-header -->
+                                    <div class="col-sm-4">
+                                        <h3 class="arches-report-subsection">{% trans "Resource Descriptions" %}</h3>
+                                    </div>
+                                    <!-- End Section sub-header -->
+
+                                     <!-- Section Content -->
+                                    <div class="col-sm-8">
+
+                                        <!-- Spacer -->
+                                        <div class="arches-report-spacer hidden-xs"></div>
+
+                                        <div class="arches-report-subsection-content">
+
+                                            <!-- Descriptions -->
+                                            {% include 'views/reports/sections/DESCRIPTION.E62.htm' %}
+
+                                        </div>
+                                    </div>
+                                    <!-- End Section Content-->
+
+                                </div>
+                                <!-- End Descriptions Section -->
 
 
                                 <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
@@ -329,65 +358,65 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                                 <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
                                 
-                                <!-- Location -->
-                                <div class="row">
+                                <!-- Location Not used in EAD -->
+                                <!-- <div class="row"> -->
 
                                     <!-- Section sub-header -->
-                                    <div class="col-sm-4">
-                                        <h3 class="arches-report-subsection">{% trans "Coverage" %}</h3>
-                                    </div>
+                                    <!-- <div class="col-sm-4"> -->
+                                        <!-- <h3 class="arches-report-subsection">{% trans "Coverage" %}</h3> -->
+                                    <!-- </div> -->
                                     <!-- End Section sub-header -->
 
                                      <!-- Section Content -->
-                                    <div class="col-sm-8">
+                                    <!-- <div class="col-sm-8"> -->
 
                                         <!-- Spacer -->
-                                        <div class="arches-report-spacer hidden-xs"></div>
+                                        <!-- <div class="arches-report-spacer hidden-xs"></div> -->
 
-                                        <div class="arches-report-subsection-content">
+                                        <!-- <div class="arches-report-subsection-content"> -->
 
                                             <!-- Location Description -->
-                                            {% include 'views/reports/sections/DESCRIPTION_OF_LOCATION.E62.htm' %}
+                                            <!-- {% include 'views/reports/sections/DESCRIPTION_OF_LOCATION.E62.htm' %} -->
 
                                             <!-- Temporal Coverage Description -->
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <dl>
-                                                        <dt>
-                                                            <h5 id="" class="arches-report-subsection-title">{% trans "Temporal Coverage" %}</h5>
-                                                        </dt>
+                                            <!-- <div class="row"> -->
+                                                <!-- <div class="col-xs-12"> -->
+                                                    <!-- <dl> -->
+                                                        <!-- <dt> -->
+                                                            <!-- <h5 id="" class="arches-report-subsection-title">{% trans "Temporal Coverage" %}</h5> -->
+                                                        <!-- </dt> -->
 
-                                                        {% if 'TEMPORAL_COVERAGE_E4' not in report_info.source.graph %}
-                                                            <dd class="arches-report-subsection-item">
-                                                                {% trans "No coverage recorded" %}
-                                                            </dd>
-                                                        {% else %}
-                                                            {% for TEMPORAL_COVERAGE_E4 in report_info.source.graph.TEMPORAL_COVERAGE_E4 %}
-                                                                {% for TEMPORAL_COVERAGE_TIME___SPAN_E52 in TEMPORAL_COVERAGE_E4.TEMPORAL_COVERAGE_TIME___SPAN_E52 %}
-                                                                    <dd class="arches-report-subsection-item">
-                                                                        {{ TEMPORAL_COVERAGE_TIME___SPAN_E52.TEMPORAL_COVERAGE_TIME___SPAN_E52__value }}
-                                                                    </dd>
-                                                                {% endfor %}
-                                                            {% endfor %}            
-                                                        {% endif %}
+                                                        <!-- {% if 'TEMPORAL_COVERAGE_E4' not in report_info.source.graph %} -->
+                                                            <!-- <dd class="arches-report-subsection-item"> -->
+                                                                <!-- {% trans "No coverage recorded" %} -->
+                                                            <!-- </dd> -->
+                                                        <!-- {% else %} -->
+                                                            <!-- {% for TEMPORAL_COVERAGE_E4 in report_info.source.graph.TEMPORAL_COVERAGE_E4 %} -->
+                                                                <!-- {% for TEMPORAL_COVERAGE_TIME___SPAN_E52 in TEMPORAL_COVERAGE_E4.TEMPORAL_COVERAGE_TIME___SPAN_E52 %} -->
+                                                                    <!-- <dd class="arches-report-subsection-item"> -->
+                                                                        <!-- {{ TEMPORAL_COVERAGE_TIME___SPAN_E52.TEMPORAL_COVERAGE_TIME___SPAN_E52__value }} -->
+                                                                    <!-- </dd> -->
+                                                                <!-- {% endfor %} -->
+                                                            <!-- {% endfor %}             -->
+                                                        <!-- {% endif %} -->
 
-                                                    </dl>
+                                                    <!-- </dl> -->
 
-                                                </div>
-                                            </div>
+                                                <!-- </div> -->
+                                            <!-- </div> -->
                                             
-                                        </div>
-                                    </div>
+                                        <!-- </div> -->
+                                    <!-- </div> -->
                                     <!-- End Section Content-->
 
-                                </div>
+                                <!-- </div> -->
                                 <!-- End Location Section -->
 
 
-                                <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
+                                <!-- <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr> -->
 
 
-                                <!-- Classification -->
+                                <!-- Creation & Publication -->
                                 <div class="row">
 
                                     <!-- Section sub-header -->
@@ -559,68 +588,42 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                     <!-- End Section Content-->
 
                                 </div>
-                                <!-- End Classification Section -->
+                                <!-- End Creation & Publication Section -->
 
 
-                                <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
+                                
+
+                                <!-- Move description to above image-->  
+                                
+
+                                <!-- <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr> -->
 
 
-                                <!-- Descriptions -->
-                                <div class="row">
+                                <!-- External System References Not used in EAD-->
+                                <!-- <div class="row"> -->
 
                                     <!-- Section sub-header -->
-                                    <div class="col-sm-4">
-                                        <h3 class="arches-report-subsection">{% trans "Resource Descriptions" %}</h3>
-                                    </div>
+                                    <!-- <div class="col-sm-4"> -->
+                                        <!-- <h3 class="arches-report-subsection">{% trans "External System References" %}</h3> -->
+                                    <!-- </div> -->
                                     <!-- End Section sub-header -->
 
                                      <!-- Section Content -->
-                                    <div class="col-sm-8">
+                                    <!-- <div class="col-sm-8"> -->
 
                                         <!-- Spacer -->
-                                        <div class="arches-report-spacer hidden-xs"></div>
+                                        <!-- <div class="arches-report-spacer hidden-xs"></div> -->
 
-                                        <div class="arches-report-subsection-content">
-
-                                            <!-- Descriptions -->
-                                            {% include 'views/reports/sections/DESCRIPTION.E62.htm' %}
-
-                                        </div>
-                                    </div>
-                                    <!-- End Section Content-->
-
-                                </div>
-                                <!-- End Descriptions Section -->
-
-
-                                <hr class="devider margin-top-10" style="margin-bottom: 5px;"></hr>
-
-
-                                <!-- External System References -->
-                                <div class="row">
-
-                                    <!-- Section sub-header -->
-                                    <div class="col-sm-4">
-                                        <h3 class="arches-report-subsection">{% trans "External System References" %}</h3>
-                                    </div>
-                                    <!-- End Section sub-header -->
-
-                                     <!-- Section Content -->
-                                    <div class="col-sm-8">
-
-                                        <!-- Spacer -->
-                                        <div class="arches-report-spacer hidden-xs"></div>
-
-                                        <div class="arches-report-subsection-content">
+                                        <!-- <div class="arches-report-subsection-content"> -->
 
                                             <!-- Moficiations -->
-                                            {% include 'views/reports/sections/EXTERNAL_XREF.E42.htm' %}
+                                            <!-- {% include 'views/reports/sections/EXTERNAL_XREF.E42.htm' %} -->
 
-                                        </div>
-                                    </div>
+                                        <!-- </div> -->
+                                    <!-- </div> -->
                                     <!-- End Section Content-->
 
-                                </div>
+                                <!-- </div> -->
                                 <!-- End Descriptions Section -->
                             </div>
                         </div>
