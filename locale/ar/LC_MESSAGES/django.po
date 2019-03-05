@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-27 06:10-0600\n"
+"POT-Creation-Date: 2019-03-05 01:58-0600\n"
 "PO-Revision-Date: 2019-02-27 05:24-0600\n"
 "Last-Translator: <admin@fargeo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,8 +208,9 @@ msgstr "الموقع في نقاط"
 #: ead/models/forms.py:123
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:322
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:281
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:604
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:607
 #: ead/templates/views/reports/sections/EXTERNAL_XREF.E42.htm:6
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:322
 msgid "External System References"
 msgstr "مصادر اخري عن الموقع"
 
@@ -222,6 +223,8 @@ msgid "Components"
 msgstr "مكونات  طبقات موقع"
 
 #: ead/models/forms.py:286 ead/models/forms.py:1126
+#: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:293
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:293
 msgid "Classifications"
 msgstr "تصنيف الموقع"
 
@@ -243,7 +246,7 @@ msgid "Location"
 msgstr "تحديد الموقع"
 
 #: ead/models/forms.py:632
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:337
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:366
 msgid "Coverage"
 msgstr "الفترة الزمنية"
 
@@ -278,7 +281,8 @@ msgstr "معايير التقييم"
 #: ead/models/forms.py:1045 ead/templates/views/forms/related-resources.htm:58
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:352
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:310
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:633
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:636
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:352
 #: ead/templates/views/reports/sections/related_resource_section.htm:23
 #: ead/templates/views/reports/sections/related_resource_section_ead.htm:12
 #: ead/templates/views/reports/sections/related_resource_section_old_9_4.htm:12
@@ -287,7 +291,7 @@ msgid "Related Resources"
 msgstr "مواقع اخري ذات صلة"
 
 #: ead/models/forms.py:1222
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:395
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:424
 msgid "Creation and Publication"
 msgstr "تاريخ النشر"
 
@@ -357,6 +361,7 @@ msgid "Email:"
 msgstr ""
 
 #: ead/templates/header.htm:23
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:237
 msgid "Languages"
 msgstr "اللغات"
 
@@ -509,6 +514,8 @@ msgstr ""
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:94
 #: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:56
 #: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:95
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:56
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:95
 msgid "Basemaps"
 msgstr "خرائط "
 
@@ -799,7 +806,7 @@ msgid "Edit this description"
 msgstr "تعديل هذا الوصف"
 
 #: ead/templates/views/forms/description.htm:14
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:573
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:270
 msgid "Resource Descriptions"
 msgstr "وصف المصدر"
 
@@ -900,6 +907,7 @@ msgstr "وصف الموقع"
 
 #: ead/templates/views/forms/location.htm:394
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:235
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:235
 msgid "Environmental Settings"
 msgstr "المكونات البئية للموقع"
 
@@ -993,7 +1001,7 @@ msgstr "نوع الموقع الآثري"
 #: ead/templates/views/forms/summary.htm:40
 #: ead/templates/views/forms/summary.htm:108
 #: ead/templates/views/forms/summary.htm:119
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:429
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:458
 #: ead/templates/views/reports/sections/designation_section.htm:60
 #: ead/templates/views/reports/sections/heritage_resource_phase_type_assignment.htm:25
 msgid "Type"
@@ -1080,30 +1088,31 @@ msgid "Edit this Deity"
 msgstr "تعديل أسم هذا المعبود"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:116
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:116
 msgid "Archaeological Site Description"
 msgstr "وصف الموقع الآثري"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:136
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:136
 msgid "Archaeological Site Summary"
 msgstr "ملخص عن الموقع الآثري"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:175
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:171
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:175
 msgid "Site Descriptions"
 msgstr "وصف الموقع"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:206
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:198
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:206
 msgid "Location Information"
 msgstr "معلومات الموقع"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:239
+#: ead/templates/views/reports/sections/HERITAGE_RESOURCE.E18.htm:239
 msgid "No settings recorded"
 msgstr "لم يتم تحديد بيئة الموقع"
-
-#: ead/templates/views/reports/HERITAGE_RESOURCE.E18.htm:293
-msgid "Classification/Components"
-msgstr "تصنيف/ مكونات"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:117
 #, fuzzy
@@ -1158,19 +1167,19 @@ msgstr "لم يتم تسجيل نوع المرجع"
 msgid "No languages recorded"
 msgstr "لم يتم ادخال نوع اللغة"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:272
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:301
 msgid "Digital Representation"
 msgstr "نسخة رقمية للمرجع"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:304
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:333
 msgid "View document"
 msgstr "مشاهدة المصدر"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:305
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:334
 msgid "Link to document"
 msgstr "رابط للمصدر"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:314
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:343
 #: ead/templates/views/reports/sections/related_resource_section_ead.htm:65
 #: ead/templates/views/reports/sections/related_resource_section_ead.htm:117
 #: ead/templates/views/reports/sections/related_resource_section_ead.htm:170
@@ -1188,48 +1197,48 @@ msgstr "رابط للمصدر"
 msgid "None"
 msgstr "لا يوجد"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:357
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:386
 msgid "Temporal Coverage"
 msgstr "الفترة الزمنية"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:362
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:391
 msgid "No coverage recorded"
 msgstr "لم يتم تسجيل فترة زمنية"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:412
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:441
 msgid "Resource Creation"
 msgstr "وصف المصدر"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:417
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:495
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:446
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:524
 msgid "No creation information recorded"
 msgstr "لم يتم كتابة تاريخ المعلومة"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:442
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:471
 msgid "Created on"
 msgstr "كتبت في"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:455
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:484
 msgid "Creator"
 msgstr "الؤلف"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:468
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:497
 msgid "Contributor"
 msgstr "المساهم"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:490
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:519
 msgid "Publishers"
 msgstr "الناشر"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:517
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:546
 msgid "Publication date"
 msgstr "تاريخ المشر"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:540
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:569
 msgid "Copy Rights"
 msgstr "حقوق النشر"
 
-#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:545
+#: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:574
 msgid "No rights recorded"
 msgstr "لا يعرف حقوق نشر"
 
@@ -1537,6 +1546,9 @@ msgstr "مناطق تاريخية ذات صلة"
 #: ead/templates/views/reports/sections/related_resource_section_old_9_4.htm:337
 msgid "Documents"
 msgstr "وثائق"
+
+#~ msgid "Classification/Components"
+#~ msgstr "تصنيف/ مكونات"
 
 #~ msgid "Giza Bibliography"
 #~ msgstr "الكتب والمراجع"
