@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-05 01:58-0600\n"
-"PO-Revision-Date: 2019-02-27 05:24-0600\n"
+"PO-Revision-Date: 2019-03-06 03:16-0600\n"
 "Last-Translator: <admin@fargeo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,35 +29,35 @@ msgstr "عربي"
 
 #: ead/settings.py:92 ead/settings_local.py:19
 msgid "All Sites"
-msgstr ""
+msgstr "جميع المواقع"
 
 #: ead/settings.py:95 ead/settings_local.py:22
 msgid "Search for all sites and complexes"
-msgstr ""
+msgstr "البحث عن جميع المواقع والمجموعات"
 
 #: ead/settings.py:99 ead/settings_local.py:40
 msgid "Tawd Temple"
-msgstr ""
+msgstr "معبد الطود"
 
 #: ead/settings.py:102
 msgid "An Upper Egyptian Temple Dedicated to Montu"
-msgstr ""
+msgstr "معبد في صعيد مصر مطرس لعبادة مونتو"
 
 #: ead/settings.py:106
 msgid "Qift: Town and Temples"
-msgstr ""
+msgstr "قفط: مدينة ومعابد"
 
 #: ead/settings.py:109
 msgid "An Upper Egyptian Town and Temples site on an important trade route"
-msgstr ""
+msgstr "موقع يحتوي مدينة ومعابد في صعيد مصر، وتقع علي طريق تجارة هام"
 
 #: ead/settings.py:113 ead/settings_local.py:54
 msgid "Bir Umm al Fawakhir"
-msgstr ""
+msgstr "بير ام الفواخير"
 
 #: ead/settings.py:116 ead/settings_local.py:57
 msgid "One of the largest and most productive gold mines in Ancient Egypt"
-msgstr ""
+msgstr "واحد من اضخم واهم مناجم الذهب في مصر القديمة"
 
 #: ead/settings.py:127
 msgid "Archaeological Site"
@@ -76,129 +76,126 @@ msgid "Archaeological Complex"
 msgstr "مجموعة أثرية"
 
 #: ead/settings.py:222
-#, fuzzy
 msgid "Bibliography/Images/OtherDocs"
-msgstr "المراجع/الصور/ممصادر اخري"
+msgstr "المراجع/الصور/وثائق اخري"
 
 #: ead/settings_local.py:26
-#, fuzzy
 msgid "All Bibliographies"
-msgstr "الكتب والمراجع"
+msgstr "جميع المراجع"
 
 #: ead/settings_local.py:29
-#, fuzzy
 msgid "Search for all bibliographies"
-msgstr "البحث عن المصدر"
+msgstr "البحث عن جميع المصادر"
 
 #: ead/settings_local.py:33
 msgid "Temples Dedicated to Montu"
-msgstr ""
+msgstr "معابد مكرسة للمعبود مونتو"
 
 #: ead/settings_local.py:36
 msgid "Search for all temples dedicated to Montu"
-msgstr ""
+msgstr "البحث عن كل معابد مونتو"
 
 #: ead/settings_local.py:43 ead/settings_local.py:64
 msgid "An Upper Egyptian temple dedicated to Montu"
-msgstr ""
+msgstr "معبد مكرس للمعبود مونتو في صعيد مصر"
 
 #: ead/settings_local.py:61
-#, fuzzy
 msgid "Armant Temple"
-msgstr "نوع التشكيل"
+msgstr "معبد ارمنت"
 
 #: ead/settings_local.py:68
 msgid "Al Wadi Darah Mine"
-msgstr ""
+msgstr "منجم وادي داره"
 
 #: ead/settings_local.py:71
 msgid "A copper mine dating from pre-dynastic times"
-msgstr ""
+msgstr "منجم للنحاس من عصر ما قبل الاسرات"
 
 #: ead/settings_local.py:75
 msgid "Abu Shaar Fort"
-msgstr ""
+msgstr "حصن ابوشعر"
 
 #: ead/settings_local.py:78
 msgid "Roman fort on the Red Sea coast"
-msgstr ""
+msgstr "حصن روماني علي ساحل البحر الاحمر"
 
 #: ead/settings_local.py:82
 msgid "Naj al Madamud"
-msgstr ""
+msgstr "نجع الميدامود"
 
 #: ead/settings_local.py:85
 msgid "An Upper Egyptian town and temple site"
-msgstr ""
+msgstr "موقع لمدينة ومعبد في صعيد مصر"
 
 #: ead/settings_local.py:89
 msgid "Hatnub Quarry"
-msgstr ""
+msgstr "محجر حتنوب"
 
 #: ead/settings_local.py:92
 msgid "An early alabaster quarry"
-msgstr ""
+msgstr "محجر للالباستر من فترة مبكرة"
 
 #: ead/settings_local.py:96
-#, fuzzy
 msgid "Al Dayr"
-msgstr "أضف طبقة"
+msgstr "الدير"
 
 #: ead/settings_local.py:99
 msgid "Kharga oasis: Graeco-Roman site with a later Coptic monastery"
 msgstr ""
+"واحة الخارجة: موقع من العصر اليوناني الروماني، يحتوي علي دير من العصر القبطي"
 
 #: ead/settings_local.py:110
 msgid "Ghueita Qasr"
-msgstr ""
+msgstr "قصر الغويطة"
 
 #: ead/settings_local.py:113
 msgid "Late period temple and Graeco-Roman fortress in Kharga oasis"
 msgstr ""
+"معبد من العصر المتاخر و حصن من العصر اليوناني الروماني في واحة الخارجة"
 
 #: ead/settings_local.py:117
 msgid "Wannina al Gharbiyah"
-msgstr ""
+msgstr "وانية الغربية"
 
 #: ead/settings_local.py:120
 msgid "Sohag: Graeco-Roman mammosi and temple"
-msgstr ""
+msgstr "سوهاج: معبد وبيت ولادة من العصر اليوناني الروماني"
 
 #: ead/settings_local.py:124
 msgid "Umm Dabadib"
-msgstr ""
+msgstr "ام دابيب"
 
 #: ead/settings_local.py:127
 msgid "Roman settlement, fort, temple and Coptic church in Kharga oasis"
-msgstr ""
+msgstr "مستوطنة رومانية، حصن، ومعبد وكنسية قبطية في واحة الخارجة"
 
 #: ead/settings_local.py:131
 msgid "Wadi al Hudi"
-msgstr ""
+msgstr "وادي الهودي"
 
 #: ead/settings_local.py:134
 msgid "A dynastic mine and quarry"
-msgstr ""
+msgstr "منجم ومحجر من العصور التاريخية"
 
 #: ead/settings_local.py:138
 msgid "Wadi Dunqash"
-msgstr ""
+msgstr "وادي دنقاش"
 
 #: ead/settings_local.py:141
 msgid "Dynastic inscriptions, mine, settlement and cemeteries"
-msgstr ""
+msgstr "نقوش، منجم، مستوطنة وجبانات من العصور التاريخية"
 
 #: ead/models/concept.py:725
 msgid "Before"
-msgstr ""
+msgstr "قبل"
 
 #: ead/models/concept.py:735
 msgid "On"
-msgstr ""
+msgstr "عن"
 
 #: ead/models/concept.py:745
 msgid "After"
-msgstr ""
+msgstr "بعد"
 
 #: ead/models/forms.py:49 ead/models/forms.py:172 ead/models/forms.py:316
 #: ead/models/forms.py:326
@@ -334,31 +331,34 @@ msgid ""
 "\t\t\t\t\t<a href=\"www.thebanmappingproject.com\"> www.thebanmappingproject.com</a> for further information and for a very detailed and comprehensive description of the sites\n"
 "\t\t\t\t\tand monuments of ancient Thebes. TMP is located in Luxor and at the American University in Cairo."
 msgstr ""
+"قواعد بيانات المواقع الاثرية المصرية هو جزء من مشروع حرائط الاقصر، <a "
+"href=\"www.thebanmappingproject.com\"> www.thebanmappingproject.com</a>  "
+"لمزيد من المعلومات عن والوصف الشامل لكثير من المواقع والاثار في مدينة "
+"الاقصر. مقر مشروع حرائط الاقصر في مدينة الاقصر والجامعة الامريكية بالقاهرة."
 
 #: ead/templates/footer.htm:62
 msgid "Contact Us"
-msgstr ""
+msgstr "الاتصال بنا"
 
 #: ead/templates/footer.htm:64
-#, fuzzy
 msgid "Theban Mapping Project (EAD)"
 msgstr "مشروع خرائط الاقصر"
 
 #: ead/templates/footer.htm:65
 msgid "The American University in Cairo"
-msgstr ""
+msgstr "الجامعة الامريكية بالقاهرة"
 
 #: ead/templates/footer.htm:66
 msgid "PO Box 74"
-msgstr ""
+msgstr "صندوق البريد 74"
 
 #: ead/templates/footer.htm:67
 msgid "New Cairo, 11835, Egypt"
-msgstr ""
+msgstr "القاهرة الجديدة، 11835، مصر"
 
 #: ead/templates/footer.htm:68
 msgid "Email:"
-msgstr ""
+msgstr "الايميل"
 
 #: ead/templates/header.htm:23
 #: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:237
@@ -416,59 +416,55 @@ msgstr "ادارة البيانات"
 #: ead/templates/index.htm:40 ead/templates/index.htm.py:63
 #: ead/templates/index.htm:87
 msgid "EAD Includes"
-msgstr ""
+msgstr "مشروع قواعد بيانات المواقع الاثرية المصرية يحتوي علي"
 
 #: ead/templates/index.htm:44
-#, fuzzy
 msgid "Egypt's pre-Islamic Archaeological Sites"
-msgstr "مواقع آثرية ذات صلة"
+msgstr "مواقع مصر الاثرية قبل العصر الاسلامي"
 
 #: ead/templates/index.htm:49
 msgid "Photo: Pyramids of Giza from the TMP Archive"
-msgstr ""
+msgstr "صورة: اهرامات الجيزة من ارشيف مشروع خرائط الاقصر"
 
 #: ead/templates/index.htm:68
 msgid "Photographs, Plans, and other Images"
-msgstr ""
+msgstr "صور، وخرائط ومصادر اخري"
 
 #: ead/templates/index.htm:73
 msgid ""
 "Historical Reconstruction of Madinat Habu from the Oriental Institute, "
 "University of Chicago"
-msgstr ""
+msgstr "صورة متخلية لمعبد مدينة هابو، من اعداد المعهد الشرقي لجامعة شيكاجو"
 
 #: ead/templates/index.htm:92
-#, fuzzy
 msgid "Site Bibliographies and other Documents"
-msgstr "المصادر ومعلومات اخري"
+msgstr "مراجع ووثائق الخاصة بموقع الاثري"
 
 #: ead/templates/index.htm:97
 msgid "Photo: Madinat Habu Temple from the TMP Archive"
-msgstr ""
+msgstr "صورة: مدينة هابو من ارشيف مشروع خرائط الاقصر"
 
 #: ead/templates/index.htm:111 ead/templates/index.htm.py:135
 msgid "EAD is about"
-msgstr ""
+msgstr "عن المشروع "
 
 #: ead/templates/index.htm:116
-#, fuzzy
 msgid "Preserving Ancient</br> Egypt's Art"
-msgstr "Arabic for preserving</br>Egypt's art"
+msgstr "الحفاظ علي الفن </br> المصري القديم"
 
 #: ead/templates/index.htm:121
 msgid "Photo: Decoration in Tomb of Haremhab from the TMP Archive"
-msgstr ""
+msgstr "صورة: مناظر من مقبرة حورمحب من ارشيف مشروع خرائط الاقصر"
 
 #: ead/templates/index.htm:140
 msgid "Preserving Egypt’s Rich Archaeological Heritage"
-msgstr ""
+msgstr "الحفاظ علي تراث مصرالاثري "
 
 #: ead/templates/index.htm:145
 msgid "Photo: Abu Simbel, Photographer Name: Lucy Fletcher-Jones"
-msgstr ""
+msgstr "صورة: ابوسمبل، اسم المصور: لوسي-فليتشر-جونز"
 
 #: ead/templates/index.htm:162
-#, fuzzy
 msgid "The Egyptian Archaeological Database"
 msgstr "قاعدة بيانات المواقع الاثرية المصرية"
 
@@ -479,11 +475,11 @@ msgid ""
 "\t\t\t\tThis is a demonstration version of the EAD with a limited number of sites showing the type of data, bibliography and imagery \n"
 "\t\t\t\tthat will be collected and displayed for all sites. We welcome your comments and ideas for improvement on the type of information we have collected. \n"
 "\t\t\t\tPlease send them to our email address below. Thank you very much for your help!"
-msgstr ""
+msgstr "مشروع قواعد بينانات المواقع المصرية الاثرية"
 
 #: ead/templates/index.htm:171
 msgid "Learn More"
-msgstr ""
+msgstr "لمعلومات اكثر"
 
 #: ead/templates/map.htm:61 ead/templates/map.htm.py:63
 msgid "Find an Address"
@@ -503,7 +499,7 @@ msgstr "المؤشر"
 
 #: ead/templates/map.htm:97
 msgid "(lat, long)"
-msgstr ""
+msgstr "الاحداثيات"
 
 #: ead/templates/map.htm:125 ead/templates/map.htm.py:250
 #: ead/templates/views/forms/location.htm:51
@@ -826,19 +822,16 @@ msgid "No Descriptions Defined"
 msgstr "لم يتم تحديد وصف"
 
 #: ead/templates/views/forms/description.htm:104
-#, fuzzy
 msgid "Resource Descriptions (Arabic)"
-msgstr "وصف المصدر"
+msgstr "مصادر الوصف العربي"
 
 #: ead/templates/views/forms/description.htm:153
-#, fuzzy
 msgid "This resource has these descriptions in Arabic:"
-msgstr "هذا المورد له هذه الأوصاف"
+msgstr "هذا المصدر فيه وصف باللغة العربية"
 
 #: ead/templates/views/forms/description.htm:157
-#, fuzzy
 msgid "No Arabic descriptions defined"
-msgstr "لم يتم تحديد وصف"
+msgstr "لم يتوافر وصف باللغة العربية"
 
 #: ead/templates/views/forms/location.htm:18
 msgid "Mapped Locations"
@@ -1115,14 +1108,12 @@ msgid "No settings recorded"
 msgstr "لم يتم تحديد بيئة الموقع"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:117
-#, fuzzy
 msgid "Archaeological Complex Description"
-msgstr "وصف الموقع الآثري"
+msgstr "وصف المجموعة الاثرية"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:136
-#, fuzzy
 msgid "Archaeological Complex Summary"
-msgstr "مجموعة أثرية"
+msgstr "وصف مختصر للمجموعة الاثرية"
 
 #: ead/templates/views/reports/HERITAGE_RESOURCE_GROUP.E27.htm:252
 #: ead/templates/views/reports/sections/heritage_resource_phase_type_assignment.htm:6
@@ -1135,9 +1126,8 @@ msgid "Description"
 msgstr "الوصف"
 
 #: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:136
-#, fuzzy
 msgid "Summary"
-msgstr "الشخصية الرئيسة"
+msgstr "الملخص"
 
 #: ead/templates/views/reports/INFORMATION_RESOURCE.E73.htm:153
 msgid "Titles"
@@ -1244,7 +1234,7 @@ msgstr "لا يعرف حقوق نشر"
 
 #: ead/templates/views/reports/title.htm:41
 msgid "Print"
-msgstr ""
+msgstr "للطباعة"
 
 #: ead/templates/views/reports/title.htm:52
 msgid "Resource Report"
@@ -1342,7 +1332,6 @@ msgid "No parcels recorded"
 msgstr "لم يتم تسجيل قطع"
 
 #: ead/templates/views/reports/sections/RESOURCE_TYPE_CLASSIFICATION.E55.htm:6
-#, fuzzy
 msgid "Archaeological Resource Type"
 msgstr "نوع الموقع الآثري"
 
@@ -1473,7 +1462,7 @@ msgstr "لم يتم تسجيل اي تصنيف للموقع"
 
 #: ead/templates/views/reports/sections/heritage_resource_phase_type_assignment.htm:53
 msgid "Reign"
-msgstr ""
+msgstr "مدة الحكم"
 
 #: ead/templates/views/reports/sections/important_dates.htm:6
 msgid "Important Dates"
@@ -1484,9 +1473,8 @@ msgid "No dates recorded"
 msgstr "لم يتم تسجيل تواريخ"
 
 #: ead/templates/views/reports/sections/related_resource_section.htm:12
-#, fuzzy
 msgid "none recorded"
-msgstr "لم يتم كتابة اي اسم"
+msgstr "غير مسجل"
 
 #: ead/templates/views/reports/sections/related_resource_section.htm:32
 #: ead/templates/views/reports/sections/related_resource_section_ead.htm:35
@@ -1499,9 +1487,8 @@ msgid "Related Archaeological Complexes"
 msgstr "مجموعات آثرية ذات صلة"
 
 #: ead/templates/views/reports/sections/related_resource_section.htm:86
-#, fuzzy
 msgid "Related Documents"
-msgstr "مفاهيم ذات صلة"
+msgstr "مصادر ذات صلة"
 
 #: ead/templates/views/reports/sections/related_resource_section.htm:113
 msgid "Related Images"
