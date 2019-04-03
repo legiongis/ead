@@ -66,3 +66,8 @@
 .servive-block {
     height: 215px;
 }
+/* home page text */
+.ead-welcome {
+    color: blue;
+    font-size: 16px;
+}

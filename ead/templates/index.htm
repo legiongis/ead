@@ -155,21 +155,58 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 <!--=== HIP Title Block ===-->
-<div class="purchase">
+<div class="purchase" style="color:blue; font-size:14px">
     <div class="container">
         <div class="row">
             <div class="col-md-9 animated fadeInLeft">
-                <span>{% trans "The Egyptian Archaeological Database" %}</span>
-                <p>{% blocktrans %}The EAD presently includes over 1600 pre-Islamic sites ranging from small Palaeolithic workstations to 
-				large complexes such as Abydos and Tall al Dabah (Avaris). The EAD's primary purpose is to enable preservation and conservation of these sites.
-				This is a demonstration version of the EAD with a limited number of sites showing the type of data, bibliography and imagery 
-				that will be collected and displayed for all sites. We welcome your comments and ideas for improvement on the type of information we have collected. 
-				Please send them to our email address below. Thank you very much for your help!{% endblocktrans %}</p>
+                <span>{% trans "Welcome to the Egyptian Archaeological Database (EAD)" %}</span>
+                <p>{% blocktrans %}The EAD is a bilingual online database of Egyptian archaeological sites from pre-dynastic times up to the Arab Conquest and its primary purpose
+				is to enable preservation and conservation of these sites. The database presently includes over 1500 sites ranging from small Palaeolithic workstations to 
+				large complexes such as Abydos and Tall al Dabah (Avaris). Here we are demonstrating the EAD with a limited number of sites showing the type of data, bibliography and imagery 
+				that is being collected and displayed for all sites. We welcome your comments and ideas for improvement on the type of information we have collected. 
+				Please send them to our email address below. Thank you very much for your help!</p><br /> 
+				<p>The EAD is powered by Arches, an open-source, standards-based, web platform developed by the <a href="http://www.getty.edu/conservation/" target="_blank">Getty Conservation Institute</a> and the <a href="https://www.wmf.org/" target="_blank">World Monuments Fund.</a>
+				TMP customized Arches version 3.1 to better meet the requirements of Egyptian archaeology, with the help of students from AUC and Legion GIS LLC and supported by <a href="https://www.arce.org/" target="_blank">ARCE.</a>
+				We would particularly like to thank Adam Cox of <a href="http://www.legiongis.com" target="_blank">legiongis</a> for allowing us to host this    
+				demonstration web site.{% endblocktrans %}</p><br />
+				<span>{% trans "The EAD Handbook" %}</span>
+				<p>{% blocktrans %}When compiling an archaeological database of ancient Egypt, many factors must be considered such as what type of information should we include, how do we name the site and 
+				how do we record the location. The EAD Handbook explains how we dealt with these questions. You may read and/or download a PDF copy of it using this link:{% endblocktrans %} <a href={% static "img/splash/EADHandbookold.pdf"%} target="_blank">EAD Handbook</a>.</p><br />
+				<span>{% trans "How do I use the EAD?" %}</span>
+				<p>{% blocktrans %}The EAD has 3 pages for users to interact with:</p>
+				<p><b>Home</b></p>
+				<p>You may view the EAD in English or Arabic. You are currently viewing the home page in English. If you wish to switch to Arabic, select the small box at the top right of the page marked 'English', choose 'Arabic'
+				and click ‘Change’ in the box next to it.{% endblocktrans %}</p><br />
+				<p><b>{% trans "Map View" %}</b></p>
+				<p>{% blocktrans %}The map view displays all the archaeological sites in orange on a Bing Satellite map of Egypt. This map is being regularly updated by Bing. The geographic position of the cursor is displayed at the bottom left of the screen as latitude and longitude.</p> 
+<p>You can see an overview of the sites in Egypt or explore one area in more detail by zooming in or out using the + and – controls on the top left of the map.</p> 
+<p>The map view is a composite of a base map and layers which contain the archaeological sites. The type of base map and layer being displayed is controlled by the white boxes at the bottom of the map.</p>  
+<p>The default base map is a hybrid of the Bing satellite map and the Bing Street map. But it can be changed to show the satellite map or just the streets map, by selecting the base map button.  
+Selecting the name of the map will turn it on or off. For ancient Egypt, the satellite map is the most useful.</p> 
+<p>The <b>overlays</b> button displays the layers currently displayed and allows these to be turned on or off. Multiple ones may be turned on together. There is a layer for each type of resource: archaeological sites, archaeological complexes and also for a map of the Roman Empire developed with the help of the Pelagios project. When this Greco-Roman map layer is turned on, you can access a key to the symbols by clicking the ‘i’, the information button on the bottom right of the map. The percentage visibility of the layers may be adjusted by the wheel. The Pelagios map is very useful for viewing the Roman roads in Egypt cited in many Roman Egypt archaeological sources. (Our sites may be located in a slightly different positions from that shown by the Pelagios map as we sometimes define our sites differently.)</p> 
+<p><b>Hovering over a site marker</b> will show the primary name of the site.</p>  
+<p><b>Clicking the marker</b> will display a pop-up window showing some basic details of the site: the site function and its chronology and location in degrees latitude and longitude. The box also contains a button for viewing the site report.{% endblocktrans %}</p><br /> 
+<p><b>{% trans "Search" %}</b></p>
+<p>{% blocktrans %}The search screen enables you to search for a particular site or group of sites sharing a characteristic, such as site type or cultural period.</p> 
+<p>When selecting the search page, you will see a number of search boxes for direct links to particular sites or groups of sites. For instance, if you select ‘Tawd’ you will be taken directly to the report on Tawd showing all the information we have on that site to date. If you select ‘All Sites’, a list of all sites in the demo database will be displayed and you may select one to find the detailed data on that site.</p>
+<p>If, for some reason, you lose the search boxes, simply select Tools> Popular Searches (on the top right of the page), and they will be displayed again.</p>
+<p>You will also see under ‘Tools’ that it is possible to export search results in either a comma delimited file (CSV) or the archaeological site locations in a KML or SHP file.</p> 
+<p>Clicking the ‘Location Filter’ green box at the top of the page will show a map of Egypt displaying all the sites in the database. This is a toggle switch - it may be switched off by clicking again. If a particular search is being made while the location filter is on, only those sites that are displayed in the search results will also be displayed on the map.</p> 
+<p>For this demo system, please ignore the long search box, marked ‘Search for Resource’ at the top of the page. {% endblocktrans %}</p><br />
+<p><b>{% trans "Site Reports" %}</b></p>
+<p>{% blocktrans %}The site reports display the detailed information we have available for a site or complex and provides internal links to the bibliography for the site, images we may have and cross references to other sites.</p> 
+<p>The satellite image at the top of the report shows the site’s location. You may use the zoom controls at the top left (+/-) to either view the surrounding area or focus on the site itself. This image will be the most recent satellite image of the site taken by Bing.</p> 
+<p>If the site’s location is known, it is given in degrees, minutes and seconds, and degrees decimal. To view the site in google maps, which enables you to view a 3-D image and may provide further information on the surroundings, click below the coordinates.</p>
+<p>The section titled ‘Related Archaeological Sites’ provides a clickable list of cross references to other sites in the EAD or other sites within a complex, such as an oasis.</p>
+<p>You can go to the bibliography for the site by clicking on the name in the ‘Related Documents’ section. You will access the bibliography record first and a link to the references will be shown. This is a PDF file which may be printed out. Use the back arrow to return to the site.</p>
+<p>Images for the site are shown as thumbnails in the ‘Related Images’ section at the end of the report. Clicking a thumbnail displays the image, a description and its provenance.</p> 
+<p>In order to print out the report, click the button at the top left. A PDF of the report is produced for sending to a printer.{% endblocktrans %}</p><br />
             </div>            
 	<!-- Not using the extra page-->	
       <!--      <div class="col-md-3 btn-buy animated fadeInRight">
                 <a href="javascript:void(0);" class="btn-u btn-u-lg"><i class="fa fa-plus-square"></i>{% trans "Learn More" %}</a>
             </div> -->
+
         </div>
     </div>
 </div><!--/row-->
