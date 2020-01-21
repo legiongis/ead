@@ -1,5 +1,8 @@
 conceptid,PrefLabel,ArLabel,AltLabels,ParentConceptid,ConceptType,Provider
-RIGHT:1,Public Domain,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
-RIGHT:2,Copyright - All Rights Reserved,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
-RIGHT:3,Copyright License (e.g. Creative Commons),,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
+RIGHT:1,Creative Commons BY NC,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+RIGHT:2,Google - as above,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+RIGHT:3,Microsoft,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
 RIGHT:4,No Known Copyright Restriction,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
+RIGHT:5,Public Domain,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
+RIGHT:6,Reproduced by permission from author/photographer,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,TMP
+RIGHT:7,Copyright - All Rights Reserved,,,RIGHT_TYPE_AUTHORITY_DOCUMENT.csv,Index,GCI
