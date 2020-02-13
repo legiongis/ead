@@ -221,7 +221,7 @@ def report(request, resourceid):
                 if entity['entitytypeid'] == 'THUMBNAIL.E62':
                     related_resource['thumbnail'] = settings.MEDIA_URL + entity['label']
                     information_resource_type = 'IMAGE'
-            
+
         # get the relationship between the two entities
         for relationship in related_resource_info['resource_relationships']:
             if relationship['entityid1'] == related_resource['entityid'] or relationship['entityid2'] == related_resource['entityid']: 
@@ -231,6 +231,31 @@ def report(request, resourceid):
         if entitytypeidkey == 'INFORMATION_RESOURCE':
             entitytypeidkey = '%s_%s' % (entitytypeidkey, information_resource_type)
         related_resource_dict[entitytypeidkey].append(related_resource)
+
+    ## do some further sorting of the images information resources. these should
+    ## be sorted like so (and alphabetically within each type)
+    ## 1. Satellite/Aerial 2. Site Photo 3. Site Plan
+    aphotos = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
+        i['relationship'][0] == "Satellite/Aerial"]
+    s_aphotos = sorted(aphotos, key=lambda k: k['primaryname'])
+
+    sitephotos = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
+        i['relationship'][0] == "Site Photo"]
+    s_sitephotos = sorted(sitephotos, key=lambda k: k['primaryname'])
+
+    siteplans = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
+        i['relationship'][0] == "Site Plan"]
+    s_siteplans = sorted(siteplans, key=lambda k: k['primaryname'])
+
+    img_list = s_aphotos + s_sitephotos + s_siteplans
+
+    ## catch any leftover images that haven't been classified as one of the three above
+    leftovers = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if not\
+        i in img_list]
+    s_leftovers = sorted(leftovers, key=lambda k: k['primaryname'])
+    img_list += s_leftovers
+
+    related_resource_dict['INFORMATION_RESOURCE_IMAGE'] = img_list
 
     # set boolean to trigger display of related resource graph
     related_resource_flag = False
