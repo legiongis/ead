@@ -230,29 +230,22 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                                             </div>
 
                                             <!-- Languages -->
+                                            {% if 'LANGUAGE_E55' in report_info.source.graph %}
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <dl>
                                                         <dt>
                                                             <h5 id="" class="arches-report-subsection-title">{% trans "Languages" %}</h5>
                                                         </dt>
-
-                                                        {% if 'LANGUAGE_E55' not in report_info.source.graph %}
+                                                        {% for LANGUAGE_E55 in report_info.source.graph.LANGUAGE_E55 %}
                                                             <dd class="arches-report-subsection-item">
-                                                                {% trans "No languages recorded" %}
+                                                                {{ LANGUAGE_E55.LANGUAGE_E55__value }}
                                                             </dd>
-                                                        {% else %}
-                                                            {% for LANGUAGE_E55 in report_info.source.graph.LANGUAGE_E55 %}
-                                                                <dd class="arches-report-subsection-item">
-                                                                    {{ LANGUAGE_E55.LANGUAGE_E55__value }}
-                                                                </dd>
-                                                            {% endfor %}
-                                                        {% endif %}
-                                                        
+                                                        {% endfor %} 
                                                     </dl>
                                                 </div>
                                             </div>
-
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <!-- End Section Content-->
