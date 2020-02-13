@@ -1,6 +1,5 @@
 {% load i18n %}
 
-
     {% if not related_resource_flag %}
     <div class="col-sm-4">
         <h3 class="arches-report-subsection"></h3>
@@ -38,7 +37,7 @@
                 <div class=" arches-report-subsection-content">
                 {% for related_resource in related_resource_dict.HERITAGE_RESOURCE %}
                     <p class="arches-report-subsection-item">
-                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
+                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}" target="_blank">
                             {{related_resource.primaryname}}
                         </a>
                         <span class="arches-report-subsection-item-type">
@@ -65,7 +64,7 @@
                 <div class=" arches-report-subsection-content">
                 {% for related_resource in related_resource_dict.HERITAGE_RESOURCE_GROUP %}
                     <p class="arches-report-subsection-item">
-                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
+                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}" target="_blank">
                             {{related_resource.primaryname}}
                         </a>
                         <span class="arches-report-subsection-item-type">
@@ -92,7 +91,7 @@
                 <div class=" arches-report-subsection-content">
                 {% for related_resource in related_resource_dict.INFORMATION_RESOURCE_DOCUMENT %}
                 <p class="arches-report-subsection-item">
-                    <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}">
+                    <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}"  target="_blank">
                         {{related_resource.primaryname}}
                     </a>
                     <span class="arches-report-subsection-item-type">
@@ -119,7 +118,7 @@
                 {% for related_resource in related_resource_dict.INFORMATION_RESOURCE_IMAGE %}
                 <div class="col-xs-12 col-sm-4">
                     <div class="arches-report-subsection-item">
-                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}">
+                        <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}" target="_blank">
                             {{related_resource.primaryname}}
                         </a>
                         <span class="arches-report-subsection-item-type">
@@ -129,7 +128,7 @@
                         </span>
                     </div>
                     <div class="arches-report-subsection-item" style="text-align:center;">
-                        <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}">
+                        <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}"  target="_blank">
                             <img src="{{related_resource.thumbnail}}" alt="" class="arches-report-image-thumbnail" style="margin-bottom: 20px; border: solid 1px #999;" onerror="this.src='{{STATIC_URL}}img/photo_missing.png';">
                         </a>
                     </div>
