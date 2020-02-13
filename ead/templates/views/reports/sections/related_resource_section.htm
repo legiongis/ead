@@ -121,11 +121,6 @@
                         <a href="{% url 'report' related_resource.entityid %}" class="" title="{% trans 'View Report' %}" target="_blank">
                             {{related_resource.primaryname}}
                         </a>
-                        <span class="arches-report-subsection-item-type">
-                            {% if related_resource.relationship|length > 0 %}
-                                <br>({{related_resource.relationship|join:", "}})
-                            {% endif %}
-                        </span>
                     </div>
                     <div class="arches-report-subsection-item" style="text-align:center;">
                         <a href="{% url 'report' related_resource.entityid %}" title="{% trans 'View Report' %}"  target="_blank">
