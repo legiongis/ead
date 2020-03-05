@@ -232,22 +232,15 @@ def report(request, resourceid):
             entitytypeidkey = '%s_%s' % (entitytypeidkey, information_resource_type)
         related_resource_dict[entitytypeidkey].append(related_resource)
 
-    ## do some further sorting of the images information resources. these should
-    ## be sorted like so (and alphabetically within each type)
-    ## 1. Satellite/Aerial 2. Site Photo 3. Site Plan
-    aphotos = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
-        i['relationship'][0] == "Satellite/Aerial"]
-    s_aphotos = sorted(aphotos, key=lambda k: k['primaryname'])
+    ## do some further sorting of the images information resources. categories are
+    ## defined in settings.py, and images within these categories are sorted alphabetically
+    img_list = list()
+    for image_type in settings.RELATED_IMAGE_CATEGORIES:
+        images = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
+            i['relationship'][0].lower() == image_type.lower()]
 
-    sitephotos = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
-        i['relationship'][0] == "Site Photo"]
-    s_sitephotos = sorted(sitephotos, key=lambda k: k['primaryname'])
-
-    siteplans = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if\
-        i['relationship'][0] == "Site Plan"]
-    s_siteplans = sorted(siteplans, key=lambda k: k['primaryname'])
-
-    img_list = s_aphotos + s_sitephotos + s_siteplans
+        s_images = sorted(images, key=lambda k: k['primaryname'])
+        img_list += s_images
 
     ## catch any leftover images that haven't been classified as one of the three above
     leftovers = [i for i in related_resource_dict['INFORMATION_RESOURCE_IMAGE'] if not\

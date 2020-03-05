@@ -84,6 +84,11 @@ MAP_EXTENT = '2616008,2154396,4285800,3829124'
 ## falls to the bottom of the sort list (no errors)
 SORT_RESULTS_BY = "primaryname"
 
+## defines the categories of related images and the order in which they will be displayed in
+## in the resource report. These labels must match those in the RDM, though they are NOT
+## case-sensitive
+RELATED_IMAGE_CATEGORIES = ["Aerial/Satellite", "Plan", "Site Photos"]
+
 ## SAVED_SEARCHES urls must be defined in settings_local.py because they are different in each
 ## installation icons are defined by their class as listed here: http://fontawesome.io/cheatsheet/
 def SAVED_SEARCHES():
