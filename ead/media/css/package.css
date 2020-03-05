@@ -56,6 +56,10 @@
     left: 0;
     top: 0;
   }
+  /* https://stackoverflow.com/questions/3476393/print-a-website-without-printing-the-link-locations */
+  a:link:after, a:visited:after {
+    content: "";
+  }
   .report-title {
       visibility: visible;
       height: 100px !important;
