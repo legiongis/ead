@@ -38,6 +38,21 @@
     min-height: 40px;
 }
 
+/* Resize map for specific screen sizes - large screen */
+@media print and (max-width : 1200px) {
+  #map {
+    height: 288.42px; 
+    width: 660px;
+}
+
+/* Resize map for specific screen sizes - medium screen */
+@media print and (max-width : 992px) {
+  #map {
+    height: 349.8px; 
+    width: 660px;
+}
+ 
+
 @media print {
   body * {
     visibility: hidden;
@@ -56,6 +71,7 @@
     left: 0;
     top: 0;
   }
+
   /* https://stackoverflow.com/questions/3476393/print-a-website-without-printing-the-link-locations */
   a:link:after, a:visited:after {
     content: "";
@@ -65,6 +81,10 @@
       height: 100px !important;
       width: 100%;
   }
+  .arches-map-tools {
+      display: none;
+  }
+
 }
 
 .servive-block {
