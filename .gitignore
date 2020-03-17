@@ -95,3 +95,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+ead/media/js/map/base-layers.js.rej
+ead/media/js/map/layers.js.rej
+ead/templates/useead.html
